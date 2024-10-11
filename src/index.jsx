@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'; // Ensure you're using 'client' here fo
 import '../src/assets/css/bootstrap.min.css'; // Import your Bootstrap CSS
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; // React Router components
 import App from './App'; // Your main App component
+import './index.css'
 
 // Create the root element for rendering
 const root = ReactDOM.createRoot(document.getElementById('root'));

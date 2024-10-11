@@ -1,5 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import NavBar from './Component/NavBar';
+import Footer from './Component/Footer';
 
 function App() {
   return (
@@ -7,8 +9,8 @@ function App() {
 
       {/* Define your routes */}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/" element={<NavBar />} />
+        <Route path="/footer" element={<Footer />} />
       </Routes>
     </>
   );

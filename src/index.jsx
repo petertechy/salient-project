@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'; // Ensure you're using 'client' here for React 18
-import '../src/assets/css/bootstrap.min.css'; // Import your Bootstrap CSS
+// import '../src/assets/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; // React Router components
 import App from './App'; // Your main App component
 import './index.css'

@@ -1,0 +1,36 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ #navbarSupportedContent ul li #button{
+    border-style: solid;
+    border-color: #F5900D;
+    color: #F5900D;
+        
+ } 
+
+ #navbarSupportedContent ul li #button:hover{
+        background-color: #F5900D;
+        color: white;
+ } 
+
+#hrFoot{
+    background-color: #F5900D;
+    width: 1px;
+}
+
+#footer{
+    background-color: #CCCCCC;
+    color: black;
+ }
+
+ #hello{
+    font-size:larger;
+    font-weight: bolder;
+    
+ }
+
+ #section{
+    background-color: black;
+    color: white;
+ }

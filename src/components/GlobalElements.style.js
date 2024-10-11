@@ -11,9 +11,15 @@ export const colors = {
 };
 
 export const GlobalStyle = createGlobalStyle`
-  body {
-    font-family: 'Poppins', sans-serif; 
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
 `;
 
 export const LoadingIconStyle = styled.span`

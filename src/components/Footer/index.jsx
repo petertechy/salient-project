@@ -1,79 +1,76 @@
-import React from "react";
-import { Container, Row } from "react-bootstrap";
+import React from 'react';
 import {
   FooterContainer,
-  Copyright,
-  Logo,
+  FooterTop,
+  FooterBottom,
+  Column,
+  FooterText,
   SocialIcons,
-  SocialIcon,
-  CompanyLinks,
-  InformationLinks,
-  ContactInfo,
-  ContactIcon,
-  Divider,
-  ColWithPadding,
-  Text,
-} from "./FooterElements.style";
-import logo from "../Images/footerLogo.png";
-import {
-  contactObject,
-  headerObject,
-  informationObject,
-  ourCompanyObject,
-  socialIconsObject,
-} from "../../utils/contentObjects";
-import { Link } from "react-router-dom"; // Directly using Link from react-router-dom
+  BrandSection,
+  FooterLogo
+} from './FooterElements';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <FooterContainer>
-      <Container>
-        <Row>
-          <ColWithPadding xs={12} md={3}>
-            <Logo>
-              <img src={logo} alt="Your Logo" />
-            </Logo>
-            <Text>{headerObject.mainHeader}</Text>
-            <SocialIcons>
-              {socialIconsObject.map((item, index) => (
-                <SocialIcon key={index}>{item.icon}</SocialIcon>
-              ))}
-            </SocialIcons>
-          </ColWithPadding>
-          <ColWithPadding xs={12} md={3}>
-            <CompanyLinks>
-              <h5>{headerObject.ourCompany}</h5>
-              {ourCompanyObject.map((item, index) => (
-                <Link key={index} to={item.href}>
-                  {item.header}
-                </Link>
-              ))}
-            </CompanyLinks>
-          </ColWithPadding>
-          <ColWithPadding xs={12} md={3}>
-            <InformationLinks>
-              <h5>{headerObject.information}</h5>
-              {informationObject.map((item, index) => (
-                <Link key={index} to={item.href}>
-                  {item.header}
-                </Link>
-              ))}
-            </InformationLinks>
-          </ColWithPadding>
-          <ColWithPadding xs={12} md={3}>
-            <ContactInfo>
-              <h5>{headerObject.contactUs}</h5>
-              {contactObject.map((item, index) => (
-                <p key={index}>
-                  <ContactIcon>{item.icon}</ContactIcon> {item.header}
-                </p>
-              ))}
-            </ContactInfo>
-          </ColWithPadding>
-        </Row>
-      </Container>
-      <Divider />
-      <Copyright>&copy; {headerObject.copyRight}</Copyright>
+      {/* Top Section */}
+      <FooterTop>
+        {/* Brand Section */}
+        <BrandSection>
+          <FooterLogo>SS</FooterLogo>
+          <FooterText>Let’s start working together</FooterText>
+          <h2>hello@salient.com</h2>
+        </BrandSection>
+
+        {/* Contact Information */}
+        <Column>
+          <h4>Contact Info</h4>
+          <ul>
+            <li>Phone: +234 802 000 0000</li>
+            <li>Email: hello@salient.com</li>
+            <li>Address: 22 Office Street, Somewhere Lane, Asaba, Delta, NG</li>
+          </ul>
+          <SocialIcons>
+            <a href="#"><FaFacebookF /></a>
+            <a href="#"><FaInstagram /></a>
+            <a href="#"><FaTwitter /></a>
+            <a href="#"><FaLinkedinIn /></a>
+          </SocialIcons>
+        </Column>
+
+        {/* Quick Links */}
+        <Column>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/about">About</a></li>
+            <li><a href="/team">Meet the Team</a></li>
+            <li><a href="/projects">Our Projects</a></li>
+            <li><a href="/career">Career</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </Column>
+
+        {/* Gallery */}
+        <Column>
+          <h4>Gallery</h4>
+          <ul>
+            <li><a href="/gallery1">Gallery 1</a></li>
+            <li><a href="/gallery2">Gallery 2</a></li>
+            <li><a href="/gallery3">Gallery 3</a></li>
+            <li><a href="/gallery4">Gallery 4</a></li>
+          </ul>
+        </Column>
+      </FooterTop>
+
+      {/* Bottom Section */}
+      <FooterBottom>
+        <FooterText>© 2024 Salient Software Solutions. All rights reserved.</FooterText>
+        <ul>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/terms-of-service">Terms of Service</a></li>
+        </ul>
+      </FooterBottom>
     </FooterContainer>
   );
 };

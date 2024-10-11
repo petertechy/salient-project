@@ -4,7 +4,7 @@ import { Navbar, Button } from 'react-bootstrap';
 // Styled component for the Navbar
 export const StyledNavbar = styled(Navbar)`
   background-color: #fff;
-  padding: 1rem 2rem;
+  padding: .5rem 2rem;
   border-bottom: 1px solid #f5f5f5;
 `;
 

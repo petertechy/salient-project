@@ -65,12 +65,14 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="d-flex justify-content-between align-items-center">
-                                <div>Copyright © Sallant Software Solution Right Reserved</div>
+                                <small>
+                                    Copyright © Sallant Software Solution Right Reserved
+                                </small>
 
                                 <ul className="list-unstyled d-flex mb-0" style={{ gap: "15px" }}>
-                                    <li>About </li>
-                                    <li>Privacy Policy</li>
-                                    <li>Services </li>
+                                    <small>About </small>      
+                                    <small>Privacy Policy</small>
+                                    <small>Services </small>
                                 </ul>
                             </div>
                         </div>

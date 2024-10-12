@@ -1,6 +1,6 @@
-body{
+/* body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+} */
 
  #navbarSupportedContent ul li #button{
     border-style: solid;
@@ -42,9 +42,27 @@ body{
 
  #discover{
    background-color: #CCCCCC;
+   padding: 3em;
  }
 
- /* #discover #head h1{
-   border-top: #CCCCCC;
-   border-style: dashed;
- } */
+ #discoverShadow:hover {
+   box-shadow: 2px 2px 2px 2px #FFE8AA;
+}
+
+.apply{
+   border-radius: 20px;
+}
+
+.apply:hover{
+   color: #F5900D;
+}
+
+.open{
+   color: gray;
+   font-size: 15px;
+   font-weight: bold;
+}
+
+.next{
+   font-weight: bolder;
+}

@@ -115,35 +115,13 @@ const Home = () => {
 <div className='bg-white p-5 mt-5' style={{   height:"80vh" }}>
 <div className='mt-5' style={{ position: 'relative' }}>
   <div 
-    className="mx-auto  d-flex justify-content-center align-items-center" 
-    style={{ 
-      backgroundColor:' #EC8B0D',
-      width: '200px', 
-      height: '200px', 
-      borderRadius: '100%', 
-      position: 'absolute', 
-      top: '50%', 
-      left: '50%', 
-      transform: 'translate(-20%, -50%)', 
-      zIndex: 2 
-    }}>
+    className="mx-auto  d-flex justify-content-center align-items-center" id="pink">
       <i class="fa-solid fa-arrow-right text-white h1"></i>
-
   </div>
   
   <div 
-    className="mx-auto d-flex justify-content-center align-items-center" 
-    style={{ 
-      backgroundColor:'lightgray',
-      width: '200px', 
-      height: '200px', 
-      borderRadius: '100%', 
-      position: 'absolute', 
-      top: '50%', 
-      left: '50%', 
-      transform: 'translate(-80%, -50%)', 
-      zIndex: 1 
-    }}>
+    className="mx-auto d-flex justify-content-center align-items-center" id="colored"
+    >
   </div>
   </div><br/><br/><br/><br/><br/><br/><br/>
   <p className='text-center h1 font-weight-bold'>Have any projects in mind? <br/>Get in touch with us!</p>

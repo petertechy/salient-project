@@ -14,23 +14,37 @@ body{
         color: white;
  } 
 
-#hrFoot{
-    background-color: #F5900D;
-    width: 1px;
+#footer{
+      border-top: #F5900D;
+      border-style: solid;
 }
-
 #footer{
     background-color: #CCCCCC;
     color: black;
- }
-
- #hello{
-    font-size:larger;
-    font-weight: bolder;
+   }
+   
+   #hello{
+      font-size:larger;
+      font-weight: bolder;
     
+   }
+
+   #section{
+      background-color: black;
+      color: white;
+      
+   }
+   
+   .porthead{
+      background-color: #CCCCCC;
+      padding: 1em;
  }
 
- #section{
-    background-color: black;
-    color: white;
+ #discover{
+   background-color: #CCCCCC;
  }
+
+ /* #discover #head h1{
+   border-top: #CCCCCC;
+   border-style: dashed;
+ } */

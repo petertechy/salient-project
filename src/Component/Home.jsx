@@ -1,18 +1,64 @@
 import React from 'react'
-// import NavBar from './NavBar'
+import NavBar from './NavBar'
 import Footer from './Footer'
+import aa from '../assets/Images/Frame 33.png'
+import bb from '../assets/Images/Frame 35.png'
+import cc from '../assets/Images/Frame 36.png'
 
 const Home = () => {
   return (
     <>
-      {/* <NavBar /> */}
+      <NavBar />
+
+{/* unlock the potential */}
+<marquee behavior="scroll" direction="left" scrollamount="10" loop="infinite">
+  <div className='d-flex' id='scroll'>
+    <p className='h5 mr-5'> * UNLOCK THE POTENTIAL</p>  
+    <p className='h5 mr-5'> * TRANSFORM IDEA INTO REALITY</p>  
+    <p className='h5 mr-5'> * INSPIRED WITH CREATIVITY</p>  
+    <p className='h5 mr-5'> * DESIGN AND DEVELOPEMENT CRAFT</p>  
+  </div>
+</marquee>
 
 
+
+
+
+      {/* the team */}
+      <div className='bg-white p-5'>
+        <div className='container'>
+        <div className='text-center'>
+              <p className='dot'> . </p>
+              <small className='open '>OUR PROFESSIONAL TEAMS</small>
+              <h1 className=' next'>Meet the team behind the <br /> agency success</h1>
+            </div>
+
+            <div className='row mt-5 mx-auto text-center'>
+                <div className='col-lg-3'>
+                     <img src={aa} alt='aa' className='mb-5' />
+                </div>
+                <div className='col-lg-3'>
+                     <img src={aa} alt='aa' className='mb-5' />
+                </div>
+                <div className='col-lg-3'>
+                     <img src={bb} alt='aa' className='mb-5' />
+                </div>
+                <div className='col-lg-3'>
+                     <img src={cc} alt='aa' className='mb-5' />
+                </div>
+            </div>
+        </div>
+
+      </div>
+
+
+{/* jobs opportunity */}
       <div className='' id='discover'>
         <div className='container'>
           <div className='bg-white rounded p-5'>
 
             <div className='text-center'>
+            <p className='dot'> . </p>
               <small className='open '>OUR OPEN JOBS</small>
               <h1 className=' next'>Discover your next career <br />  move</h1>
             </div>
@@ -112,8 +158,8 @@ const Home = () => {
       {/* project in mind */}
       
 
-<div className='bg-white p-5 mt-5' style={{   height:"80vh" }}>
-<div className='mt-5' style={{ position: 'relative' }}>
+<div className='bg-white p-3 '>
+<div className='' style={{ position: 'relative', marginTop:"10em" }}>
   <div 
     className="mx-auto  d-flex justify-content-center align-items-center" id="pink">
       <i class="fa-solid fa-arrow-right text-white h1"></i>

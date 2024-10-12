@@ -67,6 +67,12 @@
    font-weight: bolder;
 }
 
+.dot{
+   color: #F5900D;
+   font-weight: bolder;
+   font-size: 3em;
+}
+
 #pink{
    background-color:#EC8B0D;
    width: 200px; 
@@ -89,4 +95,13 @@
    left: 50%; 
    transform: translate(-80%, -50%);
    z-Index: 1 
+}
+
+#scroll{
+ background-color: #F5900D;
+ color: white;
+ /* font-size: larger; */
+ /* font-weight:700; */
+ border-radius: 10px;
+ padding: 6px;
 }

@@ -9,17 +9,39 @@ import e from '../assets/Images/dd.png'
 import f from '../assets/Images/aa.png'
 import g from '../assets/Images/bb.png'
 import h from '../assets/Images/cc.png'
+import Ellipse from '../assets/Images/Ellipse 26.png'
 
 const Home = () => {
   return (
     <>
       <NavBar />
 
+      {/* agency */}
+      <div className='bg-white mb-4'>
+          <div className='container'>
+              <div className='row'>
+                  <div className='col-lg-6'>
+                    <img src={Ellipse} alt='Ellipse' className='w-100' />
+                  </div>
+                  <div className='col-lg-6'>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+
       {/* solution */}
+      <marquee behavior="scroll" direction="left" scrollamount="10" loop="infinite">
+        <div className=''>
+          <p className='rolling'> Disruptive <span> & </span>scalable tech solution <span> . </span> </p>
+        </div>
+      </marquee>
+
       <div>
         <img src={dd} alt="dd" className='w-100' />
       </div>
 
+{/* service provider */}
       <div className='bg-white mb-4'>
         <div className='container'>
           <div className='text-center'>
@@ -64,7 +86,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <hr/>
+      <hr className='mb-5'/>
 
       {/* unlock the potential */}
       <marquee behavior="scroll" direction="left" scrollamount="10" loop="infinite">
@@ -81,7 +103,7 @@ const Home = () => {
 
 
       {/* the team */}
-      <div className='bg-white p-5'>
+      <div className='bg-white '>
         <div className='container'>
           <div className='text-center'>
             <p className='dot'> . </p>

@@ -10,6 +10,7 @@ import f from '../assets/Images/aa.png'
 import g from '../assets/Images/bb.png'
 import h from '../assets/Images/cc.png'
 import Ellipse from '../assets/Images/Ellipse 26.png'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -18,17 +19,25 @@ const Home = () => {
 
       {/* agency */}
       <div className='bg-white mb-4'>
-          <div className='container'>
-              <div className='row'>
-                  <div className='col-lg-6'>
-                    <img src={Ellipse} alt='Ellipse' className='w-100' />
-                  </div>
-                  <div className='col-lg-6'>
-
-                  </div>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-lg-6'>
+              <img src={Ellipse} alt='Ellipse' className="" />
+            </div>
+            <div className='col-lg-6'>
+              <div className=''>
+                <p className='dot'> . </p>
+                <small className='open '>ABOUT THE AGENCY</small>
+                <h1 className=' next'>We’re top notch award winning software solution agency</h1>
+                <p>Lorem ipsum dolor sit amet consectetur. Facilisi non faucibus mattis nibh. Sed at vehicula urna et pretium neque aliquam. Sed eu cursus posuere purus diam scelerisque in. Pellentesque dolor adipiscing etiam ultricies in. Sed sed pretium volutpat molestie. </p>
+                <p>Velit odio mi non lectus urna et. Mattis morbi est cras sodales ultrices nibh ut sodales. A velit enim a neque malesuada ultricies vitae aliquam tristique. Enim sagittis nulla netus velit magna elementum mattis dictum. Lectus.</p>
+                <button className='btn btn' id="more">Discover More</button>
               </div>
+            </div>
           </div>
+        </div>
       </div>
+      <hr/>
 
       {/* solution */}
       <marquee behavior="scroll" direction="left" scrollamount="10" loop="infinite">
@@ -41,7 +50,7 @@ const Home = () => {
         <img src={dd} alt="dd" className='w-100' />
       </div>
 
-{/* service provider */}
+      {/* service provider */}
       <div className='bg-white mb-4'>
         <div className='container'>
           <div className='text-center'>
@@ -86,7 +95,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <hr className='mb-5'/>
+      <hr className='mb-5' />
 
       {/* unlock the potential */}
       <marquee behavior="scroll" direction="left" scrollamount="10" loop="infinite">
@@ -151,7 +160,7 @@ const Home = () => {
 
                 <div className="col-lg-6">
                   <div className='text-right mr-auto mb-3'>
-                    <small className='apply p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></small>
+                    <Link to="/work" className='apply text-decoration-none p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></Link>
                   </div>
                 </div>
               </div>
@@ -168,7 +177,8 @@ const Home = () => {
 
                 <div className="col-lg-6">
                   <div className='text-right mr-auto mb-3'>
-                    <small className='apply p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></small>
+                    {/* <small className='apply p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></small> */}
+                    <Link to="/work" className='apply text-decoration-none p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></Link>
                   </div>
 
                 </div>
@@ -186,45 +196,14 @@ const Home = () => {
 
                 <div className="col-lg-6">
                   <div className='text-right mr-auto mb-3'>
-                    <small className='apply p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></small>
+                    {/* <small className='apply p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></small> */}
+                    <Link to="/work" className='apply text-decoration-none p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></Link>
                   </div>
 
                 </div>
               </div>
             </div>
-            {/* <div className="row mt-5">
-              <div className="col-lg-12">
-                <div className=' border p-2 bg-body rounded' id='discoverShadow'>
-                  <div className="d-flex justify-content-between align-items-center">
-                    <div>
-                      <p className='font-weight-bold'> DATA ANALYST <span style={{ color: 'grey' }}>Full-Term</span></p>
-                      <h4 className='font-weight-bold'>Jnr.Permanent Data Analyst </h4>
-                      <small style={{ color: 'grey' }}> <i className='text-warning h5 mr-2 fa-solid fa-location-dot'></i>Delta, NG </small>
-                    </div>
-                    <div>
-                      <small className='apply p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
-
-            {/* <div className="row mt-5">
-              <div className="col-lg-12">
-                <div className=' border p-2 bg-body rounded' id='discoverShadow'>
-                  <div className="d-flex justify-content-between align-items-center">
-                    <div>
-                      <p className='font-weight-bold'> Graphics Design  <span style={{ color: 'grey' }}>Part-Time</span></p>
-                      <h4 className='font-weight-bold'>Jnr. Staff Product Manager </h4>
-                      <small style={{ color: 'grey' }}> <i className='text-warning h5 mr-2 fa-solid fa-location-dot'></i>Abuja, NG </small>
-                    </div>
-                    <div>
-                      <small className='apply p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
+           
 
 
           </div>

@@ -51,6 +51,12 @@
 
 .apply{
    border-radius: 20px;
+   color: black;
+   text-decoration: none;
+}
+
+.apply:hover{
+   text-decoration: none;
 }
 
 .apply:hover{
@@ -114,4 +120,11 @@
 
 .rolling span{
       color: #EC8B0D;
+}
+
+#more{
+   padding: 10px;
+   font-weight: 700;
+   color: white;
+   background-color: #EC8B0D;
 }

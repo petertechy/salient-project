@@ -83,9 +83,9 @@ const Portfolio = () => {
       <div className='container'>
         <div className="row">
           <div className="col-lg-12">
-            <div className="d-flex justify-content-between align-items-center">
-              <p><i class="fa-solid fa-arrow-back"></i>Previous</p>
-              <p className='mr-auto'> Next <i class="fa-solid fa-arrow-right"></i></p>
+            <div className="d-flex justify-content-between" id='previous'>
+              <p><i class="fa-solid fa-arrow-left"></i>Previous</p>
+              <p> Next <i class="fa-solid fa-arrow-right"></i></p>
             </div>
           </div>
         </div>

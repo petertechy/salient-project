@@ -41,8 +41,6 @@
    
    #location{
       background-color: #E9E9E9;
-
-
  }
 
  #discover{
@@ -137,4 +135,10 @@
 .jobDetails p i {
    color: #EC8B0D;
    margin-right: 3px;
+}
+
+#previous p i {
+   background-color: #CCCCCC;
+   border-radius: 100%;
+   padding: 10px;
 }

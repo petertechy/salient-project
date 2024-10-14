@@ -18,7 +18,12 @@ const SecondPortfolio = () => {
             <NavBar />
             <img src={frame} alt="frame" className="w-100" />
 
-            <div>
+            <div className='porthead p-5'>
+
+            <div className='container'>
+            
+
+                {/* <div> */}
                 <OwlCarousel
                     className="owl-theme"
                     loop
@@ -28,7 +33,7 @@ const SecondPortfolio = () => {
                     autoplayTimeout={2000}
                     responsive={{
                         0: { items: 1 },
-                        600: { items: 3 },
+                        600: { items: 2 },
                         1000: { items: 3 }
                     }}
                 >
@@ -40,6 +45,8 @@ const SecondPortfolio = () => {
                     <div className="item"><img className='w-100' src={ff} alt="Owl" /></div>
                 </OwlCarousel>
             </div>
+            {/* </div> */}
+                </div>
 
             <Footer />
         </div>

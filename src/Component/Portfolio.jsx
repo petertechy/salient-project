@@ -3,6 +3,7 @@ import NavBar from './NavBar'
 import portfolio from '../assets/Images/Rectangle 197.svg'
 import frame from '../assets/Images/Frame 90.png'
 import Footer from './Footer'
+import { Link } from 'react-router-dom'
 
 const Portfolio = () => {
   return (
@@ -86,7 +87,7 @@ const Portfolio = () => {
           <div className="col-lg-12">
             <div className="d-flex justify-content-between" id='previous'>
               <p><i class="fa-solid fa-arrow-left"></i>Previous</p>
-              <p> Next <i class="fa-solid fa-arrow-right"></i></p>
+              <Link to="/portfolioDetails"> Next <i class="fa-solid fa-arrow-right"></i></Link>
             </div>
           </div>
         </div>

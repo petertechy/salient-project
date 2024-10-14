@@ -33,9 +33,9 @@ const NavBar = () => {
                             <Link to="/" className="nav-link active font-weight-bold text-center ">. Join Us</Link>
                         </li>
                     </ul>
-                    <ul>
+                    <ul className='navbar-nav list-line'>
                         <li className="nav-item list-line-item " >
-                            <p className='nav-link text-center' id="button" style={{ borderRadius: "20px" }} >Contact Us</p>
+                            <Link className='nav-link text-center' to="/contact" id="button" style={{ borderRadius: "20px" }} >Contact Us</Link>
                         </li>
                     </ul>
                 </div>

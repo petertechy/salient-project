@@ -1,25 +1,16 @@
 import React from 'react'
 import NavBar from './NavBar'
-import work from '../assets/Images/work01.png'
-import workk from '../assets/Images/work02.png'
+import work from '../assets/Images/Frame 91.png'
 import Footer from './Footer'
-import { Link } from 'react-router-dom'
 
 const Work = () => {
     return (
         <>
             <NavBar />
 
-            {/* <div>
-            <div className='row'>
-                <div className='col-lg-8'>
+            <div>
                 <img src={work} alt='work' className='w-100'/>
-                </div>
-                <div className='col-lg-4'>
-                        <img src={workk} alt='work' className='w-100'/>
-                </div>
-            </div>
-        </div> */}
+        </div>
 
             <div className='container mb-5'>
                 <div className='row mt-5'>

@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from './NavBar'
 import portfolio from '../assets/Images/Rectangle 197.svg'
+import frame from '../assets/Images/Frame 90.png'
 import Footer from './Footer'
 
 const Portfolio = () => {
@@ -8,10 +9,10 @@ const Portfolio = () => {
     <>
       <NavBar />
 
-      {/* <div className="porthead">
-            <h2 className='font-weight-bold'>Portfolio</h2>
-            <p className='font-weight-bold'>Home .Portfolio .PRJO2</p>
-        </div> */}
+      <div className="">
+        <img src={frame} alt="frame" className='w-100' />
+        </div>
+
       <div className='porthead'>
         <div className='container'>
           <img src={portfolio} alt="portfolio" className='w-100' />

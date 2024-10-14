@@ -36,8 +36,13 @@
    }
    
    .porthead{
-      background-color: #CCCCCC;
-      padding: 1em;
+      background-color: #E9E9E9;
+   }
+   
+   #location{
+      background-color: #E9E9E9;
+
+
  }
 
  #discover{
@@ -127,4 +132,9 @@
    font-weight: 700;
    color: white;
    background-color: #EC8B0D;
+}
+
+.jobDetails p i {
+   color: #EC8B0D;
+   margin-right: 3px;
 }

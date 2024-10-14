@@ -21,7 +21,7 @@ const NavBar = () => {
                             <Link to="/" className="nav-link active font-weight-bold text-center ">. Services</Link>
                         </li>
                         <li className="nav-item list-line-item  ">
-                            <Link to="/" className="nav-link active font-weight-bold text-center ">. Portfolio</Link>
+                            <Link to="/portfolio" className="nav-link active font-weight-bold text-center ">. Portfolio</Link>
                         </li>
                         <li className="nav-item list-line-item  ">
                             <Link to="/" className="nav-link active font-weight-bold text-center ">. Products</Link>

@@ -30,7 +30,7 @@ const About = () => {
                         <p className='h6 font-weight-bold' id='lorem'>Lorem ipsum dolor sit amet consectetur. Facilisi non faucibus mattis nibh. </p>
                         <p>Lorem ipsum dolor sit amet consectetur. Facilisi non faucibus mattis nibh. Sed at vehicula urna et pretium neque aliquam. Sed eu cursus posuere purus diam scelerisque in.</p>
                         <div className='d-flex'>
-                            <img src={dd} alt='dd' className='' />
+                            <img src={dd} alt='dd' className='mr-3' />
                             <div>
                                 <p className='haven'>Matthew Haven</p>
                                 <p>Founder</p>
@@ -47,6 +47,12 @@ const About = () => {
         </div>
       </marquee>
       <hr/>
+
+      <div  className='container'>
+            <div className='d-flex justify-content-between'>
+
+            </div>
+      </div>
         </>
     )
 }

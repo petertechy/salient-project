@@ -152,3 +152,19 @@
    background-color: #F5900D;
    padding: 1em;
 }
+
+#lorem{
+   color: #F5900D;
+}
+
+.haven{
+   color: #F5900D;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.con{
+   font-size: 5em;
+   font-weight: bolder;
+   font-stretch: ultra-expanded;
+   
+}

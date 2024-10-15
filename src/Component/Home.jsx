@@ -114,7 +114,7 @@ const Home = () => {
 
 
       {/* the team */}
-      <div className='bg-white '>
+      <div className='bg-white ' id='teamGroup'>
         <div className='container'>
           <div className='text-center'>
             <p className='dot'> . </p>

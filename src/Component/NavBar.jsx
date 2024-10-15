@@ -28,10 +28,10 @@ const NavBar = () => {
                             <Link to="/" className="nav-link active font-weight-bold text-center ">. Products</Link>
                         </li>
                         <li className="nav-item list-line-item  ">
-                            <Link to="/" className="nav-link active font-weight-bold text-center ">. Teams</Link>
+                            <a  href='#teamGroup' className="nav-link active font-weight-bold text-center ">. Teams</a>
                         </li>
                         <li className="nav-item list-line-item  ">
-                            <Link to="/" className="nav-link active font-weight-bold text-center ">. Join Us</Link>
+                            <Link to="/work" className="nav-link active font-weight-bold text-center ">. Join Us</Link>
                         </li>
                     </ul>
                     <ul className='navbar-nav list-line'>

@@ -1,22 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import logo from "../assets/Images/Logo.png"
+
 
 const Footer = () => {
     return (
         <>
             <footer className="py-5" id="footer">
-            
+
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-3 mb-lg-0 mb-3">
-                            <h6 className="text-medium text-uppercase font-weight-bold mb-5 ">SS</h6>
+                            <img src={logo} alt='logo' />
                             <p className='font-weight-bold'>Let's start working together</p>
                             <p className='' id='hello'>hello@salient.com</p>
                         </div>
 
                         <div className="col-lg-3 mb-lg-0 mb-3">
                             <h6 className="text-medium font-weight-bold">Quick Links</h6>
-                            <hr className="w-25 mx-0 bg-warning mb-5" style={{ height: '3px', border: 'none' }}/>
+                            <hr className="w-25 mx-0 bg-warning mb-5" style={{ height: '3px', border: 'none' }} />
 
                             <p> &#10914; About  </p>
                             <p> &#10914;  Meet The Team  </p>
@@ -27,7 +29,7 @@ const Footer = () => {
 
                         <div className="col-lg-3 mb-lg-0 mb-3">
                             <h6 className="text-medium font-weight-bold">Contact Info</h6>
-                            <hr className="w-25 mx-0 bg-warning mb-5" style={{ height: '3px', border: 'none' }}/>
+                            <hr className="w-25 mx-0 bg-warning mb-5" style={{ height: '3px', border: 'none' }} />
 
 
                             <p className='font-weight-bold'>Phone Number</p>
@@ -40,18 +42,18 @@ const Footer = () => {
                             <p>22, Office Street, Somewhere Lane, Asaba, Delta NG</p>
 
                             <ul className="list-unstyled d-flex mb-0" style={{ gap: "10px" }}>
-                                    <li className=''><Link to="#" className=""><i style={{backgroundColor:'black'}} className="text-white p-1 rounded bi bi-facebook"></i> </Link></li>
-                                    <li className=''><Link to="#" className=""><i style={{backgroundColor:'black'}} className="text-white p-1 rounded bi bi-twitter"></i> </Link></li>
-                                    <li className=''><Link to="#" className=""><i style={{backgroundColor:'black'}} className="text-white p-1 rounded bi bi-instagram"></i></Link></li>
-                                    <li className=''><Link to="#" className=""><i style={{backgroundColor:'black'}} className="text-white p-1 rounded bi bi-youtube"></i></Link></li>
-                                </ul>
+                                <li className=''><Link to="#" className=""><i style={{ backgroundColor: 'black' }} className="text-white p-1 rounded bi bi-facebook"></i> </Link></li>
+                                <li className=''><Link to="#" className=""><i style={{ backgroundColor: 'black' }} className="text-white p-1 rounded bi bi-twitter"></i> </Link></li>
+                                <li className=''><Link to="#" className=""><i style={{ backgroundColor: 'black' }} className="text-white p-1 rounded bi bi-instagram"></i></Link></li>
+                                <li className=''><Link to="#" className=""><i style={{ backgroundColor: 'black' }} className="text-white p-1 rounded bi bi-youtube"></i></Link></li>
+                            </ul>
 
 
                         </div>
 
                         <div className="col-lg-3 mb-lg-0 mb-3">
                             <h6 className="text-medium font-weight-bold ">Gallery</h6>
-                            <hr className="w-25 mx-0 bg-warning mb-5" style={{ height: '3px', border: 'none' }}/>
+                            <hr className="w-25 mx-0 bg-warning mb-5" style={{ height: '3px', border: 'none' }} />
 
                             <p className="mb-0">Gallery One</p>
                         </div>
@@ -70,7 +72,7 @@ const Footer = () => {
                                 </small>
 
                                 <ul className="list-unstyled d-flex mb-0" style={{ gap: "15px" }}>
-                                    <small>About </small>      
+                                    <small>About </small>
                                     <small>Privacy Policy</small>
                                     <small>Services </small>
                                 </ul>

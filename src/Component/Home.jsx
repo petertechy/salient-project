@@ -2,8 +2,10 @@ import React from 'react'
 import NavBar from './NavBar'
 import Footer from './Footer'
 import aa from '../assets/Images/Frame 33.png'
+import b from '../assets/Images/Frame 37.png'
 import bb from '../assets/Images/Frame 35.png'
 import cc from '../assets/Images/Frame 36.png'
+
 import dd from '../assets/Images/Frame 23.png'
 import e from '../assets/Images/dd.png'
 import f from '../assets/Images/aa.png'
@@ -125,7 +127,7 @@ const Home = () => {
               <img src={aa} alt='aa' className='mb-5' />
             </div>
             <div className='col-lg-3'>
-              <img src={aa} alt='aa' className='mb-5' />
+              <img src={b} alt='aa' className='mb-5' />
             </div>
             <div className='col-lg-3'>
               <img src={bb} alt='aa' className='mb-5' />

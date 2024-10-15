@@ -3,7 +3,22 @@ import aa from '../assets/Images/Frame 100.png'
 import bb from '../assets/Images/Frame 113.png'
 import cc from '../assets/Images/Frame 157.png'
 import dd from '../assets/Images/Frame 159.png'
+import ee from '../assets/Images/Ellipse 53.png'
+import ff from '../assets/Images/Frame 161.png'
+import one from '../assets/Images/Frame 33.png'
+import two from '../assets/Images/Frame 37.png'
+import three from '../assets/Images/Frame 35.png'
+import four from '../assets/Images/Frame 36.png'
 import NavBar from './NavBar'
+import Footer from './Footer'
+import aaa from '../assets/Images/Linie 1.png'
+import bbb from '../assets/Images/Group 115.png'
+import ccc from '../assets/Images/Group 112.png'
+import ddd from '../assets/Images/nwjbp9nc 2.png'
+import eee from '../assets/Images/world bank 1.png'
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const About = () => {
     return (
@@ -39,20 +54,196 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <hr/>
-            
+            <hr />
+
             <marquee behavior="scroll" direction="left" scrollamount="10" loop="infinite">
-        <div className='d-flex ' >
-          <p className="con"> Our satisfied <span style={{color:"#F5900D"}}>&</span> happy clients</p>
-        </div>
-      </marquee>
-      <hr/>
+                <div className='d-flex ' >
+                    <p className="con"> Our satisfied <span style={{ color: "#F5900D" }}>&</span> happy clients</p>
+                </div>
+            </marquee>
+            <hr />
 
-      <div  className='container'>
-            <div className='d-flex justify-content-between'>
-
+            <div className='container'>
+                <div className='d-flex justify-content-between my-4'>
+                    <div>
+                        <p className='dot'> . </p>
+                        <small className='open '>OUR CLIENTS FEEDBACK</small>
+                        <h1 className=' next'> What they're talking <br /> about us</h1>
+                    </div>
+                    <div className='mt-5'>
+                        <i className="icon fa-solid fa-arrow-right"></i>
+                        <i className="icon fa-solid fa-arrow-left"></i>
+                    </div>
+                </div>
             </div>
-      </div>
+            {/* <div className='container'>
+                <div className="row mb-5">
+                    <div className='col-lg-6'>
+                        <div className='d-flex p-4' style={{ backgroundColor: "#F5F5F5" }}>
+                            <div className=''>
+                                <p className='font-weight-bold h5' style={{ color: "#F5900D" }}>Donald Trump</p>
+                                <p>Lorem ipsum dolor sit amet consectetur. Facilisi non faucibus mattis nibh. Sed at vehicula urna et pretium neque aliquam. Sed eu cursus posuere purus diam scelerisque in.</p>
+                            </div>
+                            <div className='w-100 text-center'>
+                                <img src={ee} alt='ee' className='w-100' />
+                                <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                                <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                                <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                                <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                                <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                                <p>4.9 Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='col-lg-6'>
+                        <div className='d-flex p-4' style={{ backgroundColor: "#F5F5F5" }}>
+                            <div className=''>
+                                <p className='font-weight-bold h5' style={{ color: "#F5900D" }}>Barack Obama</p>
+                                <p>Lorem ipsum dolor sit amet consectetur. Facilisi non faucibus mattis nibh. Sed at vehicula urna et pretium neque aliquam. Sed eu cursus posuere purus diam scelerisque in.</p>
+                            </div>
+                            <div className='w-100 text-center'>
+                                <img src={ff} alt='ff' className='w-100' />
+                                <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                                <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                                <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                                <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                                <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                                <p>4.9 Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> */}
+
+            <div className="container">
+                <OwlCarousel
+                    className="owl-theme"
+                    loop
+                    margin={10}
+                    nav
+                    autoplay
+                    autoplayTimeout={5000}
+                    responsive={{
+                        0: { items: 1 },
+                        600: { items: 2 },
+                        1000: { items: 2 }
+                    }}
+                >
+                    <div className='d-flex p-4' style={{ backgroundColor: "#F5F5F5" }}>
+                        <div className=''>
+                            <p className='font-weight-bold h5' style={{ color: "#F5900D" }}>Donald Trump</p>
+                            <p>Lorem ipsum dolor sit amet consectetur. Facilisi non faucibus mattis nibh. Sed at vehicula urna et pretium neque aliquam. Sed eu cursus posuere purus diam scelerisque in.</p>
+                        </div>
+                        <div className='w-100 text-center'>
+                            <img src={ee} alt='ee' className='w-100' />
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <p>4.9 Reviews</p>
+                        </div>
+                    </div>
+                    <div className='d-flex p-4' style={{ backgroundColor: "#F5F5F5" }}>
+                        <div className=''>
+                            <p className='font-weight-bold h5' style={{ color: "#F5900D" }}>Barack Obama</p>
+                            <p>Lorem ipsum dolor sit amet consectetur. Facilisi non faucibus mattis nibh. Sed at vehicula urna et pretium neque aliquam. Sed eu cursus posuere purus diam scelerisque in.</p>
+                        </div>
+                        <div className='w-100 text-center'>
+                            <img src={ff} alt='ff' className='w-100' />
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <p>4.9 Reviews</p>
+                        </div>
+                    </div>
+                    <div className='d-flex p-4' style={{ backgroundColor: "#F5F5F5" }}>
+                        <div className=''>
+                            <p className='font-weight-bold h5' style={{ color: "#F5900D" }}>Bola Tinubu</p>
+                            <p>Lorem ipsum dolor sit amet consectetur. Facilisi non faucibus mattis nibh. Sed at vehicula urna et pretium neque aliquam. Sed eu cursus posuere purus diam scelerisque in.</p>
+                        </div>
+                        <div className='w-100 text-center'>
+                            <img src={dd} alt='dd' className='w-100' />
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <p>4.9 Reviews</p>
+                        </div>
+                    </div>
+                    <div className='d-flex p-4' style={{ backgroundColor: "#F5F5F5" }}>
+                        <div className=''>
+                            <p className='font-weight-bold h5' style={{ color: "#F5900D" }}>Mona Lisa</p>
+                            <p>Lorem ipsum dolor sit amet consectetur. Facilisi non faucibus mattis nibh. Sed at vehicula urna et pretium neque aliquam. Sed eu cursus posuere purus diam scelerisque in.</p>
+                        </div>
+                        <div className='w-100 text-center'>
+                            <img src={ff} alt='ff' className='w-100' />
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <i style={{ color: "#F5900D" }} className="fa-solid fa-star"></i>
+                            <p>4.9 Reviews</p>
+                        </div>
+                    </div>
+
+                </OwlCarousel>
+            </div>
+
+            <div className='bg-white '>
+                <div className='container'>
+                    <div className='text-center'>
+                        <p className='dot'> . </p>
+                        <small className='open '>OUR PROFESSIONAL TEAMS</small>
+                        <h1 className=' next'>Meet the team behind the <br /> agency success</h1>
+                    </div>
+
+                    <div className='row mt-5 mx-auto text-center'>
+                        <div className='col-lg-3'>
+                            <img src={one} alt='aa' className='mb-5' />
+                        </div>
+                        <div className='col-lg-3'>
+                            <img src={two} alt='aa' className='mb-5' />
+                        </div>
+                        <div className='col-lg-3'>
+                            <img src={three} alt='aa' className='mb-5' />
+                        </div>
+                        <div className='col-lg-3'>
+                            <img src={four} alt='aa' className='mb-5' />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='container my-5'>
+                <p className='text-center mb-5 font-weight-bold h5'>
+                    -------------------------------------- BRANDS THAT TRUST US ----------------------------------
+                </p>
+                <OwlCarousel
+                    className="owl-theme"
+                    loop
+                    margin={10}
+                    nav
+                    autoplay
+                    autoplayTimeout={4000}
+                    responsive={{
+                        0: { items: 1 },
+                        600: { items: 2 },
+                        1000: { items: 5 }
+                    }}
+                >
+                    <div className="item"><img className='w-100' src={aaa} alt="Owl" /></div>
+                    <div className="item"><img className='w-100' src={bbb} alt="Owl" /></div>
+                    <div className="item"><img className='w-100' src={ccc} alt="Owl" /></div>
+                    <div className="item"><img className='w-100' src={ddd} alt="Owl" /></div>
+                    <div className="item"><img className='w-100' src={eee} alt="Owl" /></div>
+                </OwlCarousel>
+            </div>
+
+            <Footer />
         </>
     )
 }

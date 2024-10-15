@@ -1,6 +1,8 @@
 import React from 'react'
 import NavBar from './NavBar'
 import work from '../assets/Images/Frame 91.png'
+import wo from '../assets/Images/work01.png'
+import wor from '../assets/Images/work02.png'
 import Footer from './Footer'
 
 const Work = () => {
@@ -8,9 +10,20 @@ const Work = () => {
         <>
             <NavBar />
 
-            <div>
+            {/* <div>
                 <img src={work} alt='work' className='w-100'/>
-        </div>
+        </div> */}
+
+<div className=' w-100'>
+    <div id="first">
+    </div>
+    <div id="second">
+    </div>
+        {/* <img src={wo} alt='wo'  className='w-75' />
+        <img src={wor} alt='wo' className='w-75' /> */}
+</div>
+
+
 
             <div className='container mb-5'>
                 <div className='row mt-5'>

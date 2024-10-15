@@ -1,10 +1,10 @@
 import React from 'react'
 import NavBar from './NavBar'
 import Footer from './Footer'
-import aa from '../assets/Images/Frame 33.png'
-import b from '../assets/Images/Frame 37.png'
-import bb from '../assets/Images/Frame 35.png'
-import cc from '../assets/Images/Frame 36.png'
+import one from '../assets/Images/Rectangle 162.png'
+import two from '../assets/Images/Rectangle 163.png'
+import three from '../assets/Images/Rectangle 164.png'
+import four from '../assets/Images/Rectangle 165.png';
 
 import dd from '../assets/Images/Frame 23.png'
 import e from '../assets/Images/dd.png'
@@ -42,11 +42,17 @@ const Home = () => {
       <hr/>
 
       {/* solution */}
-      <marquee behavior="scroll" direction="left" scrollamount="10" loop="infinite">
+      {/* <marquee behavior="scroll" direction="left" scrollamount="10" loop="infinite">
         <div className=''>
           <p className='rolling'> Disruptive <span> & </span>scalable tech solution <span> . </span> </p>
         </div>
-      </marquee>
+      </marquee> */}
+      <div className="marquee-wrapper">
+  <div className="marquee">
+  <p className='rolling'> Disruptive <span> & </span>scalable tech solution <span> . </span> </p>
+
+  </div>
+</div>
 
       <div>
         <img src={dd} alt="dd" className='w-100' />
@@ -100,14 +106,26 @@ const Home = () => {
       <hr className='mb-5' />
 
       {/* unlock the potential */}
-      <marquee behavior="scroll" direction="left" scrollamount="10" loop="infinite">
+      {/* <marquee behavior="scroll" direction="left" scrollamount="10" loop="infinite">
         <div className='d-flex' id='scroll'>
           <p className='h5 mr-5'> * UNLOCK THE POTENTIAL</p>
           <p className='h5 mr-5'> * TRANSFORM IDEA INTO REALITY</p>
           <p className='h5 mr-5'> * INSPIRED WITH CREATIVITY</p>
           <p className='h5 mr-5'> * DESIGN AND DEVELOPEMENT CRAFT</p>
         </div>
-      </marquee>
+      </marquee> */}
+
+      <div className="marquee-wrapper">
+  <div className="marquee">
+  <div className='d-flex' id='scroll'>
+          <p className='h5 mr-5'> * UNLOCK THE POTENTIAL</p>
+          <p className='h5 mr-5'> * TRANSFORM IDEA INTO REALITY</p>
+          <p className='h5 mr-5'> * INSPIRED WITH CREATIVITY</p>
+          <p className='h5 mr-5'> * DESIGN AND DEVELOPEMENT CRAFT</p>
+        </div>
+  </div>
+</div>
+
 
 
 
@@ -123,19 +141,43 @@ const Home = () => {
           </div>
 
           <div className='row mt-5 mx-auto text-center'>
-            <div className='col-lg-3'>
-              <img src={aa} alt='aa' className='mb-5' />
-            </div>
-            <div className='col-lg-3'>
-              <img src={b} alt='aa' className='mb-5' />
-            </div>
-            <div className='col-lg-3'>
-              <img src={bb} alt='aa' className='mb-5' />
-            </div>
-            <div className='col-lg-3'>
-              <img src={cc} alt='aa' className='mb-5' />
-            </div>
-          </div>
+                        <div className='col-lg-3 mb-4'>
+                            <img src={one} alt='aa' className='w-100' />
+                            <div style={{backgroundColor:"#D1D1D1"}} className='w-100'>
+                            <div className='bg-white border-bottom border-warning p-2 w-75'>
+                                <small className='h6' style={{color:'#D1D1D1'}}>Senior Developer</small>
+                                <p className='font-weight-bold h5'>Mike Idowu</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div className='col-lg-3 mb-4'>
+                            <img src={two} alt='aa' className='w-100' />
+                            <div style={{backgroundColor:"#D1D1D1"}} className='w-100'>
+                            <div className='bg-white border-bottom border-warning p-2 w-75'>
+                                <small className='h6' style={{color:'#D1D1D1'}}>Senior Developer</small>
+                                <p className='font-weight-bold h5'>Olive Adegoke</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div className='col-lg-3 mb-4'>
+                            <img src={three} alt='aa' className='w-100' />
+                            <div style={{backgroundColor:"#D1D1D1"}} className='w-100'>
+                            <div className='bg-white border-bottom border-warning p-2 w-75'>
+                                <small className='h6' style={{color:'#D1D1D1'}}>Senior Developer</small>
+                                <p className='font-weight-bold h5'>Mike Donalds</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div className='col-lg-3 mb-4'>
+                            <img src={four} alt='aa' className='w-100' />
+                            <div style={{backgroundColor:"#D1D1D1"}} className='w-100'>
+                            <div className='bg-white border-bottom border-warning p-2 w-75'>
+                                <small className='h6' style={{color:'#D1D1D1'}}>Senior Developer</small>
+                                <p className='font-weight-bold h5'>Sarah Eromosele</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
         </div>
 
       </div>

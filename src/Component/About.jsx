@@ -5,10 +5,8 @@ import cc from '../assets/Images/Frame 157.png'
 import dd from '../assets/Images/Frame 159.png'
 import ee from '../assets/Images/Ellipse 53.png'
 import ff from '../assets/Images/Frame 161.png'
-import one from '../assets/Images/Frame 33.png'
-import two from '../assets/Images/Frame 37.png'
-import three from '../assets/Images/Frame 35.png'
-import four from '../assets/Images/Frame 36.png'
+// import two from '../assets/Images/Frame 37.png'
+// import three from '../assets/Images/Frame 35.png'
 import NavBar from './NavBar'
 import Footer from './Footer'
 import aaa from '../assets/Images/Linie 1.png'
@@ -19,6 +17,10 @@ import eee from '../assets/Images/world bank 1.png'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import one from '../assets/Images/Rectangle 162.png'
+import two from '../assets/Images/Rectangle 163.png'
+import three from '../assets/Images/Rectangle 164.png'
+import four from '../assets/Images/Rectangle 165.png';
 
 const About = () => {
     return (
@@ -203,17 +205,41 @@ const About = () => {
                     </div>
 
                     <div className='row mt-5 mx-auto text-center'>
-                        <div className='col-lg-3'>
-                            <img src={one} alt='aa' className='mb-5' />
+                        <div className='col-lg-3 mb-4'>
+                            <img src={one} alt='aa' className='w-100' />
+                            <div style={{backgroundColor:"#D1D1D1"}} className='w-100'>
+                            <div className='bg-white border-bottom border-warning p-2 w-75'>
+                                <small className='h6' style={{color:'#D1D1D1'}}>Senior Developer</small>
+                                <p className='font-weight-bold h5'>Mike Idowu</p>
+                            </div>
+                            </div>
                         </div>
-                        <div className='col-lg-3'>
-                            <img src={two} alt='aa' className='mb-5' />
+                        <div className='col-lg-3 mb-4'>
+                            <img src={two} alt='aa' className='w-100' />
+                            <div style={{backgroundColor:"#D1D1D1"}} className='w-100'>
+                            <div className='bg-white border-bottom border-warning p-2 w-75'>
+                                <small className='h6' style={{color:'#D1D1D1'}}>Senior Developer</small>
+                                <p className='font-weight-bold h5'>Olive Adegoke</p>
+                            </div>
+                            </div>
                         </div>
-                        <div className='col-lg-3'>
-                            <img src={three} alt='aa' className='mb-5' />
+                        <div className='col-lg-3 mb-4'>
+                            <img src={three} alt='aa' className='w-100' />
+                            <div style={{backgroundColor:"#D1D1D1"}} className='w-100'>
+                            <div className='bg-white border-bottom border-warning p-2 w-75'>
+                                <small className='h6' style={{color:'#D1D1D1'}}>Senior Developer</small>
+                                <p className='font-weight-bold h5'>Mike Donalds</p>
+                            </div>
+                            </div>
                         </div>
-                        <div className='col-lg-3'>
-                            <img src={four} alt='aa' className='mb-5' />
+                        <div className='col-lg-3 mb-4'>
+                            <img src={four} alt='aa' className='w-100' />
+                            <div style={{backgroundColor:"#D1D1D1"}} className='w-100'>
+                            <div className='bg-white border-bottom border-warning p-2 w-75'>
+                                <small className='h6' style={{color:'#D1D1D1'}}>Senior Developer</small>
+                                <p className='font-weight-bold h5'>Sarah Eromosele</p>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>

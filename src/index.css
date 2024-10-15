@@ -177,3 +177,24 @@
    margin-right: 5px;
    font-weight: 900;
 }
+
+
+.marquee-wrapper {
+   overflow: hidden;
+   white-space: nowrap;
+ }
+ 
+ .marquee {
+   display: inline-block;
+   animation: scroll 10s linear infinite;
+ }
+ 
+ @keyframes scroll {
+   0% {
+     transform: translateX(100%);
+   }
+   100% {
+     transform: translateX(-100%);
+   }
+ }
+ 

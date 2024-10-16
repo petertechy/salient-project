@@ -1,18 +1,50 @@
 import React from 'react'
 import NavBar from './NavBar'
 import portfolio from '../assets/Images/Rectangle 197.svg'
-import frame from '../assets/Images/Frame 90.png'
 import Footer from './Footer'
 import { Link } from 'react-router-dom'
+import wo from '../assets/Images/work01.png'
+import wor from '../assets/Images/work02.png'
 
 const Portfolio = () => {
   return (
     <>
       <NavBar />
 
-      <div className="">
-        <img src={frame} alt="frame" className='w-100' />
-        </div>
+                    <div className='d-flex justify-content-center w-100'>
+                <div style={{ width: '100%', marginRight: '0' }}>
+                    <div style={{
+                        backgroundImage: `url(${wo})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        height: '20vh',
+                        width: 'auto'
+                    }}>
+
+                        <div className='p-3 mx-5'>
+                            <p className='mt-3 h4 font-weight-bold'>Portfolio</p>
+                            <p className='d-flex text-decoration-none'>
+                                <Link className='text-dark mr-3 text-decoration-none' to="/"> Home</Link>
+                                <Link className='text-dark mr-3 text-decoration-none' to="/portfolio"> .Portfolio</Link>
+                                <Link className='text-dark mr-3 text-decoration-none' to=""> .PRJ02</Link>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div style={{ width: '100%', marginLeft: '-120px', }}>
+                    <div
+                        style={{
+                            backgroundImage: `url(${wor})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            height: '20vh',
+                            width: 'auto'
+                        }}
+                    >
+                    </div>
+                </div>
+            </div>
 
       <div className='porthead'>
         <div className='container'>

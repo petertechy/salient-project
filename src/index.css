@@ -5,13 +5,11 @@
 @import "~owl.carousel/dist/assets/owl.carousel.css";
 @import "~owl.carousel/dist/assets/owl.theme.default.css";
 
-#first{
-   background-image: url("./assets/Images/work01.png");
+
+#apply{
+   background-color: #F5900D;
 }
 
-#second{
-   background-image: url("./assets/Images/work02.png");
-}
 
  #navbarSupportedContent ul li #button{
     border-style: solid;

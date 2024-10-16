@@ -1,23 +1,58 @@
 import React from 'react'
 import NavBar from './NavBar'
-import contact from '../assets/Images/Frame 93.png'
 import location from '../assets/Images/Frame 128.png'
 import Footer from './Footer'
 import aa from '../assets/Images/mdi-light_calendar.png'
 import bb from '../assets/Images/Frame 120.png'
 import cc from '../assets/Images/Frame 119.png'
+import wo from '../assets/Images/work01.png'
+import wor from '../assets/Images/work02.png'
+import { Link } from 'react-router-dom'
+// import one from '../assets/Images/Frame 136.png'
 
 const Contact = () => {
     return (
         <>
             <NavBar />
 
-            <div>
-                <img src={contact} alt='contact' className='w-100 h-100' />
+
+            <div className='d-flex justify-content-center w-100'>
+                <div style={{ width: '100%', marginRight: '0' }}>
+                    <div style={{
+                        backgroundImage: `url(${wo})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        height: '20vh',
+                        width: 'auto'
+                    }}>
+
+                        <div className='p-3 mx-5'>
+                            <p className='mt-3 h4 font-weight-bold'>Contact</p>
+                            <p className='d-flex text-decoration-none'>
+                                <Link className='text-dark mr-3 text-decoration-none' to="/"> Home</Link>
+                                <Link className='text-dark mr-3 text-decoration-none' to="/contact"> Contact</Link>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div style={{ width: '100%', marginLeft: '-120px', }}>
+                    <div
+                        style={{
+                            backgroundImage: `url(${wor})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            height: '20vh',
+                            width: 'auto'
+                        }}
+                    >
+                    </div>
+                </div>
             </div>
             <div>
-                <div className='porthead p-5 '>
-                    <div className='container text-center mx-auto mb-5'>
+
+                <div className='porthead p-5' >
+                    <div className='container text-center mx-auto mb-5' >
                         <p className='dot'> . </p>
                         <small className='open '>CONTACT WITH AGENCY</small>
                         <h1 className=' next'> Feel free to get in touch with us</h1>

@@ -1,5 +1,4 @@
 import React from 'react'
-import aa from '../assets/Images/Frame 100.png'
 import bb from '../assets/Images/Frame 113.png'
 import cc from '../assets/Images/Frame 157.png'
 import dd from '../assets/Images/Frame 159.png'
@@ -21,13 +20,46 @@ import one from '../assets/Images/Rectangle 162.png'
 import two from '../assets/Images/Rectangle 163.png'
 import three from '../assets/Images/Rectangle 164.png'
 import four from '../assets/Images/Rectangle 165.png';
+import wo from '../assets/Images/work01.png'
+import wor from '../assets/Images/work02.png'
+import { Link } from 'react-router-dom'
 
 const About = () => {
     return (
         <>
             <NavBar />
-            <div>
-                <img src={aa} alt='aa' className='w-100' />
+            <div className='d-flex justify-content-center w-100'>
+                <div style={{ width: '100%', marginRight: '0' }}>
+                    <div style={{
+                        backgroundImage: `url(${wo})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        height: '20vh',
+                        width: 'auto'
+                    }}>
+
+                        <div className='p-3 mx-5'>
+                            <p className='mt-3 h4 font-weight-bold'>Portfolio</p>
+                            <p className='d-flex text-decoration-none'>
+                                <Link className='text-dark mr-3 text-decoration-none' to="/"> Home</Link>
+                                <Link className='text-dark mr-3 text-decoration-none' to="/about"> .About</Link>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div style={{ width: '100%', marginLeft: '-120px', }}>
+                    <div
+                        style={{
+                            backgroundImage: `url(${wor})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            height: '20vh',
+                            width: 'auto'
+                        }}
+                    >
+                    </div>
+                </div>
             </div>
             <div className='porthead'>
                 <div className='container'>

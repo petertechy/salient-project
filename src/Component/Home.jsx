@@ -17,15 +17,26 @@ import a from '../assets/Images/image 3.png'
 import b from '../assets/Images/images.png'
 import c from '../assets/Images/image.png'
 
+import aaa from '../assets/Images/Linie 1.png'
+import bbb from '../assets/Images/Group 115.png'
+import ccc from '../assets/Images/Group 112.png'
+import ddd from '../assets/Images/nwjbp9nc 2.png'
+import eee from '../assets/Images/world bank 1.png'
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
 const Home = () => {
   return (
     <>
       <NavBar />
-      <div>
 
+
+      <div>
         <div className="row">
           <div className='col-lg-5'>
             <img src={a} alt='a' className='w-100' />
+            <p>Think. Create. Solution.</p>
           </div>
           <div className='col-lg-2'>
             <img src={b} alt='b' className='w-100' />
@@ -35,6 +46,32 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+    {/* brands */}
+      <div className='container my-5'>
+                <p className='text-center mb-5 font-weight-bold h5'>
+                    -------------------------------------- BRANDS THAT TRUST US ----------------------------------
+                </p>
+                <OwlCarousel
+                    className="owl-theme"
+                    loop
+                    margin={10}
+                    nav
+                    autoplay
+                    autoplayTimeout={4000}
+                    responsive={{
+                        0: { items: 1 },
+                        600: { items: 2 },
+                        1000: { items: 5 }
+                    }}
+                >
+                    <div className="item"><img className='w-100' src={aaa} alt="Owl" /></div>
+                    <div className="item"><img className='w-100' src={bbb} alt="Owl" /></div>
+                    <div className="item"><img className='w-100' src={ccc} alt="Owl" /></div>
+                    <div className="item"><img className='w-100' src={ddd} alt="Owl" /></div>
+                    <div className="item"><img className='w-100' src={eee} alt="Owl" /></div>
+                </OwlCarousel>
+            </div>
 
       {/* agency */}
       <div className='bg-white mb-4'>

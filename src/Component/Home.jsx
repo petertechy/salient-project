@@ -6,6 +6,11 @@ import two from '../assets/Images/Rectangle 163.png'
 import three from '../assets/Images/Rectangle 164.png'
 import four from '../assets/Images/Rectangle 165.png';
 
+import i from '../assets/Images/Section 6.png';
+import ii from '../assets/Images/Section 66.png';
+import iii from '../assets/Images/Section 666.png';
+
+import white from '../assets/Images/Frame 51.png'
 import dd from '../assets/Images/Frame 23.png'
 import e from '../assets/Images/dd.png'
 import f from '../assets/Images/aa.png'
@@ -14,6 +19,7 @@ import h from '../assets/Images/cc.png'
 import Ellipse from '../assets/Images/Ellipse 26.png'
 import { Link } from 'react-router-dom'
 import a from '../assets/Images/image 3.png'
+import oo from '../assets/Images/Frame 54.png'
 import b from '../assets/Images/images.png'
 import c from '../assets/Images/image.png'
 
@@ -34,44 +40,87 @@ const Home = () => {
 
       <div>
         <div className="row">
-          <div className='col-lg-5'>
-            <img src={a} alt='a' className='w-100' />
+          <div className='col-lg-5 '>
+            <img src={a} alt='a' className='w-40' />
             <p>Think. Create. Solution.</p>
           </div>
           <div className='col-lg-2'>
-            <img src={b} alt='b' className='w-100' />
+            <img src={b} alt='b' className='w-20'  />
           </div>
-          <div className='col-lg-5'>
-            <img src={c} alt='c' className='w-100' />
+          <div className='col-lg-5 '>
+            <img src={c} alt='c' className='w-40' />
           </div>
         </div>
       </div>
 
-    {/* brands */}
+      {/* brands */}
       <div className='container my-5'>
-                <p className='text-center mb-5 font-weight-bold h5'>
-                    -------------------------------------- BRANDS THAT TRUST US ----------------------------------
-                </p>
-                <OwlCarousel
-                    className="owl-theme"
-                    loop
-                    margin={10}
-                    nav
-                    autoplay
-                    autoplayTimeout={4000}
-                    responsive={{
-                        0: { items: 1 },
-                        600: { items: 2 },
-                        1000: { items: 5 }
-                    }}
-                >
-                    <div className="item"><img className='w-100' src={aaa} alt="Owl" /></div>
-                    <div className="item"><img className='w-100' src={bbb} alt="Owl" /></div>
-                    <div className="item"><img className='w-100' src={ccc} alt="Owl" /></div>
-                    <div className="item"><img className='w-100' src={ddd} alt="Owl" /></div>
-                    <div className="item"><img className='w-100' src={eee} alt="Owl" /></div>
-                </OwlCarousel>
+        <p className='text-center mb-5 font-weight-bold h5'>
+          -------------------------------------- BRANDS THAT TRUST US ----------------------------------
+        </p>
+        <OwlCarousel
+          className="owl-theme"
+          loop
+          margin={10}
+          nav
+          autoplay
+          autoplayTimeout={4000}
+          responsive={{
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 5 }
+          }}
+        >
+          <div className="item"><img className='w-100' src={aaa} alt="Owl" /></div>
+          <div className="item"><img className='w-100' src={bbb} alt="Owl" /></div>
+          <div className="item"><img className='w-100' src={ccc} alt="Owl" /></div>
+          <div className="item"><img className='w-100' src={ddd} alt="Owl" /></div>
+          <div className="item"><img className='w-100' src={eee} alt="Owl" /></div>
+        </OwlCarousel>
+      </div>
+
+      {/* overlay */}
+      <div className="container my-5" >
+        <div className='row'>
+          <div className='col-lg-4' id='contain'>
+            <img src={ii} alt="Avatar" className=" w-100" id='image' />
+            <div className="middle w-75" id='middle'>
+              <div className="text" id='text'>
+                <p className='font-weight-bold h4'>Creative Agency</p>
+                <p>This very space is important simply due to fact.</p>
+                <hr className='bg-white ' />
+                <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+              </div>
             </div>
+          </div>
+
+          <div className='col-lg-4' id="containe">
+            <img src={iii} alt="Avatar" className=" w-100" id='imag' />
+            <div className="middl w-75" id='middl'>
+              <div className="tex" id='tex'>
+                <p className='font-weight-bold h4'>Quality Work</p>
+                <p>This very space is important simply due to fact.</p>
+                <hr className='bg-white ' />
+                <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+              </div>
+            </div>
+          </div>
+
+          <div className='col-lg-4' id='con'>
+            <img src={i} alt="Avatar" className=" w-100" id='ima' />
+            <div className="midd w-75" id='midd'>
+              <div className="te" id='te'>
+                <p className='font-weight-bold h4'>Professional Team</p>
+                <p>This very space is important simply due to fact.</p>
+                <hr className='bg-white ' />
+                <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
 
       {/* agency */}
       <div className='bg-white mb-4'>
@@ -153,6 +202,45 @@ const Home = () => {
         </div>
       </div>
       <hr className='mb-5' />
+
+      <div className='container'>
+        <div className="row">
+          <div className="col-lg-6">
+            <p className='dot'> . </p>
+            <small className='open '>OUR DISTINCTIVE PRODUCTS</small>
+            <h1 className=' next'>Discover our recent <br/> groundbreaking solutions </h1>
+         
+          <div className='d-flex p-2 w-100 border-left border-warning my-4' id="hoverr" >
+              <img src={white} alt='white' className='mr-3' />
+              <div className='ml-3'>
+                <p className='font-weight-bold'>Test</p>
+                <p>A test to see how all products will appear on her</p>
+              </div>
+          </div>
+          <div className='d-flex p-2 w-100 border-left border-warning my-4' id="hoverr" >
+              <img src={white} alt='white' className='mr-3' />
+              <div className='ml-3'>
+                <p className='font-weight-bold'>Test</p>
+                <p>A test to see how all products will appear on her</p>
+              </div>
+          </div>
+
+          <div className='d-flex p-2 w-100 border-left border-warning my-4' id="hoverr" >
+              <img src={white} alt='white' className='mr-3' />
+              <div className='ml-3'>
+                <p className='font-weight-bold'>Test</p>
+                <p>A test to see how all products will appear on her</p>
+              </div>
+          </div>
+         
+          </div>
+          <div className="col-lg-6">
+            <img src={oo} alt='oo' className='w-100 mt-5' />
+          </div>
+        </div>
+      </div>
+
+
 
       {/* unlock the potential */}
       <div className="marquee-wrapper">
@@ -257,7 +345,6 @@ const Home = () => {
 
                 <div className="col-lg-6">
                   <div className='text-right mr-auto mb-3'>
-                    {/* <small className='apply p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></small> */}
                     <Link to="/work" className='apply text-decoration-none p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></Link>
                   </div>
 
@@ -276,7 +363,6 @@ const Home = () => {
 
                 <div className="col-lg-6">
                   <div className='text-right mr-auto mb-3'>
-                    {/* <small className='apply p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></small> */}
                     <Link to="/work" className='apply text-decoration-none p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></Link>
                   </div>
 

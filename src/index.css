@@ -5,6 +5,44 @@
 @import "~owl.carousel/dist/assets/owl.carousel.css";
 @import "~owl.carousel/dist/assets/owl.theme.default.css";
 
+#landing{
+   background-image: url("./assets/Images/image\ 3.png");
+   background-position: relative;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+    height: 82vh;
+}
+
+#para{
+   margin-top: 1em;
+   font-size: 4em;
+   font-weight: bolder;
+   font-stretch:extra-expanded;
+}
+
+#para span{
+   color:#CCCCCC
+}
+
+#pin{
+   background-color:#EC8B0D;
+   width: 150px; 
+   height: 150px; 
+   border-radius: 100%; 
+   position: absolute; 
+   top: 60%; 
+   left: 88%; 
+   /* margin-right:2em; */
+   transform: translate(-20%, -50%); 
+   /* z-index: 2 ; */
+}
+
+
 
 #apply{
    background-color: #F5900D;
@@ -204,9 +242,114 @@
  }
 
 
+/*  */
+
+/* .image-container {
+   width: 200px;
+   height: 200px;
+ }
+
+ .image-container .imggg {
+   position: absolute;
+   margin-top: 3.5em;
+   margin-left: 3.5em;
+ }
+  .imggg:hover {
+
+   transform: rotate(-45deg)
+ }
+
+ .spin-image {
+   width: 100%;
+   height: 100%;
+   animation: spin 4s linear infinite;
+   position: relative;
+ }
+
+ @keyframes spin {
+   from {
+     transform: rotate(0deg);
+   }
+   to {
+     transform: rotate(360deg);
+   }
+ } */
+
+/*  */
+
+
+.image-container {
+   position: relative;
+   display: inline-block;
+ }
+
+ /* Default image styling */
+ .imggg {
+   width: 50px; /* Adjust as needed */
+   transition: transform 0.3s ease;
+   /* transform: translateX(125px); */
+   margin-left: 4.5em;
+   margin-top: 4.5em;
+   position: absolute;
+   z-index: 2;
+ }
+
+ /* Rotate arrow image upward (by 45 degrees) on hover */
+ .imggg:hover {
+   transform: rotate(-45deg);
+ }
+
+ /* Styling for the spinning image */
+ .spin-image {
+   z-index: 1 ;
+   width: 200px; /* Adjust as needed */
+   animation: spin 4s linear infinite;
+   position: relative;
+
+ }
+
+ /* Keyframes for the spinning animation */
+ @keyframes spin {
+   from {
+     transform: rotate(0deg);
+   }
+   to {
+     transform: rotate(360deg);
+   }
+ }
+
+
+
+
+
+/*  */
+
+
+
+
+
+ .agency{
+   background-color: #E9E9E9;
+   color: black;
+   font-weight: bolder;
+   text-align: center;
+   margin-top: 10em;
+   width: 90%;
+ }
+
 /* overlay */
 #contain {
-   position: relative;   
+   position: relative;  
+   background-image: url("./assets/Images/Section\ 66.png");
+   background-position: relative;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+
 }
  
  #image {
@@ -245,6 +388,15 @@
 
  #containe {
    position: relative;   
+   background-image: url("./assets/Images/Section\ 666.png");
+   background-position: relative;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
 }
  
  #imag {
@@ -282,7 +434,16 @@
  }
  
  #con {
-   position: relative;   
+   position: relative;
+   background-image: url("./assets/Images/Section\ 6.png");
+   background-position: relative;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;   
 }
  
  #ima {
@@ -319,16 +480,28 @@
    padding: 16px 32px;
  }
 
- #hoverr{
+ /* #hoverr{
    background-color:#F4F4F4;
    color: black;
+   transition: width 2s, height 4s;
  }
 
  #hoverr:hover{
    background-color: #EC8B0D;
    color: white;
- }
+ } */
 
+ #hoverr {
+   background-color: #F4F4F4;
+   color: black;
+   transition: background-color 0.5s, color 0.5s, width 4s, height 10s;
+ }
+ 
+ #hoverr:hover {
+   background-color: #EC8B0D;
+   color: white;
+ }
+ 
 
 
 

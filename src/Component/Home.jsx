@@ -6,9 +6,9 @@ import two from '../assets/Images/Rectangle 163.png'
 import three from '../assets/Images/Rectangle 164.png'
 import four from '../assets/Images/Rectangle 165.png';
 
-import i from '../assets/Images/Section 6.png';
-import ii from '../assets/Images/Section 66.png';
-import iii from '../assets/Images/Section 666.png';
+import component from '../assets/Images/Component 11.png';
+import arrow from '../assets/Images/Arrow.png';
+
 
 import white from '../assets/Images/Frame 51.png'
 import dd from '../assets/Images/Frame 23.png'
@@ -18,7 +18,6 @@ import g from '../assets/Images/bb.png'
 import h from '../assets/Images/cc.png'
 import Ellipse from '../assets/Images/Ellipse 26.png'
 import { Link } from 'react-router-dom'
-import a from '../assets/Images/image 3.png'
 import oo from '../assets/Images/Frame 54.png'
 import b from '../assets/Images/images.png'
 import c from '../assets/Images/image.png'
@@ -31,6 +30,7 @@ import eee from '../assets/Images/world bank 1.png'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+// import a from '../assets/Images/image 3.png'
 
 const Home = () => {
   return (
@@ -40,15 +40,38 @@ const Home = () => {
 
       <div>
         <div className="row">
-          <div className='col-lg-5 '>
-            <img src={a} alt='a' className='w-40' />
-            <p>Think. Create. Solution.</p>
+          <div className='col-lg-5 text-center' id="landing">
+            <p id='para'>Think. <br />
+              <span >Create.</span> <br />
+              Solution.
+            </p>
+            <div
+            className=" justify-content-center align-items-center" id="pin">
+            
+          </div>
+
+
+            {/* <img src={component} alt="component" className="float-right" /> */}
+           
+            {/* <div className="image-container float-right">
+              <img src={arrow} alt='arrow' className='imggg'  />
+  <img className="spin-image " src={component} alt="Spinning Image"/>
+</div> */}
+      {/*  */}
+      
+      <div className="image-container float-right">
+  <img src={arrow} alt="arrow" className="imggg" />
+  <img className="spin-image" src={component} alt="Spinning Image" />
+</div>
+
+
+      {/*  */}
           </div>
           <div className='col-lg-2'>
-            <img src={b} alt='b' className='w-20'  />
+            <img src={b} alt='b' className='' />
           </div>
           <div className='col-lg-5 '>
-            <img src={c} alt='c' className='w-40' />
+            <img src={c} alt='c' className='' />
           </div>
         </div>
       </div>
@@ -82,20 +105,30 @@ const Home = () => {
       {/* overlay */}
       <div className="container my-5" >
         <div className='row'>
-          <div className='col-lg-4' id='contain'>
-            <img src={ii} alt="Avatar" className=" w-100" id='image' />
+          <div className='col-lg-4'>
+            <div id="contain">
+
+
+            {/* <img src={ii} alt="Avatar" className=" w-100" id='image' /> */}
+
+            <p className='agency p-3 h4 mx-auto'>Creative Agency</p>
+
             <div className="middle w-75" id='middle'>
               <div className="text" id='text'>
-                <p className='font-weight-bold h4'>Creative Agency</p>
+                <p className='font-weight-bold h4 '>Creative Agency</p>
                 <p>This very space is important simply due to fact.</p>
                 <hr className='bg-white ' />
                 <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
               </div>
             </div>
+            </div>
           </div>
 
-          <div className='col-lg-4' id="containe">
-            <img src={iii} alt="Avatar" className=" w-100" id='imag' />
+          <div className='col-lg-4' >
+          <div  id="containe">
+            {/* <img src={iii} alt="Avatar" className=" w-100" id='imag' /> */}
+            <p className='agency p-3 h4 mx-auto'>Quality Work</p>
+
             <div className="middl w-75" id='middl'>
               <div className="tex" id='tex'>
                 <p className='font-weight-bold h4'>Quality Work</p>
@@ -104,10 +137,14 @@ const Home = () => {
                 <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
               </div>
             </div>
+            </div>
           </div>
 
-          <div className='col-lg-4' id='con'>
-            <img src={i} alt="Avatar" className=" w-100" id='ima' />
+          <div className='col-lg-4'>
+          <div id='con'>
+            {/* <img src={i} alt="Avatar" className=" w-100" id='ima' /> */}
+            <p className='agency p-3 h4 mx-auto'>Professional Team</p>
+
             <div className="midd w-75" id='midd'>
               <div className="te" id='te'>
                 <p className='font-weight-bold h4'>Professional Team</p>
@@ -115,6 +152,7 @@ const Home = () => {
                 <hr className='bg-white ' />
                 <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
               </div>
+            </div>
             </div>
           </div>
 
@@ -208,31 +246,31 @@ const Home = () => {
           <div className="col-lg-6">
             <p className='dot'> . </p>
             <small className='open '>OUR DISTINCTIVE PRODUCTS</small>
-            <h1 className=' next'>Discover our recent <br/> groundbreaking solutions </h1>
-         
-          <div className='d-flex p-2 w-100 border-left border-warning my-4' id="hoverr" >
-              <img src={white} alt='white' className='mr-3' />
-              <div className='ml-3'>
-                <p className='font-weight-bold'>Test</p>
-                <p>A test to see how all products will appear on her</p>
-              </div>
-          </div>
-          <div className='d-flex p-2 w-100 border-left border-warning my-4' id="hoverr" >
-              <img src={white} alt='white' className='mr-3' />
-              <div className='ml-3'>
-                <p className='font-weight-bold'>Test</p>
-                <p>A test to see how all products will appear on her</p>
-              </div>
-          </div>
+            <h1 className=' next'>Discover our recent <br /> groundbreaking solutions </h1>
 
-          <div className='d-flex p-2 w-100 border-left border-warning my-4' id="hoverr" >
+            <div className='d-flex p-2 w-100 border-left border-warning my-4' id="hoverr" >
               <img src={white} alt='white' className='mr-3' />
               <div className='ml-3'>
                 <p className='font-weight-bold'>Test</p>
                 <p>A test to see how all products will appear on her</p>
               </div>
-          </div>
-         
+            </div>
+            <div className='d-flex p-2 w-100 border-left border-warning my-4' id="hoverr" >
+              <img src={white} alt='white' className='mr-3' />
+              <div className='ml-3'>
+                <p className='font-weight-bold'>Test</p>
+                <p>A test to see how all products will appear on her</p>
+              </div>
+            </div>
+
+            <div className='d-flex p-2 w-100 border-left border-warning my-4' id="hoverr" >
+              <img src={white} alt='white' className='mr-3' />
+              <div className='ml-3'>
+                <p className='font-weight-bold'>Test</p>
+                <p>A test to see how all products will appear on her</p>
+              </div>
+            </div>
+
           </div>
           <div className="col-lg-6">
             <img src={oo} alt='oo' className='w-100 mt-5' />
@@ -268,7 +306,7 @@ const Home = () => {
             <div className='col-lg-3 mb-4'>
               <img src={one} alt='aa' className='w-100' />
               <div style={{ backgroundColor: "#D1D1D1" }} className='w-100'>
-                <div className='bg-white border-bottom border-warning p-2 w-75'>
+                <div className='bg-white mx-auto border-bottom border-warning p-2 w-75'>
                   <small className='h6' style={{ color: '#D1D1D1' }}>Senior Developer</small>
                   <p className='font-weight-bold h5'>Mike Idowu</p>
                 </div>
@@ -277,7 +315,7 @@ const Home = () => {
             <div className='col-lg-3 mb-4'>
               <img src={two} alt='aa' className='w-100' />
               <div style={{ backgroundColor: "#D1D1D1" }} className='w-100'>
-                <div className='bg-white border-bottom border-warning p-2 w-75'>
+                <div className='bg-white border-bottom mx-auto border-warning p-2 w-75'>
                   <small className='h6' style={{ color: '#D1D1D1' }}>Senior Developer</small>
                   <p className='font-weight-bold h5'>Olive Adegoke</p>
                 </div>
@@ -286,7 +324,7 @@ const Home = () => {
             <div className='col-lg-3 mb-4'>
               <img src={three} alt='aa' className='w-100' />
               <div style={{ backgroundColor: "#D1D1D1" }} className='w-100'>
-                <div className='bg-white border-bottom border-warning p-2 w-75'>
+                <div className='bg-white border-bottom mx-auto border-warning p-2 w-75'>
                   <small className='h6' style={{ color: '#D1D1D1' }}>Senior Developer</small>
                   <p className='font-weight-bold h5'>Mike Donalds</p>
                 </div>
@@ -295,7 +333,7 @@ const Home = () => {
             <div className='col-lg-3 mb-4'>
               <img src={four} alt='aa' className='w-100' />
               <div style={{ backgroundColor: "#D1D1D1" }} className='w-100'>
-                <div className='bg-white border-bottom border-warning p-2 w-75'>
+                <div className='bg-white border-bottom mx-auto border-warning p-2 w-75'>
                   <small className='h6' style={{ color: '#D1D1D1' }}>Senior Developer</small>
                   <p className='font-weight-bold h5'>Sarah Eromosele</p>
                 </div>

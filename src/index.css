@@ -20,7 +20,6 @@
 
 #para{
    margin-top: 1em;
-   font-size: 4em;
    font-weight: bolder;
    font-stretch:extra-expanded;
 }
@@ -35,8 +34,8 @@
    height: 150px; 
    border-radius: 100%; 
    position: absolute; 
-   top: 60%; 
-   left: 88%; 
+   top: 75%; 
+   left: 86%; 
    /* margin-right:2em; */
    transform: translate(-20%, -50%); 
    /* z-index: 2 ; */

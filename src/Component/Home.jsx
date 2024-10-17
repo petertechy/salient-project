@@ -41,31 +41,31 @@ const Home = () => {
       <div>
         <div className="row">
           <div className='col-lg-5 text-center' id="landing">
-            <p id='para'>Think. <br />
+            <p id='para' className='display-2'>Think. <br />
               <span >Create.</span> <br />
               Solution.
             </p>
             <div
-            className=" justify-content-center align-items-center" id="pin">
-            
-          </div>
+              className=" justify-content-center align-items-center" id="pin">
+
+            </div>
 
 
             {/* <img src={component} alt="component" className="float-right" /> */}
-           
+
             {/* <div className="image-container float-right">
               <img src={arrow} alt='arrow' className='imggg'  />
   <img className="spin-image " src={component} alt="Spinning Image"/>
 </div> */}
-      {/*  */}
-      
-      <div className="image-container float-right">
-  <img src={arrow} alt="arrow" className="imggg" />
-  <img className="spin-image" src={component} alt="Spinning Image" />
-</div>
+            {/*  */}
+
+            <div className="image-container float-right">
+              <img src={arrow} alt="arrow" className="imggg" />
+              <img className="spin-image" src={component} alt="Spinning Image" />
+            </div>
 
 
-      {/*  */}
+            {/*  */}
           </div>
           <div className='col-lg-2'>
             <img src={b} alt='b' className='' />
@@ -109,50 +109,50 @@ const Home = () => {
             <div id="contain">
 
 
-            {/* <img src={ii} alt="Avatar" className=" w-100" id='image' /> */}
+              {/* <img src={ii} alt="Avatar" className=" w-100" id='image' /> */}
 
-            <p className='agency p-3 h4 mx-auto'>Creative Agency</p>
+              <p className='agency p-3 h4 mx-auto'>Creative Agency</p>
 
-            <div className="middle w-75" id='middle'>
-              <div className="text" id='text'>
-                <p className='font-weight-bold h4 '>Creative Agency</p>
-                <p>This very space is important simply due to fact.</p>
-                <hr className='bg-white ' />
-                <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+              <div className="middle w-75" id='middle'>
+                <div className="text" id='text'>
+                  <p className='font-weight-bold h4 '>Creative Agency</p>
+                  <p>This very space is important simply due to fact.</p>
+                  <hr className='bg-white ' />
+                  <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
               </div>
-            </div>
             </div>
           </div>
 
           <div className='col-lg-4' >
-          <div  id="containe">
-            {/* <img src={iii} alt="Avatar" className=" w-100" id='imag' /> */}
-            <p className='agency p-3 h4 mx-auto'>Quality Work</p>
+            <div id="containe">
+              {/* <img src={iii} alt="Avatar" className=" w-100" id='imag' /> */}
+              <p className='agency p-3 h4 mx-auto'>Quality Work</p>
 
-            <div className="middl w-75" id='middl'>
-              <div className="tex" id='tex'>
-                <p className='font-weight-bold h4'>Quality Work</p>
-                <p>This very space is important simply due to fact.</p>
-                <hr className='bg-white ' />
-                <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+              <div className="middl w-75" id='middl'>
+                <div className="tex" id='tex'>
+                  <p className='font-weight-bold h4'>Quality Work</p>
+                  <p>This very space is important simply due to fact.</p>
+                  <hr className='bg-white ' />
+                  <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
               </div>
-            </div>
             </div>
           </div>
 
           <div className='col-lg-4'>
-          <div id='con'>
-            {/* <img src={i} alt="Avatar" className=" w-100" id='ima' /> */}
-            <p className='agency p-3 h4 mx-auto'>Professional Team</p>
+            <div id='con'>
+              {/* <img src={i} alt="Avatar" className=" w-100" id='ima' /> */}
+              <p className='agency p-3 h4 mx-auto'>Professional Team</p>
 
-            <div className="midd w-75" id='midd'>
-              <div className="te" id='te'>
-                <p className='font-weight-bold h4'>Professional Team</p>
-                <p>This very space is important simply due to fact.</p>
-                <hr className='bg-white ' />
-                <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+              <div className="midd w-75" id='midd'>
+                <div className="te" id='te'>
+                  <p className='font-weight-bold h4'>Professional Team</p>
+                  <p>This very space is important simply due to fact.</p>
+                  <hr className='bg-white ' />
+                  <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
               </div>
-            </div>
             </div>
           </div>
 

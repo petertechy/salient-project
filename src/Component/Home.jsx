@@ -5,19 +5,161 @@ import one from '../assets/Images/Rectangle 162.png'
 import two from '../assets/Images/Rectangle 163.png'
 import three from '../assets/Images/Rectangle 164.png'
 import four from '../assets/Images/Rectangle 165.png';
-
+import component from '../assets/Images/Component 11.png';
+import arrow from '../assets/Images/Arrow.png';
+import white from '../assets/Images/Frame 51.png'
 import dd from '../assets/Images/Frame 23.png'
 import e from '../assets/Images/dd.png'
 import f from '../assets/Images/aa.png'
 import g from '../assets/Images/bb.png'
 import h from '../assets/Images/cc.png'
+import vector from '../assets/Images/Vector.png'
 import Ellipse from '../assets/Images/Ellipse 26.png'
 import { Link } from 'react-router-dom'
+import oo from '../assets/Images/Frame 54.png'
+import b from '../assets/Images/images.png'
+import c from '../assets/Images/image.png'
+import aaa from '../assets/Images/Linie 1.png'
+import bbb from '../assets/Images/Group 115.png'
+import ccc from '../assets/Images/Group 112.png'
+import ddd from '../assets/Images/nwjbp9nc 2.png'
+import eee from '../assets/Images/world bank 1.png'
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Home = () => {
   return (
     <>
       <NavBar />
+
+      <hr />
+      <div>
+        <div className="row">
+
+          <div className='col-lg-5 text-center w-100' id="landing">
+
+            <p id='para' className='display-2'>Think. <br />
+              <span >Create.</span> <br />
+              Solution.
+            </p>
+
+            <div
+              className=" justify-content-center align-items-center" id="pin">
+            </div>
+
+            <div className="image-container float-right">
+              <img src={arrow} alt="arrow" className="imggg" />
+              <img className="spin-image" src={component} alt="Spinning Image" />
+            </div>
+
+          </div>
+
+          <div className='col-lg-2 w-100'>
+            <img src={b} alt='b' className='w-100' />
+          </div>
+
+          <div className='col-lg-5 w-100 '>
+            <img src={c} alt='c' className='w-100' />
+          </div>
+
+        </div>
+      </div>
+
+      {/* brands */}
+      <div className='container my-5'>
+        <p className='text-center mb-5 font-weight-bold h5'>
+          -------------------------------------- BRANDS THAT TRUST US ----------------------------------
+        </p>
+        <OwlCarousel
+          className="owl-theme"
+          loop
+          margin={10}
+          nav
+          autoplay
+          autoplayTimeout={4000}
+          responsive={{
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 5 }
+          }}
+        >
+          <div className="item"><img className='w-100' src={aaa} alt="Owl" /></div>
+          <div className="item"><img className='w-100' src={bbb} alt="Owl" /></div>
+          <div className="item"><img className='w-100' src={ccc} alt="Owl" /></div>
+          <div className="item"><img className='w-100' src={ddd} alt="Owl" /></div>
+          <div className="item"><img className='w-100' src={eee} alt="Owl" /></div>
+        </OwlCarousel>
+      </div>
+
+      {/* overlay */}
+      <div className="container my-5" >
+        <div className='row'>
+          <div className='col-lg-4'>
+            <div id="contain">
+              <div>
+
+                <p className='agency p-3 h4 mx-auto'>
+                  Creative Agency
+                  <sup>
+                    <i class="fa-regular fa-lightbulb p-3 ml-2" id='ic'></i>
+                  </sup>
+                </p>
+              </div>
+
+              <div className="middle p-5 w-100" id='middle'>
+                <div className="text" id='text'>
+                  <p className='font-weight-bold h4 '>Creative Agency</p>
+                  <p>This very space is important simply due to fact.</p>
+                  <hr className='bg-white ' />
+                  <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div className='col-lg-4' >
+            <div id="containe">
+              <p className='agency p-3 h4 mx-auto'>Quality Work
+                <sup>
+                  <i class="fa-solid fa-users p-3 ml-2" id='ic'></i>
+                </sup>
+              </p>
+
+              <div className="middl w-75" id='middl'>
+                <div className="tex" id='tex'>
+                  <p className='font-weight-bold h4'>Quality Work</p>
+                  <p>This very space is important simply due to fact.</p>
+                  <hr className='bg-white ' />
+                  <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='col-lg-4'>
+            <div id='con'>
+              <p className='agency p-3 h4 mx-auto'>Professional Team
+                <sup>
+                  <i class="fa-solid fa-users p-3 ml-2" id='ic'></i>
+                </sup>
+              </p>
+
+              <div className="midd w-75" id='midd'>
+                <div className="te" id='te'>
+                  <p className='font-weight-bold h4'>Professional Team</p>
+                  <p>This very space is important simply due to fact.</p>
+                  <hr className='bg-white ' />
+                  <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
 
       {/* agency */}
       <div className='bg-white mb-4'>
@@ -39,20 +181,15 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <hr/>
+      <hr />
 
       {/* solution */}
-      {/* <marquee behavior="scroll" direction="left" scrollamount="10" loop="infinite">
-        <div className=''>
-          <p className='rolling'> Disruptive <span> & </span>scalable tech solution <span> . </span> </p>
-        </div>
-      </marquee> */}
       <div className="marquee-wrapper">
-  <div className="marquee">
-  <p className='rolling'> Disruptive <span> & </span>scalable tech solution <span> . </span> </p>
+        <div className="marquee">
+          <p className='rolling'> Disruptive <span> & </span>scalable tech solution <span> . </span> </p>
 
-  </div>
-</div>
+        </div>
+      </div>
 
       <div>
         <img src={dd} alt="dd" className='w-100' />
@@ -104,31 +241,114 @@ const Home = () => {
         </div>
       </div>
       <hr className='mb-5' />
+      <div className="container">
+
+        <div className='d-flex justify-content-between'>
+          <div>
+            <p className='dot'> . </p>
+            <small className='open '>OUR WORK SHOWCASE</small>
+            <h1 className=' next'>Explore our best recent <br /> completed projects </h1>
+          </div>
+          <div style={{ marginTop: '7em' }}>
+            <button className='p-3 font-weight-bold border-0' style={{ backgroundColor: "#E9E9E9" }}>View All Work</button>
+          </div>
+        </div>
+        <hr />
+        <div className='row p-3' id="explore">
+          <div className='col-lg-2 h2 ' id="one">01</div>
+          <div className='col-lg-8 h2 font-weight-bold' id="two">Unique product design</div>
+
+          <div  className='col-lg-2  text-right'>
+          <img id="three" src={vector} alt="arrow" className="arrow p-3" />
+            
+              </div>
+        </div>
+        <hr/>
+        <div className='row p-3' id="explore">
+          <div className='col-lg-2 h2 ' id="one">02</div>
+          <div className='col-lg-8 h2 font-weight-bold' id="two">UI/UX Design for Tecno</div>
+
+          <div  className='col-lg-2  text-right'>
+          <img id="three" src={vector} alt="arrow" className="arrow p-3" />
+            
+              </div>
+        </div>
+        <hr/>
+        <div className='row p-3' id="explore">
+          <div className='col-lg-2 h2 ' id="one">03</div>
+          <div className='col-lg-8 h2 font-weight-bold' id="two">Crown digitals website</div>
+
+          <div  className='col-lg-2  text-right'>
+          <img id="three" src={vector} alt="arrow" className="arrow p-3" />
+            
+              </div>
+        </div>
+        <hr/>
+        <div className='row p-3' id="explore">
+          <div className='col-lg-2 h2 ' id="one">04</div>
+          <div className='col-lg-8 h2 font-weight-bold' id="two">Creative digital market</div>
+
+          <div  className='col-lg-2  text-right'>
+          <img id="three" src={vector} alt="arrow" className="arrow p-3" />
+            
+              </div>
+        </div>
+        <hr/>
+
+      </div>
+
+      <hr className='mb-5' />
+
+      <div className='container'>
+        <div className="row">
+          <div className="col-lg-6">
+            <p className='dot'> . </p>
+            <small className='open '>OUR DISTINCTIVE PRODUCTS</small>
+            <h1 className=' next'>Discover our recent <br /> groundbreaking solutions </h1>
+
+            <div className='d-flex p-2 w-100 border-left border-warning my-4' id="hoverr" >
+              <img src={white} alt='white' className='mr-3' />
+              <div className='ml-3'>
+                <p className='font-weight-bold'>Test</p>
+                <p>A test to see how all products will appear on her</p>
+              </div>
+            </div>
+            <div className='d-flex p-2 w-100 border-left border-warning my-4' id="hoverr" >
+              <img src={white} alt='white' className='mr-3' />
+              <div className='ml-3'>
+                <p className='font-weight-bold'>Test</p>
+                <p>A test to see how all products will appear on her</p>
+              </div>
+            </div>
+
+            <div className='d-flex p-2 w-100 border-left border-warning my-4' id="hoverr" >
+              <img src={white} alt='white' className='mr-3' />
+              <div className='ml-3'>
+                <p className='font-weight-bold'>Test</p>
+                <p>A test to see how all products will appear on her</p>
+              </div>
+            </div>
+
+          </div>
+          <div className="col-lg-6">
+            <img src={oo} alt='oo' className='w-100 mt-5' />
+          </div>
+        </div>
+      </div>
+
+
 
       {/* unlock the potential */}
-      {/* <marquee behavior="scroll" direction="left" scrollamount="10" loop="infinite">
-        <div className='d-flex' id='scroll'>
-          <p className='h5 mr-5'> * UNLOCK THE POTENTIAL</p>
-          <p className='h5 mr-5'> * TRANSFORM IDEA INTO REALITY</p>
-          <p className='h5 mr-5'> * INSPIRED WITH CREATIVITY</p>
-          <p className='h5 mr-5'> * DESIGN AND DEVELOPEMENT CRAFT</p>
-        </div>
-      </marquee> */}
-
       <div className="marquee-wrapper">
-  <div className="marquee">
-  <div className='d-flex' id='scroll'>
-          <p className='h5 mr-5'> * UNLOCK THE POTENTIAL</p>
-          <p className='h5 mr-5'> * TRANSFORM IDEA INTO REALITY</p>
-          <p className='h5 mr-5'> * INSPIRED WITH CREATIVITY</p>
-          <p className='h5 mr-5'> * DESIGN AND DEVELOPEMENT CRAFT</p>
+        <div className="marquee">
+          <div className='d-flex' id='scroll'>
+            <p className='h5 mr-5'> * UNLOCK THE POTENTIAL</p>
+            <p className='h5 mr-5'> * TRANSFORM IDEA INTO REALITY</p>
+            <p className='h5 mr-5'> * INSPIRED WITH CREATIVITY</p>
+            <p className='h5 mr-5'> * DESIGN AND DEVELOPEMENT CRAFT</p>
+          </div>
         </div>
-  </div>
-</div>
-
-
-
-
+      </div>
 
 
       {/* the team */}
@@ -141,43 +361,43 @@ const Home = () => {
           </div>
 
           <div className='row mt-5 mx-auto text-center'>
-                        <div className='col-lg-3 mb-4'>
-                            <img src={one} alt='aa' className='w-100' />
-                            <div style={{backgroundColor:"#D1D1D1"}} className='w-100'>
-                            <div className='bg-white border-bottom border-warning p-2 w-75'>
-                                <small className='h6' style={{color:'#D1D1D1'}}>Senior Developer</small>
-                                <p className='font-weight-bold h5'>Mike Idowu</p>
-                            </div>
-                            </div>
-                        </div>
-                        <div className='col-lg-3 mb-4'>
-                            <img src={two} alt='aa' className='w-100' />
-                            <div style={{backgroundColor:"#D1D1D1"}} className='w-100'>
-                            <div className='bg-white border-bottom border-warning p-2 w-75'>
-                                <small className='h6' style={{color:'#D1D1D1'}}>Senior Developer</small>
-                                <p className='font-weight-bold h5'>Olive Adegoke</p>
-                            </div>
-                            </div>
-                        </div>
-                        <div className='col-lg-3 mb-4'>
-                            <img src={three} alt='aa' className='w-100' />
-                            <div style={{backgroundColor:"#D1D1D1"}} className='w-100'>
-                            <div className='bg-white border-bottom border-warning p-2 w-75'>
-                                <small className='h6' style={{color:'#D1D1D1'}}>Senior Developer</small>
-                                <p className='font-weight-bold h5'>Mike Donalds</p>
-                            </div>
-                            </div>
-                        </div>
-                        <div className='col-lg-3 mb-4'>
-                            <img src={four} alt='aa' className='w-100' />
-                            <div style={{backgroundColor:"#D1D1D1"}} className='w-100'>
-                            <div className='bg-white border-bottom border-warning p-2 w-75'>
-                                <small className='h6' style={{color:'#D1D1D1'}}>Senior Developer</small>
-                                <p className='font-weight-bold h5'>Sarah Eromosele</p>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
+            <div className='col-lg-3 mb-4'>
+              <img src={one} alt='aa' className='w-100' />
+              <div style={{ backgroundColor: "#D1D1D1" }} className='w-100'>
+                <div className='bg-white mx-auto border-bottom border-warning p-2 w-75'>
+                  <small className='h6' style={{ color: '#D1D1D1' }}>Senior Developer</small>
+                  <p className='font-weight-bold h5'>Mike Idowu</p>
+                </div>
+              </div>
+            </div>
+            <div className='col-lg-3 mb-4'>
+              <img src={two} alt='aa' className='w-100' />
+              <div style={{ backgroundColor: "#D1D1D1" }} className='w-100'>
+                <div className='bg-white border-bottom mx-auto border-warning p-2 w-75'>
+                  <small className='h6' style={{ color: '#D1D1D1' }}>Senior Developer</small>
+                  <p className='font-weight-bold h5'>Olive Adegoke</p>
+                </div>
+              </div>
+            </div>
+            <div className='col-lg-3 mb-4'>
+              <img src={three} alt='aa' className='w-100' />
+              <div style={{ backgroundColor: "#D1D1D1" }} className='w-100'>
+                <div className='bg-white border-bottom mx-auto border-warning p-2 w-75'>
+                  <small className='h6' style={{ color: '#D1D1D1' }}>Senior Developer</small>
+                  <p className='font-weight-bold h5'>Mike Donalds</p>
+                </div>
+              </div>
+            </div>
+            <div className='col-lg-3 mb-4'>
+              <img src={four} alt='aa' className='w-100' />
+              <div style={{ backgroundColor: "#D1D1D1" }} className='w-100'>
+                <div className='bg-white border-bottom mx-auto border-warning p-2 w-75'>
+                  <small className='h6' style={{ color: '#D1D1D1' }}>Senior Developer</small>
+                  <p className='font-weight-bold h5'>Sarah Eromosele</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -221,7 +441,6 @@ const Home = () => {
 
                 <div className="col-lg-6">
                   <div className='text-right mr-auto mb-3'>
-                    {/* <small className='apply p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></small> */}
                     <Link to="/work" className='apply text-decoration-none p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></Link>
                   </div>
 
@@ -240,14 +459,13 @@ const Home = () => {
 
                 <div className="col-lg-6">
                   <div className='text-right mr-auto mb-3'>
-                    {/* <small className='apply p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></small> */}
                     <Link to="/work" className='apply text-decoration-none p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></Link>
                   </div>
 
                 </div>
               </div>
             </div>
-           
+
 
 
           </div>

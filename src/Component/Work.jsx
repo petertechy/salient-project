@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from './NavBar'
-import work from '../assets/Images/Frame 91.png'
+import wo from '../assets/Images/work01.png'
+import wor from '../assets/Images/work02.png'
 import Footer from './Footer'
 
 const Work = () => {
@@ -8,9 +9,47 @@ const Work = () => {
         <>
             <NavBar />
 
-            <div>
-                <img src={work} alt='work' className='w-100'/>
-        </div>
+            <div className='d-flex justify-content-center w-100'>
+                <div style={{ width: '100%', marginRight: '0' }}>
+                    <div style={{
+                        backgroundImage: `url(${wo})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        height: '20vh',
+                        width: 'auto'
+                    }}>
+
+                        <div className='p-3 mx-5'>
+                            <p className=' h5 font-weight-bold'>Jnr. Permanet Data Analyst</p>
+                            <p>JOB ID:240829A</p>
+                            <p className='font-weight-bold'>Posted: April 16, 2024</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div style={{ width: '100%', marginLeft: '-120px', }}>
+                    <div
+                        style={{
+                            backgroundImage: `url(${wor})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            height: '20vh',
+                            width: 'auto'
+                        }}
+                    >
+                        <div className="text-center  mx-auto">
+
+                        <button className='btn btn p-3 mt-4 w-25' id='apply'>Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
 
             <div className='container mb-5'>
                 <div className='row mt-5'>
@@ -86,34 +125,34 @@ const Work = () => {
                             <p>Posted: April 16, 2024</p>
                             <p>Status: Open</p>
                         </div>
-                        <hr/>
+                        <hr />
                         <div>
                             <p className='font-weight-bold'>Assistant Field Marketing Agent</p>
                             <p>Location: Delta,  NG</p>
                             <p>Posted: April 16, 2024</p>
                             <p>Status: Open</p>
                         </div>
-                        <hr/>
+                        <hr />
                         <div>
                             <p className='font-weight-bold'>Share this job</p>
-                            <hr/>
+                            <hr />
                             <ul className="list-unstyled d-flex mb-0" style={{ gap: "10px" }}>
-                                    <li className=''>
+                                <li className=''>
                                     <i class="fa-brands fa-square-facebook h2 rounded"></i>
-                                    </li>
-                                    <li className=''>
-                                        <i class="fa-brands fa-linkedin rounded h2"></i>
-                                        </li>
-                                    <li className=''>
+                                </li>
+                                <li className=''>
+                                    <i class="fa-brands fa-linkedin rounded h2"></i>
+                                </li>
+                                <li className=''>
                                     <i class="fa-brands fa-square-x-twitter rounded h2"></i>
-                                    </li>
-                                    <li className=''>
+                                </li>
+                                <li className=''>
                                     <i class="fa-regular fa-envelope rounded h2"></i>
-                                    </li>
-                                    <li className=''>
+                                </li>
+                                <li className=''>
                                     <i class="fa-solid fa-print h2 rounded"></i>
-                                    </li>
-                                </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 

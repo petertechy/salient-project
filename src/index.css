@@ -1,7 +1,3 @@
-/* body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-} */
-
 @import "~owl.carousel/dist/assets/owl.carousel.css";
 @import "~owl.carousel/dist/assets/owl.theme.default.css";
 
@@ -15,7 +11,14 @@
     -webkit-background-size: cover;
     -o-background-size: cover;
     overflow: hidden;
-    height: 82vh;
+    height: 100vh;
+}
+
+#ic{
+   background-color: #F5900D;
+   /* padding: 1em; */
+   border-radius: 100%;
+   color: white;
 }
 
 #para{
@@ -34,11 +37,9 @@
    height: 150px; 
    border-radius: 100%; 
    position: absolute; 
-   top: 75%; 
+   top: 60%; 
    left: 86%; 
-   /* margin-right:2em; */
    transform: translate(-20%, -50%); 
-   /* z-index: 2 ; */
 }
 
 
@@ -241,40 +242,7 @@
  }
 
 
-/*  */
 
-/* .image-container {
-   width: 200px;
-   height: 200px;
- }
-
- .image-container .imggg {
-   position: absolute;
-   margin-top: 3.5em;
-   margin-left: 3.5em;
- }
-  .imggg:hover {
-
-   transform: rotate(-45deg)
- }
-
- .spin-image {
-   width: 100%;
-   height: 100%;
-   animation: spin 4s linear infinite;
-   position: relative;
- }
-
- @keyframes spin {
-   from {
-     transform: rotate(0deg);
-   }
-   to {
-     transform: rotate(360deg);
-   }
- } */
-
-/*  */
 
 
 .image-container {
@@ -282,32 +250,27 @@
    display: inline-block;
  }
 
- /* Default image styling */
  .imggg {
-   width: 50px; /* Adjust as needed */
+   width: 50px; 
    transition: transform 0.3s ease;
-   /* transform: translateX(125px); */
    margin-left: 4.5em;
    margin-top: 4.5em;
    position: absolute;
    z-index: 2;
  }
 
- /* Rotate arrow image upward (by 45 degrees) on hover */
  .imggg:hover {
    transform: rotate(-45deg);
  }
 
- /* Styling for the spinning image */
  .spin-image {
    z-index: 1 ;
-   width: 200px; /* Adjust as needed */
+   width: 200px; 
    animation: spin 4s linear infinite;
    position: relative;
 
  }
 
- /* Keyframes for the spinning animation */
  @keyframes spin {
    from {
      transform: rotate(0deg);
@@ -316,16 +279,6 @@
      transform: rotate(360deg);
    }
  }
-
-
-
-
-
-/*  */
-
-
-
-
 
  .agency{
    background-color: #E9E9E9;
@@ -336,7 +289,6 @@
    width: 90%;
  }
 
-/* overlay */
 #contain {
    position: relative;  
    background-image: url("./assets/Images/Section\ 66.png");
@@ -350,6 +302,8 @@
     overflow: hidden;
 
 }
+
+
  
  #image {
    opacity: 1;
@@ -364,7 +318,7 @@
    transition: .5s ease;
    opacity: 0;
    position: absolute;
-   top: 50%;
+   top: 40%;
    left: 50%;
    transform: translate(-50%, -50%);
    -ms-transform: translate(-50%, -50%)
@@ -411,7 +365,7 @@
    transition: .5s ease;
    opacity: 0;
    position: absolute;
-   top: 50%;
+   top: 40%;
    left: 50%;
    transform: translate(-50%, -50%);
    -ms-transform: translate(-50%, -50%)
@@ -458,7 +412,7 @@
    transition: .5s ease;
    opacity: 0;
    position: absolute;
-   top: 50%;
+   top: 40%;
    left: 50%;
    transform: translate(-50%, -50%);
    -ms-transform: translate(-50%, -50%)
@@ -479,16 +433,6 @@
    padding: 16px 32px;
  }
 
- /* #hoverr{
-   background-color:#F4F4F4;
-   color: black;
-   transition: width 2s, height 4s;
- }
-
- #hoverr:hover{
-   background-color: #EC8B0D;
-   color: white;
- } */
 
  #hoverr {
    background-color: #F4F4F4;

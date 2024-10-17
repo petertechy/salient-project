@@ -5,11 +5,8 @@ import one from '../assets/Images/Rectangle 162.png'
 import two from '../assets/Images/Rectangle 163.png'
 import three from '../assets/Images/Rectangle 164.png'
 import four from '../assets/Images/Rectangle 165.png';
-
 import component from '../assets/Images/Component 11.png';
 import arrow from '../assets/Images/Arrow.png';
-
-
 import white from '../assets/Images/Frame 51.png'
 import dd from '../assets/Images/Frame 23.png'
 import e from '../assets/Images/dd.png'
@@ -21,7 +18,6 @@ import { Link } from 'react-router-dom'
 import oo from '../assets/Images/Frame 54.png'
 import b from '../assets/Images/images.png'
 import c from '../assets/Images/image.png'
-
 import aaa from '../assets/Images/Linie 1.png'
 import bbb from '../assets/Images/Group 115.png'
 import ccc from '../assets/Images/Group 112.png'
@@ -30,49 +26,42 @@ import eee from '../assets/Images/world bank 1.png'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-// import a from '../assets/Images/image 3.png'
 
 const Home = () => {
   return (
     <>
       <NavBar />
 
-
+      <hr />
       <div>
         <div className="row">
-          <div className='col-lg-5 text-center' id="landing">
+
+          <div className='col-lg-5 text-center w-100' id="landing">
+
             <p id='para' className='display-2'>Think. <br />
               <span >Create.</span> <br />
               Solution.
             </p>
+
             <div
               className=" justify-content-center align-items-center" id="pin">
-
             </div>
-
-
-            {/* <img src={component} alt="component" className="float-right" /> */}
-
-            {/* <div className="image-container float-right">
-              <img src={arrow} alt='arrow' className='imggg'  />
-  <img className="spin-image " src={component} alt="Spinning Image"/>
-</div> */}
-            {/*  */}
 
             <div className="image-container float-right">
               <img src={arrow} alt="arrow" className="imggg" />
               <img className="spin-image" src={component} alt="Spinning Image" />
             </div>
 
+          </div>
 
-            {/*  */}
+          <div className='col-lg-2 w-100'>
+            <img src={b} alt='b' className='w-100' />
           </div>
-          <div className='col-lg-2'>
-            <img src={b} alt='b' className='' />
+
+          <div className='col-lg-5 w-100 '>
+            <img src={c} alt='c' className='w-100' />
           </div>
-          <div className='col-lg-5 '>
-            <img src={c} alt='c' className='' />
-          </div>
+
         </div>
       </div>
 
@@ -107,13 +96,17 @@ const Home = () => {
         <div className='row'>
           <div className='col-lg-4'>
             <div id="contain">
+              <div>
 
-
-              {/* <img src={ii} alt="Avatar" className=" w-100" id='image' /> */}
-
-              <p className='agency p-3 h4 mx-auto'>Creative Agency</p>
-
-              <div className="middle w-75" id='middle'>
+              <p className='agency p-3 h4 mx-auto'>
+                Creative Agency
+                <sup>
+              <i class="fa-regular fa-lightbulb p-3 ml-2" id='ic'></i>
+                </sup>
+              </p>
+              </div>
+              
+              <div className="middle p-5 w-100" id='middle'>
                 <div className="text" id='text'>
                   <p className='font-weight-bold h4 '>Creative Agency</p>
                   <p>This very space is important simply due to fact.</p>
@@ -121,13 +114,17 @@ const Home = () => {
                   <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
                 </div>
               </div>
+
             </div>
           </div>
 
           <div className='col-lg-4' >
             <div id="containe">
-              {/* <img src={iii} alt="Avatar" className=" w-100" id='imag' /> */}
-              <p className='agency p-3 h4 mx-auto'>Quality Work</p>
+              <p className='agency p-3 h4 mx-auto'>Quality Work
+                <sup>
+                <i class="fa-solid fa-users p-3 ml-2" id='ic'></i>
+                </sup>
+              </p>
 
               <div className="middl w-75" id='middl'>
                 <div className="tex" id='tex'>
@@ -142,8 +139,11 @@ const Home = () => {
 
           <div className='col-lg-4'>
             <div id='con'>
-              {/* <img src={i} alt="Avatar" className=" w-100" id='ima' /> */}
-              <p className='agency p-3 h4 mx-auto'>Professional Team</p>
+              <p className='agency p-3 h4 mx-auto'>Professional Team
+                <sup>
+                <i class="fa-solid fa-users p-3 ml-2" id='ic'></i>
+                </sup>
+              </p>
 
               <div className="midd w-75" id='midd'>
                 <div className="te" id='te'>

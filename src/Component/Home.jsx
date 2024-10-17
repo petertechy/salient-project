@@ -98,14 +98,14 @@ const Home = () => {
             <div id="contain">
               <div>
 
-              <p className='agency p-3 h4 mx-auto'>
-                Creative Agency
-                <sup>
-              <i class="fa-regular fa-lightbulb p-3 ml-2" id='ic'></i>
-                </sup>
-              </p>
+                <p className='agency p-3 h4 mx-auto'>
+                  Creative Agency
+                  <sup>
+                    <i class="fa-regular fa-lightbulb p-3 ml-2" id='ic'></i>
+                  </sup>
+                </p>
               </div>
-              
+
               <div className="middle p-5 w-100" id='middle'>
                 <div className="text" id='text'>
                   <p className='font-weight-bold h4 '>Creative Agency</p>
@@ -122,7 +122,7 @@ const Home = () => {
             <div id="containe">
               <p className='agency p-3 h4 mx-auto'>Quality Work
                 <sup>
-                <i class="fa-solid fa-users p-3 ml-2" id='ic'></i>
+                  <i class="fa-solid fa-users p-3 ml-2" id='ic'></i>
                 </sup>
               </p>
 
@@ -141,7 +141,7 @@ const Home = () => {
             <div id='con'>
               <p className='agency p-3 h4 mx-auto'>Professional Team
                 <sup>
-                <i class="fa-solid fa-users p-3 ml-2" id='ic'></i>
+                  <i class="fa-solid fa-users p-3 ml-2" id='ic'></i>
                 </sup>
               </p>
 
@@ -239,6 +239,28 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <hr className='mb-5' />
+      <div className="container">
+
+        <div className='d-flex justify-content-between'>
+          <div>
+            <p className='dot'> . </p>
+            <small className='open '>OUR WORK SHOWCASE</small>
+            <h1 className=' next'>Explore our best recent <br /> completed projects </h1>
+          </div>
+          <div style={{ marginTop: '7em' }}>
+            <button className='p-3 font-weight-bold border-0' style={{ backgroundColor: "#E9E9E9" }}>View All Work</button>
+          </div>
+        </div>
+        <hr />
+        <div className='row p-2'>
+          <div className='col-lg-2 h2 '>01</div>
+          <div className='col-lg-8 h2 font-weight-bold'>Unique product design</div>
+          <div className='col-lg-2 h2 text-right'><i className="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+      </div>
+
       <hr className='mb-5' />
 
       <div className='container'>

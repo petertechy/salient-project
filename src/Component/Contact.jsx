@@ -55,7 +55,7 @@ const Contact = () => {
                     <div className='container text-center mx-auto mb-5' >
                         <p className='dot'> . </p>
                         <small className='open '>CONTACT WITH AGENCY</small>
-                        <h1 className=' next'> Feel free to get in touch with us</h1>
+                        <h1 className=' next'> Feel free to get in touch <br/> with us</h1>
 
                         <div className='row mt-5'>
                                 <div className='col-lg-6'>

@@ -443,7 +443,35 @@
  #hoverr:hover {
    background-color: #EC8B0D;
    color: white;
+   
  }
+
+ #explore:hover{
+   #one{
+      color:#F5900D;
+      font-weight:bolder;
+      font-size: 3em;
+   }
+
+   #two{
+      text-decoration: underline
+   }
+   #three{
+      background-color: black;
+      color:white;
+   transform: rotate(-45deg);
+
+   }
+
+
+ }
+
+ #three{
+   background-color: #E9E9E9;
+   color: grey;
+   border-radius:50%;
+ }
+
  
 
 

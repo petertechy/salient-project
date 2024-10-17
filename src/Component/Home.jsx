@@ -13,6 +13,7 @@ import e from '../assets/Images/dd.png'
 import f from '../assets/Images/aa.png'
 import g from '../assets/Images/bb.png'
 import h from '../assets/Images/cc.png'
+import vector from '../assets/Images/Vector.png'
 import Ellipse from '../assets/Images/Ellipse 26.png'
 import { Link } from 'react-router-dom'
 import oo from '../assets/Images/Frame 54.png'
@@ -253,11 +254,46 @@ const Home = () => {
           </div>
         </div>
         <hr />
-        <div className='row p-2'>
-          <div className='col-lg-2 h2 '>01</div>
-          <div className='col-lg-8 h2 font-weight-bold'>Unique product design</div>
-          <div className='col-lg-2 h2 text-right'><i className="fa-solid fa-arrow-right"></i></div>
+        <div className='row p-3' id="explore">
+          <div className='col-lg-2 h2 ' id="one">01</div>
+          <div className='col-lg-8 h2 font-weight-bold' id="two">Unique product design</div>
+
+          <div  className='col-lg-2  text-right'>
+          <img id="three" src={vector} alt="arrow" className="arrow p-3" />
+            
+              </div>
         </div>
+        <hr/>
+        <div className='row p-3' id="explore">
+          <div className='col-lg-2 h2 ' id="one">02</div>
+          <div className='col-lg-8 h2 font-weight-bold' id="two">UI/UX Design for Tecno</div>
+
+          <div  className='col-lg-2  text-right'>
+          <img id="three" src={vector} alt="arrow" className="arrow p-3" />
+            
+              </div>
+        </div>
+        <hr/>
+        <div className='row p-3' id="explore">
+          <div className='col-lg-2 h2 ' id="one">03</div>
+          <div className='col-lg-8 h2 font-weight-bold' id="two">Crown digitals website</div>
+
+          <div  className='col-lg-2  text-right'>
+          <img id="three" src={vector} alt="arrow" className="arrow p-3" />
+            
+              </div>
+        </div>
+        <hr/>
+        <div className='row p-3' id="explore">
+          <div className='col-lg-2 h2 ' id="one">04</div>
+          <div className='col-lg-8 h2 font-weight-bold' id="two">Creative digital market</div>
+
+          <div  className='col-lg-2  text-right'>
+          <img id="three" src={vector} alt="arrow" className="arrow p-3" />
+            
+              </div>
+        </div>
+        <hr/>
 
       </div>
 

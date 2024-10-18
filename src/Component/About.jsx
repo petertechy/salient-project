@@ -39,7 +39,7 @@ const About = () => {
                     }}>
 
                         <div className='p-3 mx-5'>
-                            <p className='mt-3 h4 font-weight-bold'>Portfolio</p>
+                            <p className='mt-3 h4 font-weight-bold'>About</p>
                             <p className='d-flex text-decoration-none'>
                                 <Link className='text-dark mr-3 text-decoration-none' to="/"> Home</Link>
                                 <Link className='text-dark mr-3 text-decoration-none' to="/about"> .About</Link>

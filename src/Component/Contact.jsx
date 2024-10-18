@@ -51,11 +51,11 @@ const Contact = () => {
             </div>
             <div>
 
-                <div className='porthead p-5' >
+                <div className='porthe p-5 ' >
                     <div className='container text-center mx-auto mb-5' >
                         <p className='dot'> . </p>
                         <small className='open '>CONTACT WITH AGENCY</small>
-                        <h1 className=' next'> Feel free to get in touch with us</h1>
+                        <h1 className=' next'> Feel free to get in touch <br/> with us</h1>
 
                         <div className='row mt-5'>
                                 <div className='col-lg-6'>
@@ -78,12 +78,11 @@ const Contact = () => {
                                     <textarea placeholder='Write Comment' className='form-control' style={{height:"9em"}}/>
                                 </div>
                         </div>
-                        <button className='btn btn mt-3' id='butt'>Send a Message</button>
+                        <button className='btn btn my-4' id='butt'>Send a Message</button>
                     </div>
                 </div>
 
-                {/* <div className='container mx-auto justify-content-center  position-absolute' style={{ backgroundColor: "#F5F5F5", marginTop:"-4em" }}> */}
-                <div className='container mx-auto ' style={{ backgroundColor: "#F5F5F5"}}>
+                <div className='container mx-auto' id='background' >
                     <div className='row p-4'>
                         <div className='col-lg-4'>
                             <div className="d-flex justify-content-center p-2">
@@ -122,7 +121,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                    <img src={location} alt='location' className='w-100' />
+                    <img src={location} alt='location' className='w-100' id='locate'  />
                 </div>
             </div>
             <Footer />

@@ -539,9 +539,24 @@
   
   #ReadMore{
    transform: rotate(45deg);
-   margin-left: 7px;
-
+   /* margin-left: 2px; */
  }
+
+ .eee{
+    color: black;
+  }
+
+#pp:hover{
+
+  .eee{
+    color: #EC8B0D;
+  }
+  #ReadMore{
+    transform: rotate(0deg);
+    margin-left: 7px;
+  } 
+}
+ 
 
  
 

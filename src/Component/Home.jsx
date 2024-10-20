@@ -13,7 +13,6 @@ import e from '../assets/Images/dd.png'
 import f from '../assets/Images/aa.png'
 import g from '../assets/Images/bb.png'
 import h from '../assets/Images/cc.png'
-import vector from '../assets/Images/Vector.png'
 import Ellipse from '../assets/Images/Ellipse 26.png'
 import { Link } from 'react-router-dom'
 import oo from '../assets/Images/Frame 54.png'
@@ -24,15 +23,16 @@ import bbb from '../assets/Images/Group 115.png'
 import ccc from '../assets/Images/Group 112.png'
 import ddd from '../assets/Images/nwjbp9nc 2.png'
 import eee from '../assets/Images/world bank 1.png'
-import vector99 from '../assets/Images/Vector99.png'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Scroll from './Scroll'
 
 const Home = () => {
   return (
     <>
       <NavBar />
+      <Scroll/>
 
       <hr />
       <div>
@@ -45,9 +45,9 @@ const Home = () => {
               Solution.
             </p> */}
             <div id='para' className='display-2'>
-            <p>Think.</p>
-            <p className='ml-4' style={{color:"#CCCCCC"}}>Create.</p>
-            <p style={{marginLeft:"1.5em"}}>Solution.</p>
+              <p>Think.</p>
+              <p className='ml-4' style={{ color: "#CCCCCC" }}>Create.</p>
+              <p style={{ marginLeft: "1.5em" }}>Solution.</p>
             </div>
 
             <div
@@ -75,8 +75,8 @@ const Home = () => {
       {/* brands */}
       <div className='container mt-5 '>
         <p className='text-center mb-5 font-weight-bold h5'>
-         ----------------------------------------------------- BRANDS THAT TRUST US -------------------------------------------------------
-          </p>
+          ----------------------------------------------------- BRANDS THAT TRUST US -------------------------------------------------------
+        </p>
       </div>
       <div className='container my-5'>
         <OwlCarousel
@@ -218,7 +218,10 @@ const Home = () => {
                 <img src={f} alt="oo" className='pt-2' />
                 <p className='font-weight-bold h5 mt-3'>IT  <br /> solutions </p>
                 <hr className='w-50 mt-5 mx-auto text-center' />
-                <p className='font-weight-normal text-dark'>Read More &#x2B0A; </p>
+                <p id='pp' className='font-weight-normal d-flex justify-content-center text-center'>
+                  <p className='eee'>Read More </p>
+                  <i className="fa-solid fa-arrow-right" id="ReadMore"></i>
+                </p>
               </div>
             </div>
             <div className="col-lg-3 mb-3">
@@ -226,7 +229,10 @@ const Home = () => {
                 <img src={e} alt="oo" className='pt-2' />
                 <p className='font-weight-bold h5 mt-3'>Software <br /> development </p>
                 <hr className='w-50 mt-5 mx-auto text-center' />
-                <p className='font-weight-normal text-dark'>Read More &#x2B0A; </p>
+                <p id='pp' className='font-weight-normal d-flex justify-content-center text-center'>
+                  <p className='eee'>Read More </p>
+                  <i className="fa-solid fa-arrow-right" id="ReadMore"></i>
+                </p>
               </div>
             </div>
             <div className="col-lg-3 mb-3">
@@ -234,7 +240,10 @@ const Home = () => {
                 <img src={g} alt="oo" className='pt-2' />
                 <p className='font-weight-bold h5 mt-3'>Cloud/Data  <br /> engineering </p>
                 <hr className='w-50 mt-5 mx-auto text-center' />
-                <p className='font-weight-normal text-dark'>Read More &#x2B0A; </p>
+                <p id='pp' className='font-weight-normal d-flex justify-content-center text-center'>
+                  <p className='eee'>Read More </p>
+                  <i className="fa-solid fa-arrow-right" id="ReadMore"></i>
+                </p>
               </div>
             </div>
             <div className="col-lg-3 mb-3">
@@ -242,11 +251,10 @@ const Home = () => {
                 <img src={h} alt="oo" className='pt-2' />
                 <p className='font-weight-bold h5 mt-3'>UI/UX <br /> designing </p>
                 <hr className='w-50 mt-5 mx-auto text-center' />
-                <p className='font-weight-normal text-dark'>Read More 
-          <i className="fa-solid fa-arrow-right text-dark " id="ReadMore"></i>
-                  
-                   </p>
-
+                <p id='pp' className='font-weight-normal d-flex justify-content-center text-center'>
+                  <p className='eee'>Read More </p>
+                  <i className="fa-solid fa-arrow-right" id="ReadMore"></i>
+                </p>
               </div>
             </div>
           </div>
@@ -270,43 +278,38 @@ const Home = () => {
           <div className='col-lg-2 h2 ' id="one">01</div>
           <div className='col-lg-8 h2 font-weight-bold' id="two">Unique product design</div>
 
-          <div  className='col-lg-2  text-right'>
-          <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
-          {/* <img id="three" src={vector99} alt="arrow" className="arrow w-100" /> */}
-            
-              </div>
+          <div className='col-lg-2  text-right'>
+            <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
+          </div>
         </div>
-        <hr/>
+        <hr />
         <div className='row p-3' id="explore">
           <div className='col-lg-2 h2 ' id="one">02</div>
           <div className='col-lg-8 h2 font-weight-bold' id="two">UI/UX Design for Tecno</div>
 
-          <div  className='col-lg-2  text-right'>
-          <img id="three" src={vector} alt="arrow" className="arrow p-3" />
-            
-              </div>
+          <div className='col-lg-2  text-right'>
+          <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
+          </div>
         </div>
-        <hr/>
+        <hr />
         <div className='row p-3' id="explore">
           <div className='col-lg-2 h2 ' id="one">03</div>
           <div className='col-lg-8 h2 font-weight-bold' id="two">Crown digitals website</div>
 
-          <div  className='col-lg-2  text-right'>
-          <img id="three" src={vector} alt="arrow" className="arrow p-3" />
-            
-              </div>
+          <div className='col-lg-2  text-right'>
+          <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
+          </div>
         </div>
-        <hr/>
+        <hr />
         <div className='row p-3' id="explore">
           <div className='col-lg-2 h2 ' id="one">04</div>
           <div className='col-lg-8 h2 font-weight-bold' id="two">Creative digital market</div>
 
-          <div  className='col-lg-2  text-right'>
-          <img id="three" src={vector} alt="arrow" className="arrow p-3" />
-            
-              </div>
+          <div className='col-lg-2  text-right'>
+          <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
+          </div>
         </div>
-        <hr/>
+        <hr />
 
       </div>
 
@@ -352,9 +355,9 @@ const Home = () => {
 
 
       {/* unlock the potential */}
-      <div className="marquee-wrapper">
+      <div className="marquee-wrapper mt-5">
         <div className="marquee">
-          <div className='d-flex' id='scroll'>
+          <div className='d-flex p-3' id='scroll'>
             <p className='h5 mr-5'> * UNLOCK THE POTENTIAL</p>
             <p className='h5 mr-5'> * TRANSFORM IDEA INTO REALITY</p>
             <p className='h5 mr-5'> * INSPIRED WITH CREATIVITY</p>
@@ -377,7 +380,7 @@ const Home = () => {
             <div className='col-lg-3 mb-4'>
               <img src={one} alt='aa' className='w-100' />
               <div style={{ backgroundColor: "#D1D1D1" }} className='w-100'>
-                <div className='bg-white mx-auto border-bottom border-warning p-2 w-75'>
+                <div className='bg-white  border-bottom border-warning p-2 w-75'>
                   <small className='h6' style={{ color: '#D1D1D1' }}>Senior Developer</small>
                   <p className='font-weight-bold h5'>Mike Idowu</p>
                 </div>
@@ -386,7 +389,7 @@ const Home = () => {
             <div className='col-lg-3 mb-4'>
               <img src={two} alt='aa' className='w-100' />
               <div style={{ backgroundColor: "#D1D1D1" }} className='w-100'>
-                <div className='bg-white border-bottom mx-auto border-warning p-2 w-75'>
+                <div className='bg-white border-bottom  border-warning p-2 w-75'>
                   <small className='h6' style={{ color: '#D1D1D1' }}>Senior Developer</small>
                   <p className='font-weight-bold h5'>Olive Adegoke</p>
                 </div>
@@ -395,7 +398,7 @@ const Home = () => {
             <div className='col-lg-3 mb-4'>
               <img src={three} alt='aa' className='w-100' />
               <div style={{ backgroundColor: "#D1D1D1" }} className='w-100'>
-                <div className='bg-white border-bottom mx-auto border-warning p-2 w-75'>
+                <div className='bg-white border-bottom border-warning p-2 w-75'>
                   <small className='h6' style={{ color: '#D1D1D1' }}>Senior Developer</small>
                   <p className='font-weight-bold h5'>Mike Donalds</p>
                 </div>
@@ -404,7 +407,7 @@ const Home = () => {
             <div className='col-lg-3 mb-4'>
               <img src={four} alt='aa' className='w-100' />
               <div style={{ backgroundColor: "#D1D1D1" }} className='w-100'>
-                <div className='bg-white border-bottom mx-auto border-warning p-2 w-75'>
+                <div className='bg-white border-bottom border-warning p-2 w-75'>
                   <small className='h6' style={{ color: '#D1D1D1' }}>Senior Developer</small>
                   <p className='font-weight-bold h5'>Sarah Eromosele</p>
                 </div>
@@ -454,7 +457,8 @@ const Home = () => {
 
                 <div className="col-lg-6">
                   <div className='text-right mr-auto mb-3'>
-                    <Link to="/work" className='apply text-decoration-none p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></Link>
+                    <Link to="/work" className='apply text-decoration-none p-2  border border-warning '> Apply Here 
+                    <i class="fa-solid fa-arrow-right"></i></Link>
                   </div>
 
                 </div>

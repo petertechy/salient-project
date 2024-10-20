@@ -24,6 +24,7 @@ import bbb from '../assets/Images/Group 115.png'
 import ccc from '../assets/Images/Group 112.png'
 import ddd from '../assets/Images/nwjbp9nc 2.png'
 import eee from '../assets/Images/world bank 1.png'
+import vector99 from '../assets/Images/Vector99.png'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -39,10 +40,15 @@ const Home = () => {
 
           <div className='col-lg-5 text-center w-100' id="landing">
 
-            <p id='para' className='display-2'>Think. <br />
-              <span >Create.</span> <br />
+            {/* <p id='para' className='display-2'>Think. <br />
+              <span className='ml-4'>Create.</span> <br />
               Solution.
-            </p>
+            </p> */}
+            <div id='para' className='display-2'>
+            <p>Think.</p>
+            <p className='ml-4' style={{color:"#CCCCCC"}}>Create.</p>
+            <p style={{marginLeft:"1.5em"}}>Solution.</p>
+            </div>
 
             <div
               className=" justify-content-center align-items-center" id="pin">
@@ -56,21 +62,23 @@ const Home = () => {
           </div>
 
           <div className='col-lg-2 w-100'>
-            <img src={b} alt='b' className='w-100' />
+            <img src={b} alt='b' className='w-100 h-100' />
           </div>
 
           <div className='col-lg-5 w-100 '>
-            <img src={c} alt='c' className='w-100' />
+            <img src={c} alt='c' className='w-100 h-100' />
           </div>
 
         </div>
       </div>
 
       {/* brands */}
-      <div className='container my-5'>
+      <div className='container mt-5 '>
         <p className='text-center mb-5 font-weight-bold h5'>
-          -------------------------------------- BRANDS THAT TRUST US ----------------------------------
-        </p>
+         ----------------------------------------------------- BRANDS THAT TRUST US -------------------------------------------------------
+          </p>
+      </div>
+      <div className='container my-5'>
         <OwlCarousel
           className="owl-theme"
           loop
@@ -93,9 +101,9 @@ const Home = () => {
       </div>
 
       {/* overlay */}
-      <div className="container my-5" >
-        <div className='row'>
-          <div className='col-lg-4'>
+      <div className="container my-5 w-100" >
+        <div className='row w-100'>
+          <div className='col-lg-4 w-100'>
             <div id="contain">
               <div>
 
@@ -119,7 +127,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='col-lg-4' >
+          <div className='col-lg-4 w-100' >
             <div id="containe">
               <p className='agency p-3 h4 mx-auto'>Quality Work
                 <sup>
@@ -138,7 +146,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='col-lg-4'>
+          <div className='col-lg-4 w-100'>
             <div id='con'>
               <p className='agency p-3 h4 mx-auto'>Professional Team
                 <sup>
@@ -175,7 +183,7 @@ const Home = () => {
                 <h1 className=' next'>We’re top notch award winning software solution agency</h1>
                 <p>Lorem ipsum dolor sit amet consectetur. Facilisi non faucibus mattis nibh. Sed at vehicula urna et pretium neque aliquam. Sed eu cursus posuere purus diam scelerisque in. Pellentesque dolor adipiscing etiam ultricies in. Sed sed pretium volutpat molestie. </p>
                 <p>Velit odio mi non lectus urna et. Mattis morbi est cras sodales ultrices nibh ut sodales. A velit enim a neque malesuada ultricies vitae aliquam tristique. Enim sagittis nulla netus velit magna elementum mattis dictum. Lectus.</p>
-                <button className='btn btn' id="more">Discover More</button>
+                <button className='btn btn py-3 px-4 ' id="more">Discover More</button>
               </div>
             </div>
           </div>
@@ -210,7 +218,7 @@ const Home = () => {
                 <img src={f} alt="oo" className='pt-2' />
                 <p className='font-weight-bold h5 mt-3'>IT  <br /> solutions </p>
                 <hr className='w-50 mt-5 mx-auto text-center' />
-                <p className='font-weight-bold '>Read More <i className='fa-solid fa-arrow-down-right text-dark'></i> </p>
+                <p className='font-weight-normal text-dark'>Read More &#x2B0A; </p>
               </div>
             </div>
             <div className="col-lg-3 mb-3">
@@ -218,7 +226,7 @@ const Home = () => {
                 <img src={e} alt="oo" className='pt-2' />
                 <p className='font-weight-bold h5 mt-3'>Software <br /> development </p>
                 <hr className='w-50 mt-5 mx-auto text-center' />
-                <p className='font-weight-bold '>Read More <i className='fa-solid fa-arrow-down-right text-dark'></i> </p>
+                <p className='font-weight-normal text-dark'>Read More &#x2B0A; </p>
               </div>
             </div>
             <div className="col-lg-3 mb-3">
@@ -226,7 +234,7 @@ const Home = () => {
                 <img src={g} alt="oo" className='pt-2' />
                 <p className='font-weight-bold h5 mt-3'>Cloud/Data  <br /> engineering </p>
                 <hr className='w-50 mt-5 mx-auto text-center' />
-                <p className='font-weight-bold '>Read More <i className='fa-solid fa-arrow-down-right text-dark'></i> </p>
+                <p className='font-weight-normal text-dark'>Read More &#x2B0A; </p>
               </div>
             </div>
             <div className="col-lg-3 mb-3">
@@ -234,7 +242,11 @@ const Home = () => {
                 <img src={h} alt="oo" className='pt-2' />
                 <p className='font-weight-bold h5 mt-3'>UI/UX <br /> designing </p>
                 <hr className='w-50 mt-5 mx-auto text-center' />
-                <p className='font-weight-bold '>Read More <i className='fa-solid fa-arrow-down-right text-dark'></i> </p>
+                <p className='font-weight-normal text-dark'>Read More 
+          <i className="fa-solid fa-arrow-right text-dark " id="ReadMore"></i>
+                  
+                   </p>
+
               </div>
             </div>
           </div>
@@ -250,7 +262,7 @@ const Home = () => {
             <h1 className=' next'>Explore our best recent <br /> completed projects </h1>
           </div>
           <div style={{ marginTop: '7em' }}>
-            <button className='p-3 font-weight-bold border-0' style={{ backgroundColor: "#E9E9E9" }}>View All Work</button>
+            <button className='p-3 font-weight-bold border-0' id='viewWork' >View All Work</button>
           </div>
         </div>
         <hr />
@@ -259,7 +271,8 @@ const Home = () => {
           <div className='col-lg-8 h2 font-weight-bold' id="two">Unique product design</div>
 
           <div  className='col-lg-2  text-right'>
-          <img id="three" src={vector} alt="arrow" className="arrow p-3" />
+          <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
+          {/* <img id="three" src={vector99} alt="arrow" className="arrow w-100" /> */}
             
               </div>
         </div>

@@ -8,8 +8,9 @@ const Work = () => {
     return (
         <>
             <NavBar />
+        {/* <div className='row '>
 
-            <div className='d-flex justify-content-center w-100'>
+            <div className=' d-flex  justify-content-between w-100'>
                 <div style={{ width: '100%', marginRight: '0' }}>
                     <div style={{
                         backgroundImage: `url(${wo})`,
@@ -19,16 +20,16 @@ const Work = () => {
                         width: 'auto'
                     }}>
 
-                        <div className='p-3 mx-5'>
-                            <p className=' h5 font-weight-bold'>Jnr. Permanet Data Analyst</p>
-                            <p>JOB ID:240829A</p>
-                            <p className='font-weight-bold'>Posted: April 16, 2024</p>
+                        <div className='p-3 mx-5 w-100'>
+                            <p className='w-100 h5 font-weight-bold'>Jnr. Permanet Data Analyst</p>
+                            <p className='w-100'> JOB ID:240829A</p>
+                            <p className='w-100 font-weight-bold'>Posted: April 16, 2024</p>
                         </div>
 
                     </div>
                 </div>
                 <div style={{ width: '100%', marginLeft: '-120px', }}>
-                    <div
+                    <div className='w-100'
                         style={{
                             backgroundImage: `url(${wor})`,
                             backgroundSize: 'cover',
@@ -36,14 +37,76 @@ const Work = () => {
                             height: '20vh',
                             width: 'auto'
                         }}
-                    >
+                        >
                         <div className="text-center  mx-auto">
 
                         <button className='btn btn p-3 mt-4 w-25' id='apply'>Apply</button>
                         </div>
                     </div>
                 </div>
+                        </div>
+            </div> */}
+
+{/* <div className="row" id='wooo'>
+    <div className="col-md-6 col-sm-12 mb-3" style={{ width: 'auto', marginRight: '0' }}>
+        <div style={{ backgroundImage: `url(${wo})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '20vh', width: 'auto' }}>
+            <div className="p-3 w-100">
+                <p className="w-100 h5 font-weight-bold">Jnr. Permanent Data Analyst</p>
+                <p className="w-100">JOB ID: 240829A</p>
+                <p className="w-100 font-weight-bold">Posted: April 16, 2024</p>
             </div>
+        </div>
+    </div>
+
+    <div className="col-md-6 col-sm-12 mb-3" style={{marginLeft: '', width:'100%'}}>
+        <div className="w-100" style={{ backgroundImage: `url(${wor})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '20vh', width: '100%' }}>
+            <div className="text-center mx-auto">
+                <button className="btn btn p-3 mt-4 w-50" id="apply">Apply</button>
+            </div>
+        </div>
+    </div>
+</div> */}
+
+
+<div className='row no-gutters overflow-hidden' style={{overflow:"hidden"}}>
+    
+    <div className='col-md-6 col-sm-12'>
+        <div style={{
+            backgroundImage: `url(${wo})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            height: '20vh',
+            width: '100%',  // Full width to avoid overflow
+            paddingLeft:"100px"
+        }}>
+            <div className='p-3 w-100'>
+                <p className='w-100 h5 font-weight-bold'>Jnr. Permanent Data Analyst</p>
+                <p className='w-100'>JOB ID: 240829A</p>
+                <p className='w-100 font-weight-bold'>Posted: April 16, 2024</p>
+            </div>
+        </div>
+    </div>
+
+    <div id='New' className='col-md-6 col-sm-12'>
+        <div 
+            style={{
+                backgroundImage: `url(${wor})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                height: '20vh',
+                width: '123%',  // Full width to avoid overflow
+                position:"relative",
+                right:"150px",
+                maxWidth:'150vw',
+            }}>
+            <div className="d-flex justify-content-center align-items-center h-100">
+                <button className='btn btn p-3 w-25' id='apply'>Apply</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 
 

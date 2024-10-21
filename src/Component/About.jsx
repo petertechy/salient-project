@@ -29,7 +29,7 @@ const About = () => {
         <>
             <NavBar />
             <div className='d-flex justify-content-center w-100'>
-                <div style={{ width: '100%', marginRight: '0' }}>
+                <div style={{ width: '100%', marginRight: '0' }} id="bbb">
                     <div style={{
                         backgroundImage: `url(${wo})`,
                         backgroundSize: 'cover',

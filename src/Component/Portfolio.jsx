@@ -12,7 +12,7 @@ const Portfolio = () => {
       <NavBar />
 
                     <div className='d-flex justify-content-center w-100'>
-                <div style={{ width: '100%', marginRight: '0' }}>
+                <div style={{ width: '100%', marginRight: '0' }} id='abc'>
                     <div style={{
                         backgroundImage: `url(${wo})`,
                         backgroundSize: 'cover',

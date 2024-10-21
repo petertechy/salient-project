@@ -35,15 +35,13 @@ const Home = () => {
       <Scroll />
 
       <hr />
-      <div>
-        <div className="row">
+      <div  id='head'>
+        <div className="row overflow-hidden">
 
-          <div className='col-lg-5 text-center w-100' id="landing">
+          <div className='col-lg-5 text-center w-100'>
+            <div id="landing" className='w-100'>
 
-            {/* <p id='para' className='display-2'>Think. <br />
-              <span className='ml-4'>Create.</span> <br />
-              Solution.
-            </p> */}
+
             <div id='para' className='display-2'>
               <p>Think.</p>
               <p className='ml-4' style={{ color: "#CCCCCC" }}>Create.</p>
@@ -59,14 +57,15 @@ const Home = () => {
               <img className="spin-image" src={component} alt="Spinning " />
             </div>
 
+            </div>
           </div>
 
-          <div className='col-lg-2 w-100'>
-            <img src={b} alt='b' className='w-100 h-100' />
+          <div className='col-lg-2  text-center w-100'>
+            <img src={b} alt='bbbb' className='w-100 h-100 overflow-hidden' />
           </div>
 
-          <div className='col-lg-5 w-100 '>
-            <img src={c} alt='c' className='w-100 h-100' />
+          <div className='col-lg-5 text-center  w-100 '>
+            <img src={c} alt='cccc' className='w-100 h-100 overflow-hidden' />
           </div>
 
         </div>
@@ -183,7 +182,7 @@ const Home = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-6'>
-              <img src={Ellipse} alt='Ellipse' className="mt-5" />
+              <img src={Ellipse} alt='Ellipse' className="mt-5 w-100" />
             </div>
             <div className='col-lg-6'>
               <div className=''>
@@ -469,7 +468,7 @@ const Home = () => {
 
                 <div className="col-lg-6">
                   <div className='text-right mr-auto mb-3'>
-                  <Link to="/work" className='apply text-decoration-none p-1 link '>
+                    <Link to="/work" className='apply text-decoration-none p-1 link '>
                       <span className='here'> Apply Here</span>
                       <i className="fa-solid fa-arrow-right arrow "></i>
                     </Link>
@@ -490,7 +489,7 @@ const Home = () => {
 
                 <div className="col-lg-6">
                   <div className='text-right mr-auto mb-3'>
-                  <Link to="/work" className='apply text-decoration-none p-1 link '>
+                    <Link to="/work" className='apply text-decoration-none p-1 link '>
                       <span className='here'> Apply Here</span>
                       <i className="fa-solid fa-arrow-right arrow "></i>
                     </Link>

@@ -13,7 +13,6 @@ import e from '../assets/Images/dd.png'
 import f from '../assets/Images/aa.png'
 import g from '../assets/Images/bb.png'
 import h from '../assets/Images/cc.png'
-import vector from '../assets/Images/Vector.png'
 import Ellipse from '../assets/Images/Ellipse 26.png'
 import { Link } from 'react-router-dom'
 import oo from '../assets/Images/Frame 54.png'
@@ -27,11 +26,13 @@ import eee from '../assets/Images/world bank 1.png'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Scroll from './Scroll'
 
 const Home = () => {
   return (
     <>
       <NavBar />
+      <Scroll />
 
       <hr />
       <div>
@@ -39,10 +40,15 @@ const Home = () => {
 
           <div className='col-lg-5 text-center w-100' id="landing">
 
-            <p id='para' className='display-2'>Think. <br />
-              <span >Create.</span> <br />
+            {/* <p id='para' className='display-2'>Think. <br />
+              <span className='ml-4'>Create.</span> <br />
               Solution.
-            </p>
+            </p> */}
+            <div id='para' className='display-2'>
+              <p>Think.</p>
+              <p className='ml-4' style={{ color: "#CCCCCC" }}>Create.</p>
+              <p style={{ marginLeft: "1.5em" }}>Solution.</p>
+            </div>
 
             <div
               className=" justify-content-center align-items-center" id="pin">
@@ -50,27 +56,29 @@ const Home = () => {
 
             <div className="image-container float-right">
               <img src={arrow} alt="arrow" className="imggg" />
-              <img className="spin-image" src={component} alt="Spinning Image" />
+              <img className="spin-image" src={component} alt="Spinning " />
             </div>
 
           </div>
 
           <div className='col-lg-2 w-100'>
-            <img src={b} alt='b' className='w-100' />
+            <img src={b} alt='b' className='w-100 h-100' />
           </div>
 
           <div className='col-lg-5 w-100 '>
-            <img src={c} alt='c' className='w-100' />
+            <img src={c} alt='c' className='w-100 h-100' />
           </div>
 
         </div>
       </div>
 
       {/* brands */}
-      <div className='container my-5'>
+      <div className='container mt-5 '>
         <p className='text-center mb-5 font-weight-bold h5'>
-          -------------------------------------- BRANDS THAT TRUST US ----------------------------------
+          ---------------------------------------------------- BRANDS THAT TRUST US -----------------------------------------------------
         </p>
+      </div>
+      <div className='container my-5'>
         <OwlCarousel
           className="owl-theme"
           loop
@@ -93,65 +101,74 @@ const Home = () => {
       </div>
 
       {/* overlay */}
-      <div className="container my-5" >
-        <div className='row'>
-          <div className='col-lg-4'>
+      <div className="container my-5 w-100" >
+        <div className='row w-100'>
+          <div className='col-lg-4 w-100'>
             <div id="contain">
               <div>
 
-                <p className='agency p-3 h4 mx-auto'>
+                <p className='agency p-2 h4 mx-auto'>
                   Creative Agency
                   <sup>
-                    <i class="fa-regular fa-lightbulb p-3 ml-2" id='ic'></i>
+                    <i className="fa-regular fa-lightbulb p-3 ml-2" id='ic'></i>
                   </sup>
                 </p>
               </div>
 
-              <div className="middle p-5 w-100" id='middle'>
+              <div className="middle p-4 w-100" id='middle'>
                 <div className="text" id='text'>
                   <p className='font-weight-bold h4 '>Creative Agency</p>
                   <p>This very space is important simply due to fact.</p>
                   <hr className='bg-white ' />
-                  <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+                  <p className='span'>
+                    <span className='mor'>Read More</span>
+                    <i className="fa-solid fa-arrow-right right"></i>
+                  </p>
                 </div>
               </div>
 
             </div>
           </div>
 
-          <div className='col-lg-4' >
+          <div className='col-lg-4 w-100' >
             <div id="containe">
-              <p className='agency p-3 h4 mx-auto'>Quality Work
+              <p className='agency p-2 h4 mx-auto'>Quality Work
                 <sup>
-                  <i class="fa-solid fa-users p-3 ml-2" id='ic'></i>
+                  <i className="fa-solid fa-users p-3 ml-2" id='ic'></i>
                 </sup>
               </p>
 
-              <div className="middl w-75" id='middl'>
+              <div className="middl p-3 w-100" id='middl'>
                 <div className="tex" id='tex'>
                   <p className='font-weight-bold h4'>Quality Work</p>
                   <p>This very space is important simply due to fact.</p>
                   <hr className='bg-white ' />
-                  <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+                  <p className='span'>
+                    <span className='mor'>Read More</span>
+                    <i className="fa-solid fa-arrow-right right"></i>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className='col-lg-4'>
+          <div className='col-lg-4 w-100'>
             <div id='con'>
-              <p className='agency p-3 h4 mx-auto'>Professional Team
+              <p className='agency p-2 h4 mx-auto'>Professional Team
                 <sup>
                   <i class="fa-solid fa-users p-3 ml-2" id='ic'></i>
                 </sup>
               </p>
 
-              <div className="midd w-75" id='midd'>
+              <div className="midd p-3 w-100" id='midd'>
                 <div className="te" id='te'>
                   <p className='font-weight-bold h4'>Professional Team</p>
                   <p>This very space is important simply due to fact.</p>
                   <hr className='bg-white ' />
-                  <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+                  <p className='span'>
+                    <span className='mor'>Read More</span>
+                    <i className="fa-solid fa-arrow-right right"></i>
+                  </p>
                 </div>
               </div>
             </div>
@@ -166,7 +183,7 @@ const Home = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-6'>
-              <img src={Ellipse} alt='Ellipse' className="" />
+              <img src={Ellipse} alt='Ellipse' className="mt-5" />
             </div>
             <div className='col-lg-6'>
               <div className=''>
@@ -175,7 +192,7 @@ const Home = () => {
                 <h1 className=' next'>We’re top notch award winning software solution agency</h1>
                 <p>Lorem ipsum dolor sit amet consectetur. Facilisi non faucibus mattis nibh. Sed at vehicula urna et pretium neque aliquam. Sed eu cursus posuere purus diam scelerisque in. Pellentesque dolor adipiscing etiam ultricies in. Sed sed pretium volutpat molestie. </p>
                 <p>Velit odio mi non lectus urna et. Mattis morbi est cras sodales ultrices nibh ut sodales. A velit enim a neque malesuada ultricies vitae aliquam tristique. Enim sagittis nulla netus velit magna elementum mattis dictum. Lectus.</p>
-                <button className='btn btn' id="more">Discover More</button>
+                <button className='btn btn py-3 px-4 ' id="more">Discover More</button>
               </div>
             </div>
           </div>
@@ -210,7 +227,10 @@ const Home = () => {
                 <img src={f} alt="oo" className='pt-2' />
                 <p className='font-weight-bold h5 mt-3'>IT  <br /> solutions </p>
                 <hr className='w-50 mt-5 mx-auto text-center' />
-                <p className='font-weight-bold '>Read More <i className='fa-solid fa-arrow-down-right text-dark'></i> </p>
+                <p id='pp' className='font-weight-normal d-flex justify-content-center text-center'>
+                  <p className='eee'>Read More </p>
+                  <i className="fa-solid fa-arrow-right" id="ReadMore"></i>
+                </p>
               </div>
             </div>
             <div className="col-lg-3 mb-3">
@@ -218,7 +238,10 @@ const Home = () => {
                 <img src={e} alt="oo" className='pt-2' />
                 <p className='font-weight-bold h5 mt-3'>Software <br /> development </p>
                 <hr className='w-50 mt-5 mx-auto text-center' />
-                <p className='font-weight-bold '>Read More <i className='fa-solid fa-arrow-down-right text-dark'></i> </p>
+                <p id='pp' className='font-weight-normal d-flex justify-content-center text-center'>
+                  <p className='eee'>Read More </p>
+                  <i className="fa-solid fa-arrow-right" id="ReadMore"></i>
+                </p>
               </div>
             </div>
             <div className="col-lg-3 mb-3">
@@ -226,7 +249,10 @@ const Home = () => {
                 <img src={g} alt="oo" className='pt-2' />
                 <p className='font-weight-bold h5 mt-3'>Cloud/Data  <br /> engineering </p>
                 <hr className='w-50 mt-5 mx-auto text-center' />
-                <p className='font-weight-bold '>Read More <i className='fa-solid fa-arrow-down-right text-dark'></i> </p>
+                <p id='pp' className='font-weight-normal d-flex justify-content-center text-center'>
+                  <p className='eee'>Read More </p>
+                  <i className="fa-solid fa-arrow-right" id="ReadMore"></i>
+                </p>
               </div>
             </div>
             <div className="col-lg-3 mb-3">
@@ -234,7 +260,10 @@ const Home = () => {
                 <img src={h} alt="oo" className='pt-2' />
                 <p className='font-weight-bold h5 mt-3'>UI/UX <br /> designing </p>
                 <hr className='w-50 mt-5 mx-auto text-center' />
-                <p className='font-weight-bold '>Read More <i className='fa-solid fa-arrow-down-right text-dark'></i> </p>
+                <p id='pp' className='font-weight-normal d-flex justify-content-center text-center'>
+                  <p className='eee'>Read More </p>
+                  <i className="fa-solid fa-arrow-right" id="ReadMore"></i>
+                </p>
               </div>
             </div>
           </div>
@@ -250,7 +279,7 @@ const Home = () => {
             <h1 className=' next'>Explore our best recent <br /> completed projects </h1>
           </div>
           <div style={{ marginTop: '7em' }}>
-            <button className='p-3 font-weight-bold border-0' style={{ backgroundColor: "#E9E9E9" }}>View All Work</button>
+            <button className='p-3 font-weight-bold border-0' id='viewWork' >View All Work</button>
           </div>
         </div>
         <hr />
@@ -258,42 +287,38 @@ const Home = () => {
           <div className='col-lg-2 h2 ' id="one">01</div>
           <div className='col-lg-8 h2 font-weight-bold' id="two">Unique product design</div>
 
-          <div  className='col-lg-2  text-right'>
-          <img id="three" src={vector} alt="arrow" className="arrow p-3" />
-            
-              </div>
+          <div className='col-lg-2  text-right'>
+            <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
+          </div>
         </div>
-        <hr/>
+        <hr />
         <div className='row p-3' id="explore">
           <div className='col-lg-2 h2 ' id="one">02</div>
           <div className='col-lg-8 h2 font-weight-bold' id="two">UI/UX Design for Tecno</div>
 
-          <div  className='col-lg-2  text-right'>
-          <img id="three" src={vector} alt="arrow" className="arrow p-3" />
-            
-              </div>
+          <div className='col-lg-2  text-right'>
+            <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
+          </div>
         </div>
-        <hr/>
+        <hr />
         <div className='row p-3' id="explore">
           <div className='col-lg-2 h2 ' id="one">03</div>
           <div className='col-lg-8 h2 font-weight-bold' id="two">Crown digitals website</div>
 
-          <div  className='col-lg-2  text-right'>
-          <img id="three" src={vector} alt="arrow" className="arrow p-3" />
-            
-              </div>
+          <div className='col-lg-2  text-right'>
+            <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
+          </div>
         </div>
-        <hr/>
+        <hr />
         <div className='row p-3' id="explore">
           <div className='col-lg-2 h2 ' id="one">04</div>
           <div className='col-lg-8 h2 font-weight-bold' id="two">Creative digital market</div>
 
-          <div  className='col-lg-2  text-right'>
-          <img id="three" src={vector} alt="arrow" className="arrow p-3" />
-            
-              </div>
+          <div className='col-lg-2  text-right'>
+            <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
+          </div>
         </div>
-        <hr/>
+        <hr />
 
       </div>
 
@@ -306,14 +331,14 @@ const Home = () => {
             <small className='open '>OUR DISTINCTIVE PRODUCTS</small>
             <h1 className=' next'>Discover our recent <br /> groundbreaking solutions </h1>
 
-            <div className='d-flex p-2 w-100 border-left border-warning my-4' id="hoverr" >
+            <div className='d-flex p-2 w-100  my-4' id="hoverr" >
               <img src={white} alt='white' className='mr-3' />
               <div className='ml-3'>
                 <p className='font-weight-bold'>Test</p>
                 <p>A test to see how all products will appear on her</p>
               </div>
             </div>
-            <div className='d-flex p-2 w-100 border-left border-warning my-4' id="hoverr" >
+            <div className='d-flex p-2 w-100  my-4' id="hoverr" >
               <img src={white} alt='white' className='mr-3' />
               <div className='ml-3'>
                 <p className='font-weight-bold'>Test</p>
@@ -321,7 +346,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className='d-flex p-2 w-100 border-left border-warning my-4' id="hoverr" >
+            <div className='d-flex p-2 w-100  my-4' id="hoverr" >
               <img src={white} alt='white' className='mr-3' />
               <div className='ml-3'>
                 <p className='font-weight-bold'>Test</p>
@@ -339,9 +364,9 @@ const Home = () => {
 
 
       {/* unlock the potential */}
-      <div className="marquee-wrapper">
+      <div className="marquee-wrapper mt-5">
         <div className="marquee">
-          <div className='d-flex' id='scroll'>
+          <div className='d-flex p-3' id='scroll'>
             <p className='h5 mr-5'> * UNLOCK THE POTENTIAL</p>
             <p className='h5 mr-5'> * TRANSFORM IDEA INTO REALITY</p>
             <p className='h5 mr-5'> * INSPIRED WITH CREATIVITY</p>
@@ -364,7 +389,7 @@ const Home = () => {
             <div className='col-lg-3 mb-4'>
               <img src={one} alt='aa' className='w-100' />
               <div style={{ backgroundColor: "#D1D1D1" }} className='w-100'>
-                <div className='bg-white mx-auto border-bottom border-warning p-2 w-75'>
+                <div className='bg-white  border-bottom border-warning p-2 w-75'>
                   <small className='h6' style={{ color: '#D1D1D1' }}>Senior Developer</small>
                   <p className='font-weight-bold h5'>Mike Idowu</p>
                 </div>
@@ -373,7 +398,7 @@ const Home = () => {
             <div className='col-lg-3 mb-4'>
               <img src={two} alt='aa' className='w-100' />
               <div style={{ backgroundColor: "#D1D1D1" }} className='w-100'>
-                <div className='bg-white border-bottom mx-auto border-warning p-2 w-75'>
+                <div className='bg-white border-bottom  border-warning p-2 w-75'>
                   <small className='h6' style={{ color: '#D1D1D1' }}>Senior Developer</small>
                   <p className='font-weight-bold h5'>Olive Adegoke</p>
                 </div>
@@ -382,7 +407,7 @@ const Home = () => {
             <div className='col-lg-3 mb-4'>
               <img src={three} alt='aa' className='w-100' />
               <div style={{ backgroundColor: "#D1D1D1" }} className='w-100'>
-                <div className='bg-white border-bottom mx-auto border-warning p-2 w-75'>
+                <div className='bg-white border-bottom border-warning p-2 w-75'>
                   <small className='h6' style={{ color: '#D1D1D1' }}>Senior Developer</small>
                   <p className='font-weight-bold h5'>Mike Donalds</p>
                 </div>
@@ -391,7 +416,7 @@ const Home = () => {
             <div className='col-lg-3 mb-4'>
               <img src={four} alt='aa' className='w-100' />
               <div style={{ backgroundColor: "#D1D1D1" }} className='w-100'>
-                <div className='bg-white border-bottom mx-auto border-warning p-2 w-75'>
+                <div className='bg-white border-bottom border-warning p-2 w-75'>
                   <small className='h6' style={{ color: '#D1D1D1' }}>Senior Developer</small>
                   <p className='font-weight-bold h5'>Sarah Eromosele</p>
                 </div>
@@ -424,7 +449,10 @@ const Home = () => {
 
                 <div className="col-lg-6">
                   <div className='text-right mr-auto mb-3'>
-                    <Link to="/work" className='apply text-decoration-none p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></Link>
+                    <Link to="/work" className='apply text-decoration-none p-1 link '>
+                      <span className='here'> Apply Here</span>
+                      <i className="fa-solid fa-arrow-right arrow "></i>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -441,7 +469,10 @@ const Home = () => {
 
                 <div className="col-lg-6">
                   <div className='text-right mr-auto mb-3'>
-                    <Link to="/work" className='apply text-decoration-none p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></Link>
+                  <Link to="/work" className='apply text-decoration-none p-1 link '>
+                      <span className='here'> Apply Here</span>
+                      <i className="fa-solid fa-arrow-right arrow "></i>
+                    </Link>
                   </div>
 
                 </div>
@@ -459,7 +490,10 @@ const Home = () => {
 
                 <div className="col-lg-6">
                   <div className='text-right mr-auto mb-3'>
-                    <Link to="/work" className='apply text-decoration-none p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></Link>
+                  <Link to="/work" className='apply text-decoration-none p-1 link '>
+                      <span className='here'> Apply Here</span>
+                      <i className="fa-solid fa-arrow-right arrow "></i>
+                    </Link>
                   </div>
 
                 </div>
@@ -481,7 +515,7 @@ const Home = () => {
         <div className='' style={{ position: 'relative', marginTop: "10em" }}>
           <div
             className="mx-auto  d-flex justify-content-center align-items-center" id="pink">
-            <i class="fa-solid fa-arrow-right text-white h1"></i>
+            <i className="fa-solid fa-arrow-right text-white  solid"></i>
           </div>
 
           <div
@@ -489,7 +523,7 @@ const Home = () => {
           >
           </div>
         </div><br /><br /><br /><br /><br /><br /><br />
-        <p className='text-center h1 font-weight-bold'>Have any projects in mind? <br />Get in touch with us!</p>
+        <p className='text-center h1 display-5 mb-3 font-weight-bold'>Have any projects in mind? <br />Get in touch with us!</p>
       </div>
 
 

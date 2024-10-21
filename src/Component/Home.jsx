@@ -32,7 +32,7 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <Scroll/>
+      <Scroll />
 
       <hr />
       <div>
@@ -75,7 +75,7 @@ const Home = () => {
       {/* brands */}
       <div className='container mt-5 '>
         <p className='text-center mb-5 font-weight-bold h5'>
-          ----------------------------------------------------- BRANDS THAT TRUST US -------------------------------------------------------
+          ---------------------------------------------------- BRANDS THAT TRUST US -----------------------------------------------------
         </p>
       </div>
       <div className='container my-5'>
@@ -107,20 +107,23 @@ const Home = () => {
             <div id="contain">
               <div>
 
-                <p className='agency p-3 h4 mx-auto'>
+                <p className='agency p-2 h4 mx-auto'>
                   Creative Agency
                   <sup>
-                    <i class="fa-regular fa-lightbulb p-3 ml-2" id='ic'></i>
+                    <i className="fa-regular fa-lightbulb p-3 ml-2" id='ic'></i>
                   </sup>
                 </p>
               </div>
 
-              <div className="middle p-5 w-100" id='middle'>
+              <div className="middle p-4 w-100" id='middle'>
                 <div className="text" id='text'>
                   <p className='font-weight-bold h4 '>Creative Agency</p>
                   <p>This very space is important simply due to fact.</p>
                   <hr className='bg-white ' />
-                  <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+                  <p className='span'>
+                    <span className='mor'>Read More</span>
+                    <i className="fa-solid fa-arrow-right right"></i>
+                  </p>
                 </div>
               </div>
 
@@ -129,18 +132,21 @@ const Home = () => {
 
           <div className='col-lg-4 w-100' >
             <div id="containe">
-              <p className='agency p-3 h4 mx-auto'>Quality Work
+              <p className='agency p-2 h4 mx-auto'>Quality Work
                 <sup>
-                  <i class="fa-solid fa-users p-3 ml-2" id='ic'></i>
+                  <i className="fa-solid fa-users p-3 ml-2" id='ic'></i>
                 </sup>
               </p>
 
-              <div className="middl w-75" id='middl'>
+              <div className="middl p-3 w-100" id='middl'>
                 <div className="tex" id='tex'>
                   <p className='font-weight-bold h4'>Quality Work</p>
                   <p>This very space is important simply due to fact.</p>
                   <hr className='bg-white ' />
-                  <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+                  <p className='span'>
+                    <span className='mor'>Read More</span>
+                    <i className="fa-solid fa-arrow-right right"></i>
+                  </p>
                 </div>
               </div>
             </div>
@@ -148,18 +154,21 @@ const Home = () => {
 
           <div className='col-lg-4 w-100'>
             <div id='con'>
-              <p className='agency p-3 h4 mx-auto'>Professional Team
+              <p className='agency p-2 h4 mx-auto'>Professional Team
                 <sup>
                   <i class="fa-solid fa-users p-3 ml-2" id='ic'></i>
                 </sup>
               </p>
 
-              <div className="midd w-75" id='midd'>
+              <div className="midd p-3 w-100" id='midd'>
                 <div className="te" id='te'>
                   <p className='font-weight-bold h4'>Professional Team</p>
                   <p>This very space is important simply due to fact.</p>
                   <hr className='bg-white ' />
-                  <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+                  <p className='span'>
+                    <span className='mor'>Read More</span>
+                    <i className="fa-solid fa-arrow-right right"></i>
+                  </p>
                 </div>
               </div>
             </div>
@@ -174,7 +183,7 @@ const Home = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-6'>
-              <img src={Ellipse} alt='Ellipse' className="" />
+              <img src={Ellipse} alt='Ellipse' className="mt-5" />
             </div>
             <div className='col-lg-6'>
               <div className=''>
@@ -288,7 +297,7 @@ const Home = () => {
           <div className='col-lg-8 h2 font-weight-bold' id="two">UI/UX Design for Tecno</div>
 
           <div className='col-lg-2  text-right'>
-          <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
+            <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
           </div>
         </div>
         <hr />
@@ -297,7 +306,7 @@ const Home = () => {
           <div className='col-lg-8 h2 font-weight-bold' id="two">Crown digitals website</div>
 
           <div className='col-lg-2  text-right'>
-          <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
+            <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
           </div>
         </div>
         <hr />
@@ -306,7 +315,7 @@ const Home = () => {
           <div className='col-lg-8 h2 font-weight-bold' id="two">Creative digital market</div>
 
           <div className='col-lg-2  text-right'>
-          <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
+            <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
           </div>
         </div>
         <hr />
@@ -322,14 +331,14 @@ const Home = () => {
             <small className='open '>OUR DISTINCTIVE PRODUCTS</small>
             <h1 className=' next'>Discover our recent <br /> groundbreaking solutions </h1>
 
-            <div className='d-flex p-2 w-100 border-left border-warning my-4' id="hoverr" >
+            <div className='d-flex p-2 w-100  my-4' id="hoverr" >
               <img src={white} alt='white' className='mr-3' />
               <div className='ml-3'>
                 <p className='font-weight-bold'>Test</p>
                 <p>A test to see how all products will appear on her</p>
               </div>
             </div>
-            <div className='d-flex p-2 w-100 border-left border-warning my-4' id="hoverr" >
+            <div className='d-flex p-2 w-100  my-4' id="hoverr" >
               <img src={white} alt='white' className='mr-3' />
               <div className='ml-3'>
                 <p className='font-weight-bold'>Test</p>
@@ -337,7 +346,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className='d-flex p-2 w-100 border-left border-warning my-4' id="hoverr" >
+            <div className='d-flex p-2 w-100  my-4' id="hoverr" >
               <img src={white} alt='white' className='mr-3' />
               <div className='ml-3'>
                 <p className='font-weight-bold'>Test</p>
@@ -440,7 +449,10 @@ const Home = () => {
 
                 <div className="col-lg-6">
                   <div className='text-right mr-auto mb-3'>
-                    <Link to="/work" className='apply text-decoration-none p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></Link>
+                    <Link to="/work" className='apply text-decoration-none p-1 link '>
+                      <span className='here'> Apply Here</span>
+                      <i className="fa-solid fa-arrow-right arrow "></i>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -457,8 +469,10 @@ const Home = () => {
 
                 <div className="col-lg-6">
                   <div className='text-right mr-auto mb-3'>
-                    <Link to="/work" className='apply text-decoration-none p-2  border border-warning '> Apply Here 
-                    <i class="fa-solid fa-arrow-right"></i></Link>
+                  <Link to="/work" className='apply text-decoration-none p-1 link '>
+                      <span className='here'> Apply Here</span>
+                      <i className="fa-solid fa-arrow-right arrow "></i>
+                    </Link>
                   </div>
 
                 </div>
@@ -476,7 +490,10 @@ const Home = () => {
 
                 <div className="col-lg-6">
                   <div className='text-right mr-auto mb-3'>
-                    <Link to="/work" className='apply text-decoration-none p-2  border border-warning '> Apply Here <i class="fa-solid fa-arrow-right"></i></Link>
+                  <Link to="/work" className='apply text-decoration-none p-1 link '>
+                      <span className='here'> Apply Here</span>
+                      <i className="fa-solid fa-arrow-right arrow "></i>
+                    </Link>
                   </div>
 
                 </div>
@@ -498,7 +515,7 @@ const Home = () => {
         <div className='' style={{ position: 'relative', marginTop: "10em" }}>
           <div
             className="mx-auto  d-flex justify-content-center align-items-center" id="pink">
-            <i class="fa-solid fa-arrow-right text-white h1"></i>
+            <i className="fa-solid fa-arrow-right text-white  solid"></i>
           </div>
 
           <div
@@ -506,7 +523,7 @@ const Home = () => {
           >
           </div>
         </div><br /><br /><br /><br /><br /><br /><br />
-        <p className='text-center h1 font-weight-bold'>Have any projects in mind? <br />Get in touch with us!</p>
+        <p className='text-center h1 display-5 mb-3 font-weight-bold'>Have any projects in mind? <br />Get in touch with us!</p>
       </div>
 
 

@@ -306,7 +306,7 @@
    color: black;
    font-weight: bolder;
    text-align: center;
-   margin-top: 10em;
+   margin-top: 5em;
    width: 90%;
  }
 
@@ -321,7 +321,7 @@
     -webkit-background-size: cover;
     -o-background-size: cover;
     overflow: hidden;
-
+    height: 30vh;
 }
 
 #contain:hover{
@@ -357,8 +357,9 @@
    transition: .5s ease;
    opacity: 0;
    position: absolute;
-   top: 50%;
+   top: 69%;
    left: 50%;
+   height: 45vh;
    transform: translate(-50%, -50%);
    -ms-transform: translate(-50%, -50%)
  }
@@ -375,7 +376,7 @@
    background-color: rgba(206, 206, 206, 0.5);
    color: black;
    font-size: 16px;
-   padding: 16px 32px;
+   padding: 10px 30px;
  }
 
  #containe {
@@ -385,7 +386,8 @@
    background-size: cover;
    background-repeat: no-repeat;
    width: 100%;
-    -moz-background-size: cover;
+   height: 30vh;
+        -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     overflow: hidden;
@@ -404,8 +406,9 @@
    transition: .5s ease;
    opacity: 0;
    position: absolute;
-   top: 50%;
+   top: 60%;
    left: 50%;
+   height: 38vh;
    transform: translate(-50%, -50%);
    -ms-transform: translate(-50%, -50%)
  }
@@ -422,7 +425,7 @@
    background-color: rgba(206, 206, 206, 0.5);
    color: black;
    font-size: 16px;
-   padding: 16px 32px;
+   padding: 10px 30px;
  }
  
  #con {
@@ -435,7 +438,8 @@
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
-    overflow: hidden;   
+    overflow: hidden;  
+    height: 30vh ;
 }
 
 
@@ -475,8 +479,9 @@
    transition: .5s ease;
    opacity: 0;
    position: absolute;
-   top: 50%;
+   top: 63%;
    left: 50%;
+    height: 40vh;
    transform: translate(-50%, -50%);
    -ms-transform: translate(-50%, -50%)
  }
@@ -493,7 +498,7 @@
    background-color: rgba(206, 206, 206, 0.5);
    color: black;
    font-size: 16px;
-   padding: 16px 32px;
+   padding: 10px 30px;
  }
 
 
@@ -501,6 +506,14 @@
    background-color: #F4F4F4;
    color: black;
    transition: background-color 0.5s, color 0.5s, width 4s, height 10s;
+   border-right: white;
+   border-left: #EC8B0D;
+   /* border: #EC8B0D; */
+   border-style: solid;
+   border-left-color: #EC8B0D;
+   border-top: #E9E9E9;
+   border-bottom: white;
+   border-width: 4px;
  }
  
  #hoverr:hover {
@@ -540,25 +553,75 @@
   #ReadMore{
    transform: rotate(45deg);
    /* margin-left: 2px; */
- }
+  }
 
  .eee{
-    color: black;
+   color: black;
   }
+  
+  #pp:hover{
+    
+    .eee{
+      color: #EC8B0D;
+    }
+    #ReadMore{
+      transform: rotate(0deg);
+      margin-left: 7px;
+      color: #EC8B0D;
+    } 
+  }
+  
+  .right{
+    transform: rotate(45deg);
+    margin-left: 5px;
+}
 
-#pp:hover{
+.span:hover{
 
-  .eee{
+  .mor{
     color: #EC8B0D;
   }
-  #ReadMore{
+
+  .right{
     transform: rotate(0deg);
-    margin-left: 7px;
-  } 
+    color: #EC8B0D;
+  }
 }
  
+.link{
+  border: #EC8B0D;
+  border-style: solid;
+}
 
- 
+.arrow{
+  transform: rotate(45deg);
+  
+}
+
+.link:hover{
+  .here{
+    color: #EC8B0D;
+  }
+  .arrow{
+    transform: rotate(0deg);
+  }
+}
+
+.solid{
+  transform: rotate(45deg);
+  font-size: 5em;
+  
+}
+
+
+#pink:hover .solid {
+  transform: rotate(0deg);
+  opacity: 0;  /* Fades out the element */
+  transition: transform 2s ease, opacity 2s ease; /* Adjust the timing for smooth transition */
+}
+
+
+
 
 
 

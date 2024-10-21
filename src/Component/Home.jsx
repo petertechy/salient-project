@@ -56,7 +56,7 @@ const Home = () => {
 
             <div className="image-container float-right">
               <img src={arrow} alt="arrow" className="imggg" />
-              <img className="spin-image" src={component} alt="Spinning Image" />
+              <img className="spin-image" src={component} alt="Spinning " />
             </div>
 
           </div>

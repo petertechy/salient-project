@@ -45,7 +45,7 @@ const Home = () => {
             <div id='para' className='display-2'>
               <p>Think.</p>
               <p className='ml-4' style={{ color: "#CCCCCC" }}>Create.</p>
-              <p style={{ marginLeft: "1.5em" }}>Solution.</p>
+              <p id="solution" style={{ marginLeft: "1.5em" }}>Solution.</p>
             </div>
 
             <div
@@ -60,8 +60,8 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='col-lg-2  text-center w-100'>
-            <img src={b} alt='bbbb' className='w-100 h-100 overflow-hidden' />
+          <div className='col-lg-2  text-center'>
+            <img src={b} alt='bbbb' className='w-100 h-100 overflow-hidden' id = 'second' />
           </div>
 
           <div className='col-lg-5 text-center  w-100 '>
@@ -430,7 +430,7 @@ const Home = () => {
       {/* jobs opportunity */}
       <div className='' id='discover'>
         <div className='container'>
-          <div className='bg-white rounded p-5'>
+          <div className='bg-white rounded px-5 py-4'>
 
             <div className='text-center'>
               <p className='dot'> . </p>
@@ -448,7 +448,7 @@ const Home = () => {
 
                 <div className="col-lg-6">
                   <div className='text-right mr-auto mb-3'>
-                    <Link to="/work" className='apply text-decoration-none p-1 link '>
+                    <Link to="/work" className='apply text-decoration-none p-2 link '>
                       <span className='here'> Apply Here</span>
                       <i className="fa-solid fa-arrow-right arrow "></i>
                     </Link>
@@ -468,7 +468,7 @@ const Home = () => {
 
                 <div className="col-lg-6">
                   <div className='text-right mr-auto mb-3'>
-                    <Link to="/work" className='apply text-decoration-none p-1 link '>
+                    <Link to="/work" className='apply text-decoration-none p-2 link '>
                       <span className='here'> Apply Here</span>
                       <i className="fa-solid fa-arrow-right arrow "></i>
                     </Link>
@@ -489,7 +489,7 @@ const Home = () => {
 
                 <div className="col-lg-6">
                   <div className='text-right mr-auto mb-3'>
-                    <Link to="/work" className='apply text-decoration-none p-1 link '>
+                    <Link to="/work" className='apply text-decoration-none p-2 link '>
                       <span className='here'> Apply Here</span>
                       <i className="fa-solid fa-arrow-right arrow "></i>
                     </Link>

@@ -23,6 +23,10 @@ import bbb from '../assets/Images/Group 115.png'
 import ccc from '../assets/Images/Group 112.png'
 import ddd from '../assets/Images/nwjbp9nc 2.png'
 import eee from '../assets/Images/world bank 1.png'
+
+import fillOne from '../assets/Images/Filled 01.png'
+import noFillOne from '../assets/Images/No fill 01.png'
+
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -81,7 +85,7 @@ const Home = () => {
         <OwlCarousel
           className="owl-theme"
           loop
-          margin={10}
+          margin={15}
           nav
           autoplay
           autoplayTimeout={4000}
@@ -91,11 +95,11 @@ const Home = () => {
             1000: { items: 5 }
           }}
         >
-          <div className="item"><img className='w-100' src={aaa} alt="Owl" /></div>
-          <div className="item"><img className='w-100' src={bbb} alt="Owl" /></div>
-          <div className="item"><img className='w-100' src={ccc} alt="Owl" /></div>
-          <div className="item"><img className='w-100' src={ddd} alt="Owl" /></div>
-          <div className="item"><img className='w-100' src={eee} alt="Owl" /></div>
+          <div className="item"><img className='w-100 ' src={aaa} alt="Owl"  /></div>
+          <div className="item"><img className='w-100 ' src={bbb} alt="Owl" /></div>
+          <div className="item"><img className='w-100 ' src={ccc} alt="Owl"  /></div>
+          <div className="item"><img className='w-100 ' src={ddd} alt="Owl" /></div>
+          <div className="item"><img className='w-100 ' src={eee} alt="Owl" /></div>
         </OwlCarousel>
       </div>
 
@@ -116,7 +120,7 @@ const Home = () => {
 
               <div className="middle p-4 w-100" id='middle'>
                 <div className="text" id='text'>
-                  <p className='font-weight-bold h4 '>Creative Agency</p>
+                  <p className='font-weight-bold h4 '>Creative Agency</p><br/>
                   <p>This very space is important simply due to fact.</p>
                   <hr className='bg-white ' />
                   <p className='span'>
@@ -139,7 +143,7 @@ const Home = () => {
 
               <div className="middl p-3 w-100" id='middl'>
                 <div className="tex" id='tex'>
-                  <p className='font-weight-bold h4'>Quality Work</p>
+                  <p className='font-weight-bold h4'>Quality Work</p><br/>
                   <p>This very space is important simply due to fact.</p>
                   <hr className='bg-white ' />
                   <p className='span'>
@@ -161,7 +165,7 @@ const Home = () => {
 
               <div className="midd p-3 w-100" id='midd'>
                 <div className="te" id='te'>
-                  <p className='font-weight-bold h4'>Professional Team</p>
+                  <p className='font-weight-bold h4'>Professional Team</p><br/>
                   <p>This very space is important simply due to fact.</p>
                   <hr className='bg-white ' />
                   <p className='span'>
@@ -283,7 +287,12 @@ const Home = () => {
         </div>
         <hr />
         <div className='row p-3' id="explore">
-          <div className='col-lg-2 h2 ' id="one">01</div>
+          <div className='col-lg-2' id='fill'>
+              <img src={noFillOne} alt='number' className='w-50' />
+              <img src={fillOne} alt='number' className='w-50 mr-5' id='noFill'   />
+          </div>
+          {/* <div className='col-lg-2' id='noFill'> */}
+          {/* </div> */}
           <div className='col-lg-8 h2 font-weight-bold' id="two">Unique product design</div>
 
           <div className='col-lg-2  text-right'>

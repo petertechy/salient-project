@@ -43,7 +43,7 @@ const styles = {
         position: 'fixed',
         bottom: '40px',
         right: '40px',
-        width:'80px',
+        width:'50px',
         cursor: 'pointer',
         zIndex: 1000,
     },

@@ -88,9 +88,9 @@ const Home = () => {
       {/* brands */}
       <div className="container mt-5">
         <div className="d-flex align-items-center justify-content-center mb-5">
-          <div style={{ flex: "1", borderBottom: "2px solid #000", marginRight: "10px" }}></div>
+          <div style={{ flex: "1", borderBottom: "2px solid #EAEAEA", marginRight: "10px" }}></div>
           <p className="mx-2 font-weight-bold h5">BRANDS THAT TRUST US</p>
-          <div style={{ flex: "1", borderBottom: "2px solid #000", marginLeft: "10px" }}></div>
+          <div style={{ flex: "1", borderBottom: "2px solid #EAEAEA", marginLeft: "10px" }}></div>
         </div>
       </div>
 
@@ -109,11 +109,11 @@ const Home = () => {
             1000: { items: 5 }
           }}
         >
-          <div className="item mr-5 w-100"><img className='' src={aaa} alt="Owl" /></div>
-          <div className="item mr-5 w-100"><img className='' src={bbb} alt="Owl" /></div>
-          <div className="item mr-5 w-100"><img className='' src={ccc} alt="Owl" /></div>
-          <div className="item mr-5 w-100"><img className='' src={ddd} alt="Owl" /></div>
-          <div className="item mr-5 w-100"><img className='' src={eee} alt="Owl" /></div>
+          <div className="item mr-5 "><img className='' src={aaa} alt="Owl" /></div>
+          <div className="item mr-5 "><img className='' src={bbb} alt="Owl" /></div>
+          <div className="item mr-5 "><img className='' src={ccc} alt="Owl" /></div>
+          <div className="item mr-5 "><img className='' src={ddd} alt="Owl" /></div>
+          <div className="item mr-5 "><img className='' src={eee} alt="Owl" /></div>
         </OwlCarousel>
       </div>
 

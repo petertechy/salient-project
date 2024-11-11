@@ -760,14 +760,6 @@
  }
  
 
- /* #viewWork {
-  padding: 10px;
-  font-weight: bolder;
-  color: black;
-  font-weight: bold;
-  background-color: #E9E9E9;
-} */
-
 #viewWork {
   padding: 0.8em 1.8em;
   position: relative;
@@ -807,4 +799,6 @@
  #viewWork:hover {
   color: white;
  }
+
+ 
  

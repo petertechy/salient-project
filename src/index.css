@@ -174,33 +174,10 @@
   padding: 6px;
 }
 
-.rolling {
-  font-size: 5em;
-  font-weight: bolder;
-  font-stretch: extra-expanded;
-}
 
-.rolling span {
-  color: #EC8B0D;
-}
 
-#viewWork {
-  padding: 10px;
-  font-weight: bolder;
-  color: black;
-  font-weight: bold;
-  background-color: #E9E9E9;
-}
 
-#more {
-  padding: 10px;
-  font-weight: bolder;
-  color: white;
-  background-color: #EC8B0D;
-  /* color: #F5900D; */
-  font-weight: bold;
-  /* border-radius: 20px; */
-}
+
 
 .jobDetails p i {
   color: #EC8B0D;
@@ -246,16 +223,30 @@
 .marquee-wrapper {
   overflow: hidden;
   white-space: nowrap;
+  width: 100%;
 }
 
 .marquee {
+  white-space: nowrap;
   display: inline-block;
   animation: scroll 10s linear infinite;
 }
 
+.rolling {
+  display: inline-block;
+  padding-right: 50%;
+  font-size: 7em;
+  font-weight: bolder;
+  font-stretch: extra-expanded;
+}
+
+.rolling span {
+  color: #EC8B0D;
+}
+
 @keyframes scroll {
   0% {
-    transform: translateX(100%);
+    transform: translateX(80%);
   }
 
   100% {
@@ -727,13 +718,7 @@
   line-height: 80%
 }
 
-/* #butt {
-  color: white;
-  background-color: #F5900D;
-  padding: 1em;
-} */
 
-/* From Uiverse.io by nikk7007 */ 
 #butt {
   padding: 0.8em 1.8em;
   position: relative;
@@ -772,5 +757,54 @@
  
  #butt:hover {
   color: #F5900D;
+ }
+ 
+
+ /* #viewWork {
+  padding: 10px;
+  font-weight: bolder;
+  color: black;
+  font-weight: bold;
+  background-color: #E9E9E9;
+} */
+
+#viewWork {
+  padding: 0.8em 1.8em;
+  position: relative;
+  overflow: hidden;
+  background-color: #E9E9E9;
+  text-align: center;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: black;
+  margin-top: 2em;
+  margin-bottom: 4em;
+  font-weight: 700;
+  padding: 1em;
+ }
+ 
+ #viewWork::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: black;
+  
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ #viewWork:hover::before {
+  width: 100%;
+ }
+ 
+ #viewWork:hover {
+  color: white;
  }
  

@@ -196,12 +196,14 @@ const Home = () => {
             </div>
             <div className='col-lg-6'>
               <div className=''>
-                <p className='dot'> . </p>
+                <small className='dot'> . </small><br/>
                 <small className='open '>ABOUT THE AGENCY</small>
                 <h1 className=' next'>We’re top notch award winning software solution agency</h1>
                 <p>Lorem ipsum dolor sit amet consectetur. Facilisi non faucibus mattis nibh. Sed at vehicula urna et pretium neque aliquam. Sed eu cursus posuere purus diam scelerisque in. Pellentesque dolor adipiscing etiam ultricies in. Sed sed pretium volutpat molestie. </p>
                 <p>Velit odio mi non lectus urna et. Mattis morbi est cras sodales ultrices nibh ut sodales. A velit enim a neque malesuada ultricies vitae aliquam tristique. Enim sagittis nulla netus velit magna elementum mattis dictum. Lectus.</p>
-                <button className='btn btn py-3 px-4 ' id="more">Discover More</button>
+              
+                <button className='btn btn py-3 px-4 border-0' id='butt'> Discover More</button>
+
               </div>
             </div>
           </div>
@@ -213,7 +215,6 @@ const Home = () => {
       <div className="marquee-wrapper">
         <div className="marquee">
           <p className='rolling'> Disruptive <span> & </span>scalable tech solution <span> . </span> </p>
-
         </div>
       </div>
 
@@ -288,7 +289,9 @@ const Home = () => {
             <h1 className=' next'>Explore our best recent <br /> completed projects </h1>
           </div>
           <div style={{ marginTop: '7em' }}>
-            <button className='p-3 font-weight-bold border-0' id='viewWork' >View All Work</button>
+                        <button className='btn btn py-3 px-4 font-weight-bold border-0' id='viewWork'> View All Work</button>
+
+            {/* <button className='p-3 font-weight-bold border-0' id='viewWork' >View All Work</button> */}
           </div>
         </div>
         <hr />

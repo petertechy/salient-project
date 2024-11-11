@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import eee from '../assets/Images/GoUp.png'
+
 
 const Scroll= () => {
     // State to show or hide the button
@@ -29,12 +31,8 @@ const Scroll= () => {
     return (
         <div>
             {isVisible && (
-                <button
-                    onClick={scrollToTop}
-                    style={styles.scrollToTopButton}
-                >
-                    ↑
-                </button>
+                <img src={eee} alt="scroll"  style={styles.scrollToTopButton} onClick={scrollToTop} />
+                
             )}
         </div>
     );
@@ -45,13 +43,7 @@ const styles = {
         position: 'fixed',
         bottom: '40px',
         right: '40px',
-        backgroundColor: '#EC8B0D',
-        color: 'white',
-        border: 'none',
-        borderRadius: '50%',
-        padding: '10px 20px',
-        fontSize: '20px',
-        fontWeight: '60px',
+        width:'80px',
         cursor: 'pointer',
         zIndex: 1000,
     },

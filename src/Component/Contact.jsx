@@ -76,9 +76,8 @@ const Contact = () => {
                                 <textarea placeholder='Write Comment' className='form-control' style={{ height: "9em" }} />
                             </div>
                         </div>
-                        {/* <button className='btn btn my-4' id='butt'>Send a Message</button> */}
 
-                        <button className='btn btn ' id='butt'> Send a Message</button>
+                        <button className='btn btn py-3 px-4 border-0' id='butt'> Send a Message</button>
                     </div>
                 </div>
 

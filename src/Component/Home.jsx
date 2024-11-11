@@ -23,6 +23,20 @@ import bbb from '../assets/Images/Group 115.png'
 import ccc from '../assets/Images/Group 112.png'
 import ddd from '../assets/Images/nwjbp9nc 2.png'
 import eee from '../assets/Images/world bank 1.png'
+
+import fillOne from '../assets/Images/Filled 01.png'
+import noFillOne from '../assets/Images/No fill 01.png'
+import fillTwo from '../assets/Images/Filled 02.png'
+import noFillTwo from '../assets/Images/No fill 02.png'
+import fillThree from '../assets/Images/Filled 03.png'
+import noFillThree from '../assets/Images/No fill 03.png'
+import fillFour from '../assets/Images/Filled 04.png'
+import noFillFour from '../assets/Images/No fill 04.png'
+
+// import newOne from '../assets/Images/Rectangle 161.png'
+// import newTwo from '../assets/Images/Intersect.png'
+// import newThree from '../assets/Images/IntersectO.png'
+
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -35,33 +49,33 @@ const Home = () => {
       <Scroll />
 
       <hr />
-      <div  id='head'>
+      <div id='head'>
         <div className="row overflow-hidden">
 
           <div className='col-lg-5 text-center w-100'>
             <div id="landing" className='w-100'>
 
 
-            <div id='para' className='display-2'>
-              <p>Think.</p>
-              <p className='ml-4' style={{ color: "#CCCCCC" }}>Create.</p>
-              <p id="solution" style={{ marginLeft: "1.5em" }}>Solution.</p>
-            </div>
+              <div id='para' className='display-2'>
+                <p>Think.</p>
+                <p className='ml-4' style={{ color: "#CCCCCC" }}>Create.</p>
+                <p id="solution" style={{ marginLeft: "1.5em" }}>Solution.</p>
+              </div>
 
-            <div
-              className=" justify-content-center align-items-center" id="pin">
-            </div>
+              <div
+                className=" justify-content-center align-items-center" id="pin">
+              </div>
 
-            <div className="image-container float-right">
-              <img src={arrow} alt="arrow" className="imggg" />
-              <img className="spin-image" src={component} alt="Spinning " />
-            </div>
+              <div className="image-container float-right">
+                <img src={arrow} alt="arrow" className="imggg" />
+                <img className="spin-image" src={component} alt="Spinning " />
+              </div>
 
             </div>
           </div>
 
           <div className='col-lg-2  text-center'>
-            <img src={b} alt='bbbb' className='w-100 h-100 overflow-hidden' id = 'second' />
+            <img src={b} alt='bbbb' className='w-100 h-100 overflow-hidden' id='second' />
           </div>
 
           <div className='col-lg-5 text-center  w-100 '>
@@ -72,16 +86,20 @@ const Home = () => {
       </div>
 
       {/* brands */}
-      <div className='container mt-5 '>
-        <p className='text-center mb-5 font-weight-bold h5'>
-          ---------------------------------------------------- BRANDS THAT TRUST US -----------------------------------------------------
-        </p>
+      <div className="container mt-5">
+        <div className="d-flex align-items-center justify-content-center mb-5">
+          <div style={{ flex: "1", borderBottom: "2px solid #000", marginRight: "10px" }}></div>
+          <p className="mx-2 font-weight-bold h5">BRANDS THAT TRUST US</p>
+          <div style={{ flex: "1", borderBottom: "2px solid #000", marginLeft: "10px" }}></div>
+        </div>
       </div>
-      <div className='container my-5'>
+
+      <div className='container my-5 d-flex'>
+        
         <OwlCarousel
           className="owl-theme"
           loop
-          margin={10}
+          margin={15}
           nav
           autoplay
           autoplayTimeout={4000}
@@ -91,18 +109,18 @@ const Home = () => {
             1000: { items: 5 }
           }}
         >
-          <div className="item"><img className='w-100' src={aaa} alt="Owl" /></div>
-          <div className="item"><img className='w-100' src={bbb} alt="Owl" /></div>
-          <div className="item"><img className='w-100' src={ccc} alt="Owl" /></div>
-          <div className="item"><img className='w-100' src={ddd} alt="Owl" /></div>
-          <div className="item"><img className='w-100' src={eee} alt="Owl" /></div>
+          <div className="item mr-5 w-100"><img className='' src={aaa} alt="Owl" /></div>
+          <div className="item mr-5 w-100"><img className='' src={bbb} alt="Owl" /></div>
+          <div className="item mr-5 w-100"><img className='' src={ccc} alt="Owl" /></div>
+          <div className="item mr-5 w-100"><img className='' src={ddd} alt="Owl" /></div>
+          <div className="item mr-5 w-100"><img className='' src={eee} alt="Owl" /></div>
         </OwlCarousel>
       </div>
 
       {/* overlay */}
       <div className="container my-5 w-100" >
         <div className='row w-100'>
-          <div className='col-lg-4 w-100'>
+          <div className='col-lg-4 w-100 mb-5'>
             <div id="contain">
               <div>
 
@@ -116,7 +134,7 @@ const Home = () => {
 
               <div className="middle p-4 w-100" id='middle'>
                 <div className="text" id='text'>
-                  <p className='font-weight-bold h4 '>Creative Agency</p>
+                  <p className='font-weight-bold h4 '>Creative Agency</p><br />
                   <p>This very space is important simply due to fact.</p>
                   <hr className='bg-white ' />
                   <p className='span'>
@@ -129,7 +147,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='col-lg-4 w-100' >
+          <div className='col-lg-4 w-100 mb-5' >
             <div id="containe">
               <p className='agency p-2 h4 mx-auto'>Quality Work
                 <sup>
@@ -139,7 +157,7 @@ const Home = () => {
 
               <div className="middl p-3 w-100" id='middl'>
                 <div className="tex" id='tex'>
-                  <p className='font-weight-bold h4'>Quality Work</p>
+                  <p className='font-weight-bold h4'>Quality Work</p><br />
                   <p>This very space is important simply due to fact.</p>
                   <hr className='bg-white ' />
                   <p className='span'>
@@ -161,7 +179,7 @@ const Home = () => {
 
               <div className="midd p-3 w-100" id='midd'>
                 <div className="te" id='te'>
-                  <p className='font-weight-bold h4'>Professional Team</p>
+                  <p className='font-weight-bold h4'>Professional Team</p><br />
                   <p>This very space is important simply due to fact.</p>
                   <hr className='bg-white ' />
                   <p className='span'>
@@ -186,12 +204,14 @@ const Home = () => {
             </div>
             <div className='col-lg-6'>
               <div className=''>
-                <p className='dot'> . </p>
+                <small className='dot'> . </small><br />
                 <small className='open '>ABOUT THE AGENCY</small>
                 <h1 className=' next'>We’re top notch award winning software solution agency</h1>
                 <p>Lorem ipsum dolor sit amet consectetur. Facilisi non faucibus mattis nibh. Sed at vehicula urna et pretium neque aliquam. Sed eu cursus posuere purus diam scelerisque in. Pellentesque dolor adipiscing etiam ultricies in. Sed sed pretium volutpat molestie. </p>
                 <p>Velit odio mi non lectus urna et. Mattis morbi est cras sodales ultrices nibh ut sodales. A velit enim a neque malesuada ultricies vitae aliquam tristique. Enim sagittis nulla netus velit magna elementum mattis dictum. Lectus.</p>
-                <button className='btn btn py-3 px-4 ' id="more">Discover More</button>
+
+                <button className='btn btn py-3 px-4 border-0' id='butt'> Discover More</button>
+
               </div>
             </div>
           </div>
@@ -203,13 +223,26 @@ const Home = () => {
       <div className="marquee-wrapper">
         <div className="marquee">
           <p className='rolling'> Disruptive <span> & </span>scalable tech solution <span> . </span> </p>
-
         </div>
       </div>
 
       <div>
         <img src={dd} alt="dd" className='w-100' />
       </div>
+
+        {/* <div className='d-flex'>
+          <div className=''>
+            <img src={newOne} alt='newOne' className='w-100' />
+          </div>
+          <div className=''>
+            <img src={newTwo} alt='newTwo' className='w-100' />
+          </div>
+          <div className=''>
+            <img src={newThree} alt='newThree' className='w-100' />
+          </div>
+        </div> */}
+
+
 
       {/* service provider */}
       <div className='bg-white mb-4'>
@@ -278,13 +311,19 @@ const Home = () => {
             <h1 className=' next'>Explore our best recent <br /> completed projects </h1>
           </div>
           <div style={{ marginTop: '7em' }}>
-            <button className='p-3 font-weight-bold border-0' id='viewWork' >View All Work</button>
+            <button className='btn btn py-3 px-4 font-weight-bold border-0' id='viewWork'> View All Work</button>
+
+            {/* <button className='p-3 font-weight-bold border-0' id='viewWork' >View All Work</button> */}
           </div>
         </div>
         <hr />
         <div className='row p-3' id="explore">
-          <div className='col-lg-2 h2 ' id="one">01</div>
-          <div className='col-lg-8 h2 font-weight-bold' id="two">Unique product design</div>
+          <div className='col-lg-2 w-100' >
+            <img src={fillOne} alt='number' className='w-50' id='noFill' />
+            <img src={noFillOne} alt='number' className='w-50' id='fill' />
+          </div>
+
+          <div className='col-lg-8 h2  font-weight-bold' id="two">Unique product design</div>
 
           <div className='col-lg-2  text-right'>
             <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
@@ -292,8 +331,11 @@ const Home = () => {
         </div>
         <hr />
         <div className='row p-3' id="explore">
-          <div className='col-lg-2 h2 ' id="one">02</div>
-          <div className='col-lg-8 h2 font-weight-bold' id="two">UI/UX Design for Tecno</div>
+          <div className='col-lg-2 w-100'>
+            <img src={fillTwo} alt='number' className='w-50' id='noFill' />
+            <img src={noFillTwo} alt='number' className='w-50' id='fill' />
+          </div>
+          <div className='col-lg-8  h2 font-weight-bold' id="two">UI/UX Design for Tecno</div>
 
           <div className='col-lg-2  text-right'>
             <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
@@ -301,7 +343,10 @@ const Home = () => {
         </div>
         <hr />
         <div className='row p-3' id="explore">
-          <div className='col-lg-2 h2 ' id="one">03</div>
+          <div className='col-lg-2 w-100' >
+            <img src={fillThree} alt='number' className='w-50' id='noFill' />
+            <img src={noFillThree} alt='number' className='w-50' id='fill' />
+          </div>
           <div className='col-lg-8 h2 font-weight-bold' id="two">Crown digitals website</div>
 
           <div className='col-lg-2  text-right'>
@@ -310,7 +355,10 @@ const Home = () => {
         </div>
         <hr />
         <div className='row p-3' id="explore">
-          <div className='col-lg-2 h2 ' id="one">04</div>
+          <div className='col-lg-2 '>
+            <img src={fillFour} alt='number' className='w-50' id='noFill' />
+            <img src={noFillFour} alt='number' className='w-50' id='fill' />
+          </div>
           <div className='col-lg-8 h2 font-weight-bold' id="two">Creative digital market</div>
 
           <div className='col-lg-2  text-right'>
@@ -323,7 +371,7 @@ const Home = () => {
 
       <hr className='mb-5' />
 
-      <div className='container'>
+      <div className='container' id='ourProduct'>
         <div className="row">
           <div className="col-lg-6">
             <p className='dot'> . </p>

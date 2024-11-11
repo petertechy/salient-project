@@ -16,22 +16,22 @@ const NavBar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav list-line mx-auto">
                         <li className="nav-item list-line-item ">
-                            <Link to="/" className="nav-link active font-weight-bold text-center mr-3 "> <span>.</span> Home</Link>
+                            <Link to="/" className="nav-link active font-weight-bold text-center mr-3 "> <span style={{marginTop:"-4px", position:"absolute"}}>.</span> &nbsp; Home</Link>
                         </li>
                         <li className="nav-item list-line-item  ">
-                            <Link to="/about" className="nav-link active font-weight-bold text-center mr-3 ">. Services</Link>
+                            <Link to="/about" className="nav-link active font-weight-bold text-center mr-3 "><span style={{marginTop:"-4px", position:"absolute"}}>.</span> &nbsp; Services</Link>
                         </li>
                         <li className="nav-item list-line-item  ">
-                            <Link to="/portfolio" className="nav-link active font-weight-bold text-center mr-3 ">. Portfolio</Link>
+                            <Link to="/portfolio" className="nav-link active font-weight-bold text-center mr-3 "><span style={{marginTop:"-4px", position:"absolute"}}>.</span> &nbsp; Portfolio</Link>
                         </li>
                         <li className="nav-item list-line-item  ">
-                            <Link to="/" className="nav-link active font-weight-bold text-center mr-3 ">. Products</Link>
+                            <a href="#ourProduct" className="nav-link active font-weight-bold text-center mr-3 "><span style={{marginTop:"-4px", position:"absolute"}}>.</span> &nbsp; Products</a>
                         </li>
                         <li className="nav-item list-line-item  ">
-                            <a  href='#teamGroup' className="nav-link active font-weight-bold text-center mr-3 ">. Teams</a>
+                            <a  href='#teamGroup' className="nav-link active font-weight-bold text-center mr-3 "><span style={{marginTop:"-4px", position:"absolute"}}>.</span> &nbsp; Teams</a>
                         </li>
                         <li className="nav-item list-line-item  ">
-                            <Link to="/work" className="nav-link active font-weight-bold text-center mr-3 ">. Join Us</Link>
+                            <Link to="/work" className="nav-link active font-weight-bold text-center mr-3 "><span style={{marginTop:"-4px", position:"absolute"}}>.</span> &nbsp; Join Us</Link>
                         </li>
                     </ul>
                     <ul className='navbar-nav list-line'>

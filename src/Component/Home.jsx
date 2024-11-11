@@ -26,6 +26,12 @@ import eee from '../assets/Images/world bank 1.png'
 
 import fillOne from '../assets/Images/Filled 01.png'
 import noFillOne from '../assets/Images/No fill 01.png'
+import fillTwo from '../assets/Images/Filled 02.png'
+import noFillTwo from '../assets/Images/No fill 02.png'
+import fillThree from '../assets/Images/Filled 03.png'
+import noFillThree from '../assets/Images/No fill 03.png'
+import fillFour from '../assets/Images/Filled 04.png'
+import noFillFour from '../assets/Images/No fill 04.png'
 
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -287,13 +293,12 @@ const Home = () => {
         </div>
         <hr />
         <div className='row p-3' id="explore">
-          <div className='col-lg-2' id='fill'>
-              <img src={noFillOne} alt='number' className='w-50' />
-              <img src={fillOne} alt='number' className='w-50 mr-5' id='noFill'   />
+          <div className='col-lg-2 w-100' >
+              <img src={fillOne} alt='number' className='w-50' id='noFill'   />
+              <img src={noFillOne} alt='number' className='w-50' id='fill' />
           </div>
-          {/* <div className='col-lg-2' id='noFill'> */}
-          {/* </div> */}
-          <div className='col-lg-8 h2 font-weight-bold' id="two">Unique product design</div>
+
+          <div className='col-lg-8 h2  font-weight-bold' id="two">Unique product design</div>
 
           <div className='col-lg-2  text-right'>
             <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
@@ -301,8 +306,11 @@ const Home = () => {
         </div>
         <hr />
         <div className='row p-3' id="explore">
-          <div className='col-lg-2 h2 ' id="one">02</div>
-          <div className='col-lg-8 h2 font-weight-bold' id="two">UI/UX Design for Tecno</div>
+          <div className='col-lg-2 w-100'>
+          <img src={fillTwo} alt='number' className='w-50' id='noFill'   />
+          <img src={noFillTwo} alt='number' className='w-50' id='fill' />
+          </div>
+          <div className='col-lg-8  h2 font-weight-bold' id="two">UI/UX Design for Tecno</div>
 
           <div className='col-lg-2  text-right'>
             <i className="fa-solid fa-arrow-right arrow p-3 h1" id="three"></i>
@@ -310,7 +318,10 @@ const Home = () => {
         </div>
         <hr />
         <div className='row p-3' id="explore">
-          <div className='col-lg-2 h2 ' id="one">03</div>
+          <div className='col-lg-2 w-100' >
+          <img src={fillThree} alt='number' className='w-50' id='noFill'   />
+          <img src={noFillThree} alt='number' className='w-50' id='fill' />
+          </div>
           <div className='col-lg-8 h2 font-weight-bold' id="two">Crown digitals website</div>
 
           <div className='col-lg-2  text-right'>
@@ -319,7 +330,10 @@ const Home = () => {
         </div>
         <hr />
         <div className='row p-3' id="explore">
-          <div className='col-lg-2 h2 ' id="one">04</div>
+          <div className='col-lg-2 '>
+          <img src={fillFour} alt='number' className='w-50' id='noFill'   />
+          <img src={noFillFour} alt='number' className='w-50' id='fill' />
+          </div>
           <div className='col-lg-8 h2 font-weight-bold' id="two">Creative digital market</div>
 
           <div className='col-lg-2  text-right'>
@@ -332,7 +346,7 @@ const Home = () => {
 
       <hr className='mb-5' />
 
-      <div className='container'>
+      <div className='container' id='ourProduct'>
         <div className="row">
           <div className="col-lg-6">
             <p className='dot'> . </p>

@@ -25,7 +25,7 @@ const NavBar = () => {
                             <Link to="/portfolio" className="nav-link active font-weight-bold text-center mr-3 ">. Portfolio</Link>
                         </li>
                         <li className="nav-item list-line-item  ">
-                            <Link to="/" className="nav-link active font-weight-bold text-center mr-3 ">. Products</Link>
+                            <a href="#ourProduct" className="nav-link active font-weight-bold text-center mr-3 ">. Products</a>
                         </li>
                         <li className="nav-item list-line-item  ">
                             <a  href='#teamGroup' className="nav-link active font-weight-bold text-center mr-3 ">. Teams</a>

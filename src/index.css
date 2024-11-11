@@ -532,15 +532,11 @@
 
 #noFill{
   visibility: hidden;
-  margin-bottom:-5em ;
+  margin-right:-5em ;
 }
 
 #explore:hover {
-  #one {
-    color: #F5900D;
-    font-weight: bolder;
-    font-size: 3em;
-  }
+  
 
   #fill{
   visibility: hidden;

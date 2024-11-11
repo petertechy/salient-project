@@ -1,6 +1,5 @@
 import React from 'react'
 import NavBar from './NavBar'
-import location from '../assets/Images/Frame 128.png'
 import Footer from './Footer'
 import aa from '../assets/Images/mdi-light_calendar.png'
 import bb from '../assets/Images/Frame 120.png'
@@ -8,7 +7,6 @@ import cc from '../assets/Images/Frame 119.png'
 import wo from '../assets/Images/work01.png'
 import wor from '../assets/Images/work02.png'
 import { Link } from 'react-router-dom'
-// import one from '../assets/Images/Frame 136.png'
 
 const Contact = () => {
     return (
@@ -78,7 +76,9 @@ const Contact = () => {
                                 <textarea placeholder='Write Comment' className='form-control' style={{ height: "9em" }} />
                             </div>
                         </div>
-                        <button className='btn btn my-4' id='butt'>Send a Message</button>
+                        {/* <button className='btn btn my-4' id='butt'>Send a Message</button> */}
+
+                        <button className='btn btn ' id='butt'> Send a Message</button>
                     </div>
                 </div>
 
@@ -119,11 +119,6 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-
-                {/* <div>
-                    <img src={location} alt='location' className='w-100' id='locate'  />
-                </div> */}
-
 
                 <div className="map-container" style={{ width: "100%", height: "400px" }}>
                     <iframe

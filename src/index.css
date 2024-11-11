@@ -215,11 +215,7 @@
   margin-right: 2px;
 }
 
-#butt {
-  color: white;
-  background-color: #F5900D;
-  padding: 1em;
-}
+
 
 #lorem {
   color: #F5900D;
@@ -730,3 +726,51 @@
 #para{
   line-height: 80%
 }
+
+/* #butt {
+  color: white;
+  background-color: #F5900D;
+  padding: 1em;
+} */
+
+/* From Uiverse.io by nikk7007 */ 
+#butt {
+  padding: 0.8em 1.8em;
+  position: relative;
+  overflow: hidden;
+  background-color: #F5900D;
+  text-align: center;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: white;
+  margin-top: 2em;
+  margin-bottom: 4em;
+  font-weight: 700;
+  padding: 1em;
+ }
+ 
+ #butt::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: black;
+  
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ #butt:hover::before {
+  width: 100%;
+ }
+ 
+ #butt:hover {
+  color: #F5900D;
+ }
+ 

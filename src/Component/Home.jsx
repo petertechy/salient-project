@@ -88,9 +88,9 @@ const Home = () => {
       {/* brands */}
       <div className="container mt-5">
         <div className="d-flex align-items-center justify-content-center mb-5">
-          <div style={{ flex: "1", borderBottom: "2px solid #000", marginRight: "10px" }}></div>
+          <div style={{ flex: "1", borderBottom: "2px solid #EAEAEA", marginRight: "10px" }}></div>
           <p className="mx-2 font-weight-bold h5">BRANDS THAT TRUST US</p>
-          <div style={{ flex: "1", borderBottom: "2px solid #000", marginLeft: "10px" }}></div>
+          <div style={{ flex: "1", borderBottom: "2px solid #EAEAEA", marginLeft: "10px" }}></div>
         </div>
       </div>
 

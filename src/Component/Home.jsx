@@ -109,11 +109,11 @@ const Home = () => {
             1000: { items: 5 }
           }}
         >
-          <div className="item mr-5 w-100"><img className='w-100' src={aaa} alt="Owl" /></div>
-          <div className="item mr-5 w-100"><img className='w-100' src={bbb} alt="Owl" /></div>
-          <div className="item mr-5 w-100"><img className='w-100' src={ccc} alt="Owl" /></div>
-          <div className="item mr-5 w-100"><img className='w-100' src={ddd} alt="Owl" /></div>
-          <div className="item mr-5 w-100"><img className='w-100' src={eee} alt="Owl" /></div>
+          <div className="item mr-5 w-100"><img className='' src={aaa} alt="Owl" /></div>
+          <div className="item mr-5 w-100"><img className='' src={bbb} alt="Owl" /></div>
+          <div className="item mr-5 w-100"><img className='' src={ccc} alt="Owl" /></div>
+          <div className="item mr-5 w-100"><img className='' src={ddd} alt="Owl" /></div>
+          <div className="item mr-5 w-100"><img className='' src={eee} alt="Owl" /></div>
         </OwlCarousel>
       </div>
 
